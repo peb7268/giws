@@ -13,21 +13,18 @@
  *
  * @package WordPress
  */
-define('DB_NAME', 'dev_gointengo');
-define('DB_USER', 'root');
-define('DB_PASSWORD', '');
-define('DB_HOST', 'localhost');
-define('DB_CHARSET', 'utf8');
-define('DB_COLLATE', '');
 
-define('WP_DEBUG', true);
-define('WP_DEBUG_DISPLAY', false);
-@ini_set('display_errors', 1);
-error_reporting(E_ALL);
-define('WP_DEBUG_LOG', true);
-define('SCRIPT_DEBUG', false);
-define('SAVEQUERIES', true);
+if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
+    include( dirname( __FILE__ ) . '/local-config.php' );
+} else {
+    define('DB_NAME', 'intengo_website');
+	define('DB_USER', 'intengo_website');
+	define('DB_PASSWORD', 'Intengo1234*');
+	define('DB_HOST', 'mx.internal');
+	define('DB_CHARSET', 'utf8');
+	define('DB_COLLATE', '');
 
+}
 
 /**#@+
  * Authentication Unique Keys and Salts.
