@@ -48,20 +48,24 @@ header, .parallax {
 		@include innerBase;
 	}
 }
-header {
-	padding: 23px 0 16px;
-	z-index: 9;
+#headerWrapper {
 	position: fixed;
-	background: #fff;
 	width: 100%;
-	//width: 1290px;
-	//width: 1020px;
-	top: 0;
-	//border-bottom: 1px solid #ccc;
-
+	padding: 23px 0 16px;
+	background: #FFF;
+	overflow: visible;
+	z-index: 10;
 	box-shadow: 7px 1px 10px #777;
 	-webkit-box-shadow: 7px 1px 10px #777;
 	-moz-box-shadow: 7px 1px 10px #777;
+}
+header {
+	z-index: 9;
+	width: 100%;
+	top: 0;
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 #logo {
 	max-height: 123px;
