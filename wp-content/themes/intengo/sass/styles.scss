@@ -1,4 +1,4 @@
-@import 'includes/fonts';
+ @import 'includes/fonts';
 @import 'includes/colors';
 @import 'includes/reset';
 @import 'includes/mixins';
@@ -255,7 +255,8 @@
 	}
 }
 #logos {
-	margin: 0 0 70px 7.5%;
+	margin: 0 auto 70px;
+	max-width: 930px;
 
 	li {
 		float: left;

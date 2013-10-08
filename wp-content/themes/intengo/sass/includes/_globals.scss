@@ -77,9 +77,15 @@ header {
 .content, .cta {
 	@include innerBase;
 }
+.content {
+	max-width: 1100px;
+}
 .cta {
 	position: relative;
 	width: 100%;
+	& > .inner {
+		max-width: 1100px;
+	}
 }
 #cta-home1 {
 	.right {
@@ -243,6 +249,7 @@ header {
 	.inner {
 		overflow: hidden;
 		width: 88%;
+		max-width: 1100px;
 		margin: 0 auto;
 		h4, h5 {
 			font-family: 'SancoaleSlabNormRegular', 'Times New Roman', 'serif';
