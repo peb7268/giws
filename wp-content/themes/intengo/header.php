@@ -6,6 +6,7 @@
 
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="initial-scale=1">
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="all">
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
