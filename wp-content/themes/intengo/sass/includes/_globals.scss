@@ -1,0 +1,361 @@
+body {
+	background: $background;
+}
+p, li {
+	font-family: 'SancoaleSlabNormRegular', 'Times New Roman', 'serif';
+	font-size: 13pt;
+	color: $nav-text;
+	line-height: 1.4;
+	margin: 0 0 7px 0;
+	strong {
+		font-family: 'SancoaleSlabNormBold', 'Times New Roman', 'serif';
+	}
+}
+//temporary fixed width to lock in the responsivity
+#parallax1, #parallax2, #nav2, .cta {
+	//width: 1290px !important;
+	width: 100%;
+}
+#pageWrapper {
+	width: 1020px;
+	margin: 0 auto;
+}
+.wrapper {
+	//width: 1020px !important;
+}
+#getInspired, #logos {
+	width: 92%;
+}
+
+
+//Real Styles
+.wrapper {
+	//width: 90%;
+	width: 100%;
+	max-width: 1900px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#nav2.wrapper {
+	position: relative;
+	height: 225px;
+	width: 100%;
+	max-width: 1900px;
+}
+header, .parallax {
+	position: relative;
+	.inner {
+		@include innerBase;
+	}
+}
+header {
+	padding: 23px 0 16px;
+	z-index: 9;
+	position: fixed;
+	background: #fff;
+	width: 100%;
+	//width: 1290px;
+	//width: 1020px;
+	top: 0;
+	//border-bottom: 1px solid #ccc;
+
+	box-shadow: 7px 1px 10px #777;
+	-webkit-box-shadow: 7px 1px 10px #777;
+	-moz-box-shadow: 7px 1px 10px #777;
+}
+#logo {
+	max-height: 123px;
+	width: 9.5%;
+	margin-right: w(24, 1000);
+	float: left;
+	margin: 0;
+}
+.content, .cta {
+	@include innerBase;
+}
+.cta {
+	position: relative;
+	width: 100%;
+}
+#cta-home1 {
+	.right {
+		p {
+			font-family: 'TradeGothicLTPro-Cn18', 'helvetica', 'arial', 'sans-serif';
+			font-size: 12pt;
+		}
+	}
+}
+#navControl {
+	display: none;
+}
+#nav{
+	@include navBase;
+	width: w(700);
+	float: left;
+	margin: 4.35% 0 0 15px;
+
+	li {
+		position: relative;
+		span.seperator {
+			@include seperator(45px, 16px, 36px, 48px);
+			display: none;
+		}
+		&#solutions {
+			span.seperator{
+				left: 70px;
+			}
+			& > ul.sub-nav {
+				width: 400px;
+			}
+		}
+		&#methodology {
+			span.seperator{
+				left: 92px;
+			}
+			& > ul.sub-nav {
+				width: 680px;
+				left: -145px;
+			}
+		}
+		&#case-study {
+			span.seperator{
+				left: 75px;
+			}
+			& > ul.sub-nav {
+				left: -145px;
+			}
+		}
+		a {
+			font-family: 'TradeGothicLTPro-BdCn20', 'helvetica', 'arial', 'sans-serif';
+			color: $nav-text;
+			font-size: 12pt;
+			font-weight: bold;
+			text-transform: uppercase;
+
+		}
+		& > ul.sub-nav {
+			display: none;
+			position: absolute;
+			left: -15px;
+			top: 45px;
+			margin: 0;
+			padding: 4px 0 0 0;
+			border-top: 1px solid $light-blue;
+			width: 350px;
+
+			li {
+				list-style-image: url('../images/bullet.png');
+				margin-right: 22px;
+				float: left;
+				&:first-child{
+					list-style-image: none;
+				}
+			}
+		}
+		&.hidden {
+			display: none;
+		}
+	}
+	li:hover, li.active {
+		span.seperator, & > ul.sub-nav {
+			display: block;
+		}
+	}
+}
+#secondaryNav {
+	position: absolute;
+	right: -11px;
+	top: 0;
+	height: 198px;
+	width: 336px;
+	z-index: 10;
+	@include i_img('secondaryNav.png', 0 0);
+	background-repeat: no-repeat;
+	p {
+		margin: 0 0 0 188px;
+		width: 122px;
+
+		&.tagline {
+			color: $green;
+			font-size: 9pt;
+			margin-top: 50px;
+		}
+		&.phone {
+			color: #fff;
+			font-size: 13pt;
+			//padding-right: 16px;
+			text-align: right;
+		}
+	}
+	a {
+		display: block;
+		position: absolute;
+		&#about{
+			height: 34px;
+			width: 44px;
+			top: 10px;
+			left: 43px;
+		}
+		&#contact-us{
+			width: 65px;
+			height: 46px;
+			top: 47px;
+			left: 103px;
+		}
+	}
+	ul#socialIcons{
+		@include i_img('social_icons.png', 0 0);
+		background-repeat: no-repeat;
+		height: 28px;
+		width: 142px;
+		top: 10px;
+		position: absolute;
+		right: 24px;
+		margin: 0;
+		padding: 0;
+
+		li {
+			position: relative;
+			float: left;
+			width: 28px;
+			height: 30px;
+			margin-right: 10px;
+			&.last {
+				margin-right: 0;
+			}
+			a {
+				display: block;
+				height: 28px;
+				width: 100%;
+			}
+		}
+	}
+}
+.parallax {
+	height: 255px;
+	margin-bottom: 37px;
+
+	@include i_img('parallax_demo.jpg', 0 0);
+	.inner {
+		overflow: hidden;
+		width: 88%;
+		margin: 0 auto;
+		h4, h5 {
+			font-family: 'SancoaleSlabNormRegular', 'Times New Roman', 'serif';
+			color: $parallax-text;
+			font-size: 50pt;
+			margin: 55px 0 0 0;
+			font-weight: normal;
+			line-height: 0.95;
+		}
+		h5 {
+			margin-top: 10px;
+			font-size: 21pt;
+		}
+		& > ul {
+			margin: 55px 1% 0;
+		}
+	}
+	.button {
+		float: left;
+		margin-right: w(13 , 800);
+		&.last{
+			margin-right: 0;
+		}
+		a {
+			color: #fff;
+			border: 1px solid #fff;
+			padding: 5px 10px;
+			width: 220px;
+			display: block;
+
+			strong {
+				display: block;
+				font-size: 14pt;
+				margin: 0;
+				padding: 0;
+			}
+		}
+	}
+}
+.parallax div.screen {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-repeat: repeat;
+	width: 100%;
+	height: 255px;
+
+	&.white {
+		@include i_img('parallax/screens/white.png', 0 0);
+	}
+	&.black {
+		@include i_img('parallax/screens/black.png', 0 0);
+	}
+}
+.cta div.screen {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-repeat: repeat;
+	width: 100%;
+	height: 281px;
+	&.white {
+		@include i_img('parallax/screens/white.png', 0 0);
+	}
+	&.black {
+		@include i_img('parallax/screens/black.png', 0 0);
+	}
+}
+.buttonCta {
+	span, p {
+		font-family: 'TradeGothicLTPro-Cn18', 'helvetica', 'sans-serif';
+		line-height: 1;
+		color: #fff;
+	}
+	span.seperator {
+		@include i_img('seperator-white.png' , 12px 0);
+		background-position: 12px 0;
+		background-repeat: no-repeat;
+	}
+}
+.modal {
+	display: none;
+	z-index: 9999;
+	position: absolute;
+	top: 30%;
+	background: #293E41;
+	width: 60%;
+	left: 20%;
+	background: rgba(41, 62, 65, 0.979);
+	border: 1px solid darken($teal, 20%);
+	box-shadow: 0px 2px 10px #777;
+	-moz-box-shadow: 0px 2px 10px #777;
+	-webkit-box-shadow: 0px 2px 10px #777;
+
+	.close {
+		position: absolute;
+		top: 2%;
+		right: 2%;
+		color: #fff;
+		font-weight: bold;
+	}
+	.inner {
+		padding: 0 0 30px;
+		h2, p {
+			color: #fff;
+		}
+	}
+}
+
+.hbspt-form form#hsForm_ce338ae7-08ae-4ccd-a10a-644c278d5a26 input.hs-button.primary {
+	background: none;
+	border-radius: 0;
+	text-shadow: none;
+	-webkit-text-shadow: none;
+	-webkit-border-radius: 0;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	@include button($teal, #fff);
+	border: 1px solid #000;
+}

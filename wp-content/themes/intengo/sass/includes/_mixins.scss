@@ -1,0 +1,89 @@
+//Utility Mixins
+/* do some responsive width math */
+@function w($target, $context: 0) {
+	@if $context > 0 {
+		@return (($target/$context) * 100%);
+	} @else {
+		@return (($target/$containerWidth) * 100%);
+	}
+}
+
+@mixin i_img($path, $repeat){
+	background-image: url('../images/#{$path}');
+}
+
+
+//Style Mixins
+@mixin innerBase {
+	width: 91%;
+	margin: auto;
+}
+@mixin navBase {
+	li {
+		float: left;
+		margin-right: 7%;
+	}
+}
+@mixin button($backgroundColor, $color) {
+	background-color: $backgroundColor;
+	color: $color;
+	display: block;
+	padding: 14px 7px 10px 7px;
+	margin: 0 0 30px 0;
+	font-size: 12pt;
+	font-weight: bold;
+}
+@mixin triangle($color){
+	position: absolute;
+	top: -10px;
+	right: 0;
+	display: block;
+	width: 0;
+	height: 0;
+	border-bottom: 20px solid transparent;  /* left arrow slant */
+	border-top: 10px solid transparent; /* right arrow slant */
+	border-right: 34px solid $color; /* bottom, add background color here */
+	font-size: 0;
+	line-height: 0;
+}
+//put this on a ul li that contains a span
+@mixin ctaButton($width, $padding, $float, $margin-right, $bgColor, $triangleColor){
+	position: relative;
+	overflow: hidden;
+	float: $float;
+	width: $width;
+	padding: $padding;
+	margin-right: $margin-right;
+	background-color: $bgColor;
+	&.last {
+		margin-right: 0;
+	}
+	& > span {
+		@include triangle($triangleColor);
+	}
+}
+@mixin transparentWhiteButton{
+	li {
+		@include ctaButton(100%, 0, none, 0, transparent, #fff);
+		a {
+			display: block;
+			color: #fff;
+			border: 1px solid #fff;
+			padding: 15px 7px;
+			margin-bottom: 25px;
+			&:hover {
+				background-color: $nav-text;
+			}
+		}
+	}
+}
+//Used in the nav
+@mixin seperator($height, $top, $left, $width) {
+	@include i_img('line_seperator.png', 0 0);
+	display: block;
+	height: $height;
+	position: absolute;
+	top: $top;
+	left: $left;
+	width: $width;
+}

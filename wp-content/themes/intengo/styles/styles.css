@@ -1,0 +1,2413 @@
+/* @import must be at top of file, otherwise CSS will not work */
+@font-face {
+  font-family: 'TradeGothicLT-Light';
+  src: url("../fonts/2884B9_0_0.eot");
+  src: url("../fonts/2884B9_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/2884B9_0_0.woff") format("woff"), url("../fonts/2884B9_0_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'TradeGothicLTCom-Bd2';
+  src: url("../fonts/28794D_0_0.eot");
+  src: url("../fonts/28794D_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/28794D_0_0.woff") format("woff"), url("../fonts/28794D_0_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'TradeGothicLTPro-Cn18';
+  src: url("../fonts/28794D_1_0.eot");
+  src: url("../fonts/28794D_1_0.eot?#iefix") format("embedded-opentype"), url("../fonts/28794D_1_0.woff") format("woff"), url("../fonts/28794D_1_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'TradeGothicLTPro-BdCn20';
+  src: url("../fonts/28794D_2_0.eot");
+  src: url("../fonts/28794D_2_0.eot?#iefix") format("embedded-opentype"), url("../fonts/28794D_2_0.woff") format("woff"), url("../fonts/28794D_2_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'SancoaleSlabCondRegular';
+  src: url("../fonts/28794D_3_0.eot");
+  src: url("../fonts/28794D_3_0.eot?#iefix") format("embedded-opentype"), url("../fonts/28794D_3_0.woff") format("woff"), url("../fonts/28794D_3_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'SancoaleSlabNormBold';
+  src: url("../fonts/28794D_4_0.eot");
+  src: url("../fonts/28794D_4_0.eot?#iefix") format("embedded-opentype"), url("../fonts/28794D_4_0.woff") format("woff"), url("../fonts/28794D_4_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'SancoaleSlabNormRegular';
+  src: url("../fonts/28794D_5_0.eot");
+  src: url("../fonts/28794D_5_0.eot?#iefix") format("embedded-opentype"), url("../fonts/28794D_5_0.woff") format("woff"), url("../fonts/28794D_5_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'SancoaleSlabNormRegularItal';
+  src: url("../fonts/2884A5_0_0.eot");
+  src: url("../fonts/2884A5_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/2884A5_0_0.woff") format("woff"), url("../fonts/2884A5_0_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'SancoaleSlabNormMedium';
+  src: url("../fonts/28794D_6_0.eot");
+  src: url("../fonts/28794D_6_0.eot?#iefix") format("embedded-opentype"), url("../fonts/28794D_6_0.woff") format("woff"), url("../fonts/28794D_6_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'SancoaleSlabNormMediumItal';
+  src: url("../fonts/28794D_7_0.eot");
+  src: url("../fonts/28794D_7_0.eot?#iefix") format("embedded-opentype"), url("../fonts/28794D_7_0.woff") format("woff"), url("../fonts/28794D_7_0.ttf") format("truetype");
+}
+
+/* normalize.css v2.1.3 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+/* line 22, ../sass/includes/_reset.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+/* line 32, ../sass/includes/_reset.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 41, ../sass/includes/_reset.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+/* line 52, ../sass/includes/_reset.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 66, ../sass/includes/_reset.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 78, ../sass/includes/_reset.scss */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 90, ../sass/includes/_reset.scss */
+a {
+  background: transparent;
+  text-decoration: none;
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 99, ../sass/includes/_reset.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 108, ../sass/includes/_reset.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 121, ../sass/includes/_reset.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 125, ../sass/includes/_reset.scss */
+h2 {
+  font-family: 'TradeGothicLTPro-BdCn20', 'times new roman', 'serif';
+  font-size: 22pt;
+  text-transform: uppercase;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 135, ../sass/includes/_reset.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 144, ../sass/includes/_reset.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 152, ../sass/includes/_reset.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 160, ../sass/includes/_reset.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 170, ../sass/includes/_reset.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+/* line 182, ../sass/includes/_reset.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+/* line 191, ../sass/includes/_reset.scss */
+pre {
+  white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+/* line 199, ../sass/includes/_reset.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 207, ../sass/includes/_reset.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 216, ../sass/includes/_reset.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 223, ../sass/includes/_reset.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 227, ../sass/includes/_reset.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+/* line 239, ../sass/includes/_reset.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 247, ../sass/includes/_reset.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+/* line 259, ../sass/includes/_reset.scss */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 271, ../sass/includes/_reset.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 282, ../sass/includes/_reset.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 296, ../sass/includes/_reset.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 308, ../sass/includes/_reset.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+/* line 320, ../sass/includes/_reset.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 335, ../sass/includes/_reset.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 345, ../sass/includes/_reset.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 355, ../sass/includes/_reset.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 366, ../sass/includes/_reset.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 379, ../sass/includes/_reset.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 388, ../sass/includes/_reset.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+/* line 398, ../sass/includes/_reset.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 411, ../sass/includes/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 415, ../sass/includes/_reset.scss */
+ul {
+  list-style: none;
+}
+
+/* line 418, ../sass/includes/_reset.scss */
+.clearfix:after {
+  content: ' ';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/*-- Global Variables -------------------------------------
+|
+/*-------------------------------------------------------*/
+/* do some responsive width math */
+/* line 1, ../sass/includes/_globals.scss */
+body {
+  background: white;
+}
+
+/* line 4, ../sass/includes/_globals.scss */
+p, li {
+  font-family: 'SancoaleSlabNormRegular', 'Times New Roman', 'serif';
+  font-size: 13pt;
+  color: #303e48;
+  line-height: 1.4;
+  margin: 0 0 7px 0;
+}
+/* line 10, ../sass/includes/_globals.scss */
+p strong, li strong {
+  font-family: 'SancoaleSlabNormBold', 'Times New Roman', 'serif';
+}
+
+/* line 15, ../sass/includes/_globals.scss */
+#parallax1, #parallax2, #nav2, .cta {
+  width: 100%;
+}
+
+/* line 19, ../sass/includes/_globals.scss */
+#pageWrapper {
+  width: 1020px;
+  margin: 0 auto;
+}
+
+/* line 26, ../sass/includes/_globals.scss */
+#getInspired, #logos {
+  width: 92%;
+}
+
+/* line 32, ../sass/includes/_globals.scss */
+.wrapper {
+  width: 100%;
+  max-width: 1900px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* line 39, ../sass/includes/_globals.scss */
+#nav2.wrapper {
+  position: relative;
+  height: 225px;
+  width: 100%;
+  max-width: 1900px;
+}
+
+/* line 45, ../sass/includes/_globals.scss */
+header, .parallax {
+  position: relative;
+}
+/* line 47, ../sass/includes/_globals.scss */
+header .inner, .parallax .inner {
+  width: 91%;
+  margin: auto;
+}
+
+/* line 51, ../sass/includes/_globals.scss */
+header {
+  padding: 23px 0 16px;
+  z-index: 9;
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  top: 0;
+  box-shadow: 7px 1px 10px #777;
+  -webkit-box-shadow: 7px 1px 10px #777;
+  -moz-box-shadow: 7px 1px 10px #777;
+}
+
+/* line 66, ../sass/includes/_globals.scss */
+#logo {
+  max-height: 123px;
+  width: 9.5%;
+  margin-right: 2.4%;
+  float: left;
+  margin: 0;
+}
+
+/* line 73, ../sass/includes/_globals.scss */
+.content, .cta {
+  width: 91%;
+  margin: auto;
+}
+
+/* line 76, ../sass/includes/_globals.scss */
+.cta {
+  position: relative;
+  width: 100%;
+}
+
+/* line 82, ../sass/includes/_globals.scss */
+#cta-home1 .right p {
+  font-family: 'TradeGothicLTPro-Cn18', 'helvetica', 'arial', 'sans-serif';
+  font-size: 12pt;
+}
+
+/* line 88, ../sass/includes/_globals.scss */
+#navControl {
+  display: none;
+}
+
+/* line 91, ../sass/includes/_globals.scss */
+#nav {
+  width: 70%;
+  float: left;
+  margin: 4.35% 0 0 15px;
+}
+/* line 22, ../sass/includes/_mixins.scss */
+#nav li {
+  float: left;
+  margin-right: 7%;
+}
+/* line 97, ../sass/includes/_globals.scss */
+#nav li {
+  position: relative;
+}
+/* line 99, ../sass/includes/_globals.scss */
+#nav li span.seperator {
+  background-image: url("../images/line_seperator.png");
+  display: block;
+  height: 45px;
+  position: absolute;
+  top: 16px;
+  left: 36px;
+  width: 48px;
+  display: none;
+}
+/* line 104, ../sass/includes/_globals.scss */
+#nav li#solutions span.seperator {
+  left: 70px;
+}
+/* line 107, ../sass/includes/_globals.scss */
+#nav li#solutions > ul.sub-nav {
+  width: 400px;
+}
+/* line 112, ../sass/includes/_globals.scss */
+#nav li#methodology span.seperator {
+  left: 92px;
+}
+/* line 115, ../sass/includes/_globals.scss */
+#nav li#methodology > ul.sub-nav {
+  width: 680px;
+  left: -145px;
+}
+/* line 121, ../sass/includes/_globals.scss */
+#nav li#case-study span.seperator {
+  left: 75px;
+}
+/* line 124, ../sass/includes/_globals.scss */
+#nav li#case-study > ul.sub-nav {
+  left: -145px;
+}
+/* line 128, ../sass/includes/_globals.scss */
+#nav li a {
+  font-family: 'TradeGothicLTPro-BdCn20', 'helvetica', 'arial', 'sans-serif';
+  color: #303e48;
+  font-size: 12pt;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* line 136, ../sass/includes/_globals.scss */
+#nav li > ul.sub-nav {
+  display: none;
+  position: absolute;
+  left: -15px;
+  top: 45px;
+  margin: 0;
+  padding: 4px 0 0 0;
+  border-top: 1px solid #1daadd;
+  width: 350px;
+}
+/* line 146, ../sass/includes/_globals.scss */
+#nav li > ul.sub-nav li {
+  list-style-image: url("../images/bullet.png");
+  margin-right: 22px;
+  float: left;
+}
+/* line 150, ../sass/includes/_globals.scss */
+#nav li > ul.sub-nav li:first-child {
+  list-style-image: none;
+}
+/* line 155, ../sass/includes/_globals.scss */
+#nav li.hidden {
+  display: none;
+}
+/* line 160, ../sass/includes/_globals.scss */
+#nav li:hover span.seperator, #nav li:hover > ul.sub-nav, #nav li.active span.seperator, #nav li.active > ul.sub-nav {
+  display: block;
+}
+
+/* line 165, ../sass/includes/_globals.scss */
+#secondaryNav {
+  position: absolute;
+  right: -11px;
+  top: 0;
+  height: 198px;
+  width: 336px;
+  z-index: 10;
+  background-image: url("../images/secondaryNav.png");
+  background-repeat: no-repeat;
+}
+/* line 174, ../sass/includes/_globals.scss */
+#secondaryNav p {
+  margin: 0 0 0 188px;
+  width: 122px;
+}
+/* line 178, ../sass/includes/_globals.scss */
+#secondaryNav p.tagline {
+  color: #90ca55;
+  font-size: 9pt;
+  margin-top: 50px;
+}
+/* line 183, ../sass/includes/_globals.scss */
+#secondaryNav p.phone {
+  color: #fff;
+  font-size: 13pt;
+  text-align: right;
+}
+/* line 190, ../sass/includes/_globals.scss */
+#secondaryNav a {
+  display: block;
+  position: absolute;
+}
+/* line 193, ../sass/includes/_globals.scss */
+#secondaryNav a#about {
+  height: 34px;
+  width: 44px;
+  top: 10px;
+  left: 43px;
+}
+/* line 199, ../sass/includes/_globals.scss */
+#secondaryNav a#contact-us {
+  width: 65px;
+  height: 46px;
+  top: 47px;
+  left: 103px;
+}
+/* line 206, ../sass/includes/_globals.scss */
+#secondaryNav ul#socialIcons {
+  background-image: url("../images/social_icons.png");
+  background-repeat: no-repeat;
+  height: 28px;
+  width: 142px;
+  top: 10px;
+  position: absolute;
+  right: 24px;
+  margin: 0;
+  padding: 0;
+}
+/* line 217, ../sass/includes/_globals.scss */
+#secondaryNav ul#socialIcons li {
+  position: relative;
+  float: left;
+  width: 28px;
+  height: 30px;
+  margin-right: 10px;
+}
+/* line 223, ../sass/includes/_globals.scss */
+#secondaryNav ul#socialIcons li.last {
+  margin-right: 0;
+}
+/* line 226, ../sass/includes/_globals.scss */
+#secondaryNav ul#socialIcons li a {
+  display: block;
+  height: 28px;
+  width: 100%;
+}
+
+/* line 234, ../sass/includes/_globals.scss */
+.parallax {
+  height: 255px;
+  margin-bottom: 37px;
+  background-image: url("../images/parallax_demo.jpg");
+}
+/* line 239, ../sass/includes/_globals.scss */
+.parallax .inner {
+  overflow: hidden;
+  width: 88%;
+  margin: 0 auto;
+}
+/* line 243, ../sass/includes/_globals.scss */
+.parallax .inner h4, .parallax .inner h5 {
+  font-family: 'SancoaleSlabNormRegular', 'Times New Roman', 'serif';
+  color: white;
+  font-size: 50pt;
+  margin: 55px 0 0 0;
+  font-weight: normal;
+  line-height: 0.95;
+}
+/* line 251, ../sass/includes/_globals.scss */
+.parallax .inner h5 {
+  margin-top: 10px;
+  font-size: 21pt;
+}
+/* line 255, ../sass/includes/_globals.scss */
+.parallax .inner > ul {
+  margin: 55px 1% 0;
+}
+/* line 259, ../sass/includes/_globals.scss */
+.parallax .button {
+  float: left;
+  margin-right: 1.625%;
+}
+/* line 262, ../sass/includes/_globals.scss */
+.parallax .button.last {
+  margin-right: 0;
+}
+/* line 265, ../sass/includes/_globals.scss */
+.parallax .button a {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  width: 220px;
+  display: block;
+}
+/* line 272, ../sass/includes/_globals.scss */
+.parallax .button a strong {
+  display: block;
+  font-size: 14pt;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 281, ../sass/includes/_globals.scss */
+.parallax div.screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: repeat;
+  width: 100%;
+  height: 255px;
+}
+/* line 289, ../sass/includes/_globals.scss */
+.parallax div.screen.white {
+  background-image: url("../images/parallax/screens/white.png");
+}
+/* line 292, ../sass/includes/_globals.scss */
+.parallax div.screen.black {
+  background-image: url("../images/parallax/screens/black.png");
+}
+
+/* line 296, ../sass/includes/_globals.scss */
+.cta div.screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: repeat;
+  width: 100%;
+  height: 281px;
+}
+/* line 303, ../sass/includes/_globals.scss */
+.cta div.screen.white {
+  background-image: url("../images/parallax/screens/white.png");
+}
+/* line 306, ../sass/includes/_globals.scss */
+.cta div.screen.black {
+  background-image: url("../images/parallax/screens/black.png");
+}
+
+/* line 311, ../sass/includes/_globals.scss */
+.buttonCta span, .buttonCta p {
+  font-family: 'TradeGothicLTPro-Cn18', 'helvetica', 'sans-serif';
+  line-height: 1;
+  color: #fff;
+}
+/* line 316, ../sass/includes/_globals.scss */
+.buttonCta span.seperator {
+  background-image: url("../images/seperator-white.png");
+  background-position: 12px 0;
+  background-repeat: no-repeat;
+}
+
+/* line 322, ../sass/includes/_globals.scss */
+.modal {
+  display: none;
+  z-index: 9999;
+  position: absolute;
+  top: 30%;
+  background: #293E41;
+  width: 60%;
+  left: 20%;
+  background: rgba(41, 62, 65, 0.979);
+  border: 1px solid #020202;
+  box-shadow: 0px 2px 10px #777;
+  -moz-box-shadow: 0px 2px 10px #777;
+  -webkit-box-shadow: 0px 2px 10px #777;
+}
+/* line 336, ../sass/includes/_globals.scss */
+.modal .close {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  color: #fff;
+  font-weight: bold;
+}
+/* line 343, ../sass/includes/_globals.scss */
+.modal .inner {
+  padding: 0 0 30px;
+}
+/* line 345, ../sass/includes/_globals.scss */
+.modal .inner h2, .modal .inner p {
+  color: #fff;
+}
+
+/* line 351, ../sass/includes/_globals.scss */
+.hbspt-form form#hsForm_ce338ae7-08ae-4ccd-a10a-644c278d5a26 input.hs-button.primary {
+  background: none;
+  border-radius: 0;
+  text-shadow: none;
+  -webkit-text-shadow: none;
+  -webkit-border-radius: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  background-color: #293e41;
+  color: white;
+  display: block;
+  padding: 14px 7px 10px 7px;
+  margin: 0 0 30px 0;
+  font-size: 12pt;
+  font-weight: bold;
+  border: 1px solid #000;
+}
+
+/* line 10, ../sass/styles.scss */
+.page-id-5 #parallax1 {
+  background-image: url("../images/parallax/home/header.jpg");
+}
+/* line 13, ../sass/styles.scss */
+.page-id-5 #cta-home1 {
+  background-image: url("../images/parallax/home/cta1.jpg");
+}
+/* line 18, ../sass/styles.scss */
+.page-id-5 #parallax2 .inner li {
+  border: 0;
+}
+/* line 20, ../sass/styles.scss */
+.page-id-5 #parallax2 .inner li a {
+  border: 1px solid #FFF;
+  width: 93%;
+}
+
+/* line 28, ../sass/styles.scss */
+#block1 {
+  border-bottom: 1px solid #a4b2a5;
+}
+/* line 30, ../sass/styles.scss */
+#block1 .left {
+  width: 54.36893%;
+  float: left;
+}
+/* line 33, ../sass/styles.scss */
+#block1 .left > p {
+  padding-left: 35px;
+}
+/* line 37, ../sass/styles.scss */
+#block1 .right {
+  width: 25%;
+  float: right;
+  margin: 0 5.77778% 0 0;
+}
+/* line 42, ../sass/styles.scss */
+#block1 .right li {
+  position: relative;
+  overflow: hidden;
+}
+/* line 48, ../sass/styles.scss */
+#block1 .right li > span {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: 20px solid transparent;
+  /* left arrow slant */
+  border-top: 10px solid transparent;
+  /* right arrow slant */
+  border-right: 34px solid #90ca55;
+  /* bottom, add background color here */
+  font-size: 0;
+  line-height: 0;
+}
+/* line 52, ../sass/styles.scss */
+#block1 .right li a {
+  background-color: #303e48;
+  color: white;
+  display: block;
+  padding: 14px 7px 10px 7px;
+  margin: 0 0 30px 0;
+  font-size: 12pt;
+  font-weight: bold;
+  line-height: 1.2;
+  font-size: 14pt;
+  padding: 12px 7px 10px 7px;
+  margin: 0 0 20px 0;
+}
+/* line 59, ../sass/styles.scss */
+#block1 .right li a p {
+  color: #fff;
+  font-size: 11pt;
+  margin: 0 0 2px 0;
+}
+/* line 65, ../sass/styles.scss */
+#block1 .right li p, #block1 .right li a {
+  font-family: 'TradeGothicLTPro-Cn18', 'helvetica', 'arial', 'sans-serif';
+}
+
+/* line 72, ../sass/styles.scss */
+#block2 h2 {
+  color: #293e41;
+  margin-top: 42px;
+}
+/* line 77, ../sass/styles.scss */
+#block2 ul {
+  padding: 0;
+  margin: 0 0 50px 0;
+}
+/* line 81, ../sass/styles.scss */
+#block2 ul li {
+  font-family: 'TradeGothicLTPro-Cn18', 'times new roman', 'serif';
+  width: 20%;
+  float: left;
+  border-right: 1px solid #1daadd;
+  padding: 0 13px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+/* line 90, ../sass/styles.scss */
+#block2 ul li.last {
+  border-right: none;
+}
+/* line 93, ../sass/styles.scss */
+#block2 ul li span {
+  margin: 0 auto 23px;
+  display: block;
+  background-image: url("../images/icon_sprite.png");
+  width: 63px;
+  height: 61px;
+}
+/* line 100, ../sass/styles.scss */
+#block2 ul li span#clear {
+  background-position: -73px 0;
+}
+/* line 103, ../sass/styles.scss */
+#block2 ul li span#high {
+  background-position: -146px 0;
+}
+/* line 106, ../sass/styles.scss */
+#block2 ul li span#wild {
+  background-position: -220px 0;
+}
+/* line 109, ../sass/styles.scss */
+#block2 ul li span#rich {
+  background-position: -295px 0;
+}
+/* line 113, ../sass/styles.scss */
+#block2 ul li p {
+  font-family: 'TradeGothicLTPro-BdCn20', 'times new roman', 'serif';
+  color: #1daadd;
+  font-size: 11pt;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* line 123, ../sass/styles.scss */
+.cta {
+  height: 281px;
+  margin-bottom: 37px;
+  background-image: url("../images/parallax_demo.jpg");
+}
+/* line 128, ../sass/styles.scss */
+.cta .inner {
+  overflow: hidden;
+  margin: 0 auto;
+  width: 88%;
+}
+/* line 133, ../sass/styles.scss */
+.cta .inner h4.left {
+  font-family: 'SancoaleSlabCondRegular', 'times new roman', 'serif';
+  float: left;
+  color: white;
+  width: 50%;
+  font-size: 50pt;
+  margin: 50px 0 0 0;
+  font-weight: normal;
+}
+/* line 142, ../sass/styles.scss */
+.cta .inner .right {
+  float: right;
+  width: 35%;
+  margin: 60px 0 0 0;
+}
+/* line 147, ../sass/styles.scss */
+.cta .inner .right p {
+  color: #fff;
+  font-size: 12pt;
+  text-align: center;
+}
+/* line 66, ../sass/includes/_mixins.scss */
+.cta .inner .right li {
+  position: relative;
+  overflow: hidden;
+  float: none;
+  width: 100%;
+  padding: 0;
+  margin-right: 0;
+  background-color: transparent;
+}
+/* line 58, ../sass/includes/_mixins.scss */
+.cta .inner .right li.last {
+  margin-right: 0;
+}
+/* line 61, ../sass/includes/_mixins.scss */
+.cta .inner .right li > span {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: 20px solid transparent;
+  /* left arrow slant */
+  border-top: 10px solid transparent;
+  /* right arrow slant */
+  border-right: 34px solid white;
+  /* bottom, add background color here */
+  font-size: 0;
+  line-height: 0;
+}
+/* line 68, ../sass/includes/_mixins.scss */
+.cta .inner .right li a {
+  display: block;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 15px 7px;
+  margin-bottom: 25px;
+}
+/* line 74, ../sass/includes/_mixins.scss */
+.cta .inner .right li a:hover {
+  background-color: #303e48;
+}
+/* line 153, ../sass/styles.scss */
+.cta .inner .right li {
+  width: 80%;
+  margin: 0 0 20px 0;
+}
+/* line 157, ../sass/styles.scss */
+.cta .inner .right li a {
+  margin: 0;
+  line-height: 1;
+}
+/* line 162, ../sass/styles.scss */
+.cta .inner .right a {
+  font-family: 'TradeGothicLTPro-BdCn20', 'times new roman', 'serif';
+  font-size: 16pt;
+}
+
+/* line 169, ../sass/styles.scss */
+.inner {
+  width: 88%;
+  margin: 0 auto;
+}
+/* line 172, ../sass/styles.scss */
+.inner > h4 {
+  font-family: 'TradeGothicLTPro-BdCn20', 'times new roman', 'serif';
+  margin: 0 0 20px 0;
+  font-size: 24pt;
+}
+/* line 177, ../sass/styles.scss */
+.inner #cta-group-home1 {
+  margin: 0 0 38px;
+  padding: 0  15px 25px;
+  border-bottom: 1px solid #a4b2a5;
+}
+/* line 182, ../sass/styles.scss */
+.inner #cta-group-home1 .inner {
+  overflow: hidden;
+  margin: 0;
+  padding-top: 12px;
+}
+/* line 188, ../sass/styles.scss */
+.inner #cta-group-home1 .inner a {
+  font-family: 'TradeGothicLTPro-BdCn20', 'arial', 'sans-serif';
+  display: block;
+  margin-top: 12px;
+}
+/* line 195, ../sass/styles.scss */
+.inner #cta-group-home1 li {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  width: 20%;
+  padding: 14px 2%;
+  margin-right: 1.3%;
+  background-color: #303e48;
+}
+/* line 58, ../sass/includes/_mixins.scss */
+.inner #cta-group-home1 li.last {
+  margin-right: 0;
+}
+/* line 61, ../sass/includes/_mixins.scss */
+.inner #cta-group-home1 li > span {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: 20px solid transparent;
+  /* left arrow slant */
+  border-top: 10px solid transparent;
+  /* right arrow slant */
+  border-right: 34px solid red;
+  /* bottom, add background color here */
+  font-size: 0;
+  line-height: 0;
+}
+/* line 199, ../sass/styles.scss */
+.inner #cta-group-home1 li.yellow > span {
+  border-right-color: #eeec78;
+}
+/* line 202, ../sass/styles.scss */
+.inner #cta-group-home1 li.yellow .inner > a {
+  color: #eeec78;
+}
+/* line 207, ../sass/styles.scss */
+.inner #cta-group-home1 li.green > span {
+  border-right-color: #90ca55;
+}
+/* line 210, ../sass/styles.scss */
+.inner #cta-group-home1 li.green .inner > a {
+  color: #90ca55;
+}
+/* line 215, ../sass/styles.scss */
+.inner #cta-group-home1 li.blue > span {
+  border-right-color: #1daadd;
+}
+/* line 218, ../sass/styles.scss */
+.inner #cta-group-home1 li.blue .inner > a {
+  color: #1daadd;
+}
+/* line 223, ../sass/styles.scss */
+.inner #cta-group-home1 li.gray > span {
+  border-right-color: #a4b2a5;
+}
+/* line 226, ../sass/styles.scss */
+.inner #cta-group-home1 li.gray .inner > a {
+  color: #a4b2a5;
+}
+/* line 231, ../sass/styles.scss */
+.inner #cta-group-home1 li p, .inner #cta-group-home1 li h4 {
+  color: #fff;
+}
+/* line 234, ../sass/styles.scss */
+.inner #cta-group-home1 li h4 {
+  font-family: 'SancoaleSlabNormRegularItal', 'times new roman', 'serif';
+  margin: 0;
+}
+/* line 238, ../sass/styles.scss */
+.inner #cta-group-home1 li p {
+  font-family: 'TradeGothicLT-Light', 'times new roman', 'serif';
+  margin: 0;
+  font-size: 10pt;
+}
+/* line 243, ../sass/styles.scss */
+.inner #cta-group-home1 li a {
+  font-family: 'TradeGothicLT-Light', 'times new roman', 'serif';
+}
+
+/* line 251, ../sass/styles.scss */
+#getInspired > h4 {
+  font-family: 'TradeGothicLTPro-BdCn20', 'arial', 'sans-serif';
+  margin: 0 0 17px 6%;
+  font-size: 24pt;
+}
+
+/* line 257, ../sass/styles.scss */
+#logos {
+  margin-bottom: 70px;
+}
+/* line 259, ../sass/styles.scss */
+#logos li {
+  float: left;
+  margin-right: 7%;
+  max-width: 170px;
+}
+/* line 264, ../sass/styles.scss */
+#logos li.last {
+  margin-right: 0;
+}
+/* line 268, ../sass/styles.scss */
+#logos .img {
+  background-color: #999;
+  width: 100%;
+}
+
+/* line 273, ../sass/styles.scss */
+#parallax1 {
+  margin-top: -90px;
+}
+
+/* line 277, ../sass/styles.scss */
+#parallax2 {
+  background-image: url("../images/parallax/footer.jpg");
+  background-position: 0 5%;
+}
+/* line 282, ../sass/styles.scss */
+#parallax2 .inner > ul {
+  margin: 55px 1% 0 10%;
+}
+/* line 285, ../sass/styles.scss */
+#parallax2 .inner > ul > li {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  width: 24.6%;
+  padding: 0;
+  margin-right: 2%;
+  background-color: transparent;
+  border: 1px solid #FFF;
+}
+/* line 58, ../sass/includes/_mixins.scss */
+#parallax2 .inner > ul > li.last {
+  margin-right: 0;
+}
+/* line 61, ../sass/includes/_mixins.scss */
+#parallax2 .inner > ul > li > span {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: 20px solid transparent;
+  /* left arrow slant */
+  border-top: 10px solid transparent;
+  /* right arrow slant */
+  border-right: 34px solid white;
+  /* bottom, add background color here */
+  font-size: 0;
+  line-height: 0;
+}
+/* line 289, ../sass/styles.scss */
+#parallax2 .inner > ul > li, #parallax2 .inner > ul > li p, #parallax2 .inner > ul > li a, #parallax2 .inner > ul > li span {
+  font-family: 'TradeGothicLTPro-Cn18', 'helvetica', 'arial', sans-serif;
+}
+/* line 292, ../sass/styles.scss */
+#parallax2 .inner > ul > li strong {
+  font-family: 'TradeGothicLTPro-BdCn20', 'helvetica', 'arial', sans-serif;
+  font-size: 18pt;
+  line-height: 1;
+}
+/* line 298, ../sass/styles.scss */
+#parallax2 .inner > ul > li a {
+  display: block;
+  color: #fff;
+  border: 0;
+  width: 100%;
+  padding: 15px 7px;
+  margin-bottom: -2px;
+}
+/* line 306, ../sass/styles.scss */
+#parallax2 .inner > ul > li a:hover {
+  background-color: #303e48;
+}
+/* line 310, ../sass/styles.scss */
+#parallax2 .inner > ul > li span.seperator {
+  display: block;
+  height: 25px;
+}
+/* line 317, ../sass/styles.scss */
+#parallax2.solutions .inner > ul > li a {
+  margin: 0;
+}
+
+/* line 323, ../sass/styles.scss */
+.page-id-9 #block1 {
+  border-bottom: 0;
+  margin-bottom: 40px;
+}
+/* line 327, ../sass/styles.scss */
+.page-id-9 .content {
+  width: 61%;
+}
+/* line 330, ../sass/styles.scss */
+.page-id-9 #predictionMarkets, .page-id-9 #brandPositioning {
+  width: 73%;
+  margin-bottom: 70px;
+}
+/* line 334, ../sass/styles.scss */
+.page-id-9 #block2 {
+  margin: 0 auto 50px;
+}
+/* line 336, ../sass/styles.scss */
+.page-id-9 #block2 em {
+  font-family: "SancoaleSlabNormBold", "Times New Roman", "serif";
+}
+/* line 339, ../sass/styles.scss */
+.page-id-9 #block2 > ul {
+  width: 100%;
+  margin: 0;
+  padding: 0 0 0 15px;
+}
+/* line 344, ../sass/styles.scss */
+.page-id-9 #block2 > ul li {
+  width: 33%;
+  border: 0;
+}
+/* line 347, ../sass/styles.scss */
+.page-id-9 #block2 > ul li.first {
+  width: 28%;
+  margin-left: 0;
+  padding-left: 0;
+  border-right: 1px solid #111111;
+  margin-right: 10px;
+}
+/* line 354, ../sass/styles.scss */
+.page-id-9 #block2 > ul li.second {
+  margin-right: 1%;
+  width: 28%;
+}
+/* line 359, ../sass/styles.scss */
+.page-id-9 #block2 > ul li.blue h4 {
+  color: #1daadd;
+}
+/* line 362, ../sass/styles.scss */
+.page-id-9 #block2 > ul li.green h4 {
+  color: #90ca55;
+}
+/* line 365, ../sass/styles.scss */
+.page-id-9 #block2 > ul li.green a {
+  background-color: #90ca55;
+  color: white;
+  display: block;
+  padding: 14px 7px 10px 7px;
+  margin: 0 0 30px 0;
+  font-size: 12pt;
+  font-weight: bold;
+  float: right;
+  padding: 5px 4px;
+  margin: 10px 190px 30px 0;
+  font-size: 10pt;
+  width: 45%;
+}
+/* line 373, ../sass/styles.scss */
+.page-id-9 #block2 > ul li.blue a {
+  background-color: #1daadd;
+  color: white;
+  display: block;
+  padding: 14px 7px 10px 7px;
+  margin: 0 0 30px 0;
+  font-size: 12pt;
+  font-weight: bold;
+  float: right;
+  padding: 5px 4px;
+  margin: 10px 15px 30px 0;
+  font-size: 10pt;
+  width: 45%;
+}
+/* line 381, ../sass/styles.scss */
+.page-id-9 #block2 > ul li.green a, .page-id-9 #block2 > ul li.blue a {
+  position: relative;
+  overflow: hidden;
+}
+/* line 384, ../sass/styles.scss */
+.page-id-9 #block2 > ul li.green a span, .page-id-9 #block2 > ul li.blue a span {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: 20px solid transparent;
+  /* left arrow slant */
+  border-top: 10px solid transparent;
+  /* right arrow slant */
+  border-right: 34px solid #293e41;
+  /* bottom, add background color here */
+  font-size: 0;
+  line-height: 0;
+  background-image: none;
+}
+/* line 389, ../sass/styles.scss */
+.page-id-9 #block2 > ul li h4 {
+  margin: 4px 0;
+  font-family: 'TradeGothicLTPro-BdCn20', 'times new roman', 'serif';
+}
+/* line 393, ../sass/styles.scss */
+.page-id-9 #block2 > ul li p {
+  font-family: 'TradeGothicLTPro-Cn18', 'helvetica', 'sans-serif';
+  font-weight: normal;
+  color: #111111;
+  font-size: 10pt;
+}
+/* line 402, ../sass/styles.scss */
+.page-id-9 #block2 #creative span {
+  font-size: 16pt;
+  font-family: 'TradeGothicLTPro-BdCn20', 'helvetica', 'sans-serif';
+  font-weight: bold;
+}
+/* line 410, ../sass/styles.scss */
+.page-id-9 #predictionMarkets h4, .page-id-9 #brandPositioning h4 {
+  font-family: 'TradeGothicLTPro-BdCn20', 'helvetica', 'arial', 'sans-serif';
+  font-size: 20pt;
+  margin: 0 0 15px 0;
+  color: #293e41;
+}
+/* line 417, ../sass/styles.scss */
+.page-id-9 table#productScreening, .page-id-9 #brandPositioning table#positioningAndCreative {
+  width: 100%;
+}
+/* line 419, ../sass/styles.scss */
+.page-id-9 table#productScreening th, .page-id-9 #brandPositioning table#positioningAndCreative th {
+  text-transform: uppercase;
+  font-family: 'TradeGothicLTPro-BdCn20', 'helvetica', 'arial', 'sans-serif';
+  color: #fff;
+  height: 85px;
+  background-color: #1daadd;
+  font-size: 15pt;
+  border-right: 1px solid #fff;
+}
+/* line 428, ../sass/styles.scss */
+.page-id-9 table#productScreening tr, .page-id-9 #brandPositioning table#positioningAndCreative tr {
+  border-bottom: 1px solid #293e41;
+}
+/* line 430, ../sass/styles.scss */
+.page-id-9 table#productScreening tr h4, .page-id-9 #brandPositioning table#positioningAndCreative tr h4 {
+  font-size: 12pt;
+  margin: 0 0 4px;
+}
+/* line 434, ../sass/styles.scss */
+.page-id-9 table#productScreening tr td, .page-id-9 #brandPositioning table#positioningAndCreative tr td {
+  padding: 9px;
+  vertical-align: top;
+}
+/* line 438, ../sass/styles.scss */
+.page-id-9 table#productScreening tr td:first-child, .page-id-9 #brandPositioning table#positioningAndCreative tr td:first-child {
+  font-family: 'SancoaleSlabNormMediumItal', 'times new roman', 'serif';
+  font-size: 14pt;
+  color: #293e41;
+  text-align: center;
+}
+/* line 444, ../sass/styles.scss */
+.page-id-9 table#productScreening tr td:first-child span, .page-id-9 #brandPositioning table#positioningAndCreative tr td:first-child span {
+  background-image: url("../images/solutions_icon_sprite.png");
+  display: block;
+  width: 65px;
+  height: 80px;
+  background-repeat: no-repeat;
+}
+/* line 452, ../sass/styles.scss */
+.page-id-9 table#productScreening tr td:first-child.stm span, .page-id-9 #brandPositioning table#positioningAndCreative tr td:first-child.stm span {
+  margin: 7px 0 0 15px;
+}
+/* line 457, ../sass/styles.scss */
+.page-id-9 table#productScreening tr td:first-child.bts span, .page-id-9 #brandPositioning table#positioningAndCreative tr td:first-child.bts span {
+  width: 72px;
+  background-position: 0 -88px;
+  margin: 0 0 0 14px;
+}
+/* line 464, ../sass/styles.scss */
+.page-id-9 table#productScreening tr td:first-child.co span, .page-id-9 #brandPositioning table#positioningAndCreative tr td:first-child.co span {
+  background-position: 0 -184px;
+  margin: 0 0 0 14px;
+}
+/* line 470, ../sass/styles.scss */
+.page-id-9 table#productScreening tr td:first-child.is span, .page-id-9 #brandPositioning table#positioningAndCreative tr td:first-child.is span {
+  background-position: 0 -285px;
+  margin: 0 0 0 14px;
+}
+/* line 476, ../sass/styles.scss */
+.page-id-9 table#productScreening tr td p, .page-id-9 #brandPositioning table#positioningAndCreative tr td p {
+  font-size: 11pt;
+  line-height: 1.2;
+}
+/* line 481, ../sass/styles.scss */
+.page-id-9 table#productScreening tr.last, .page-id-9 #brandPositioning table#positioningAndCreative tr.last {
+  border-bottom: 0;
+}
+/* line 487, ../sass/styles.scss */
+.page-id-9 #brandPositioning table#positioningAndCreative th {
+  background-color: #90ca55;
+}
+/* line 491, ../sass/styles.scss */
+.page-id-9 #brandPositioning table#positioningAndCreative tr td:first-child .nas {
+  width: 105px;
+  background-position: -96px 0;
+}
+/* line 495, ../sass/styles.scss */
+.page-id-9 #brandPositioning table#positioningAndCreative tr td:first-child .ed {
+  width: 77px;
+  background-position: -95px -90px;
+  margin: 0 0 0 14px;
+}
+/* line 500, ../sass/styles.scss */
+.page-id-9 #brandPositioning table#positioningAndCreative tr td:first-child .ami {
+  height: 95px;
+  width: 77px;
+  background-position: -95px -185px;
+  margin: 0 0 0 14px;
+}
+
+/* line 510, ../sass/styles.scss */
+.page-id-9 #parallax1 {
+  background-image: url("../images/parallax/solutions/header.jpg");
+}
+/* line 513, ../sass/styles.scss */
+.page-id-9 #cta-solutions1 {
+  background-image: url("../images/parallax/solutions/cta1.jpg");
+  height: 236px;
+}
+/* line 517, ../sass/styles.scss */
+.page-id-9 #cta-solutions2 {
+  height: 235px;
+  background-image: url("../images/parallax/solutions/cta2.jpg");
+}
+/* line 521, ../sass/styles.scss */
+.page-id-9 #parallax2 {
+  background-image: url("../images/parallax/footer.jpg");
+}
+
+/* line 527, ../sass/styles.scss */
+.page-id-14 .content.wrapper, .page-id-16 .content.wrapper, .page-id-84 .content.wrapper {
+  position: relative;
+  width: 85%;
+  margin: 0 0 35px 6%;
+}
+/* line 532, ../sass/styles.scss */
+.page-id-14 .content.wrapper > h4, .page-id-16 .content.wrapper > h4, .page-id-84 .content.wrapper > h4 {
+  font-family: 'TradeGothicLTPro-BdCn20', 'helvetica', sans-serif;
+  font-size: 24pt;
+  color: #293e41;
+  margin: 0 0 32px;
+}
+/* line 538, ../sass/styles.scss */
+.page-id-14 .content.wrapper #block1, .page-id-16 .content.wrapper #block1, .page-id-84 .content.wrapper #block1 {
+  width: 90%;
+  margin: 0 3.5% 0 4%;
+  border-bottom: 0;
+  padding-right: 205px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+/* line 547, ../sass/styles.scss */
+.page-id-14 .content.wrapper > .btn, .page-id-16 .content.wrapper > .btn, .page-id-84 .content.wrapper > .btn {
+  position: relative;
+  overflow: hidden;
+  float: none;
+  width: 200px;
+  padding: 7px 4px 7px 12px;
+  margin-right: 0;
+  background-color: #293e41;
+  position: absolute;
+  bottom: 12px;
+  right: 0;
+}
+/* line 58, ../sass/includes/_mixins.scss */
+.page-id-14 .content.wrapper > .btn.last, .page-id-16 .content.wrapper > .btn.last, .page-id-84 .content.wrapper > .btn.last {
+  margin-right: 0;
+}
+/* line 61, ../sass/includes/_mixins.scss */
+.page-id-14 .content.wrapper > .btn > span, .page-id-16 .content.wrapper > .btn > span, .page-id-84 .content.wrapper > .btn > span {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: 20px solid transparent;
+  /* left arrow slant */
+  border-top: 10px solid transparent;
+  /* right arrow slant */
+  border-right: 34px solid #90ca55;
+  /* bottom, add background color here */
+  font-size: 0;
+  line-height: 0;
+}
+/* line 552, ../sass/styles.scss */
+.page-id-14 .content.wrapper > .btn a, .page-id-16 .content.wrapper > .btn a, .page-id-84 .content.wrapper > .btn a {
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'TradeGothicLTPro-BdCn20', 'helvetica', 'arial', sans-serif;
+  font-size: 14pt;
+}
+/* line 557, ../sass/styles.scss */
+.page-id-14 .content.wrapper > .btn a span, .page-id-16 .content.wrapper > .btn a span, .page-id-84 .content.wrapper > .btn a span {
+  text-transform: none;
+  font-size: 11pt;
+}
+/* line 565, ../sass/styles.scss */
+.page-id-14 .content ul, .page-id-16 .content ul, .page-id-84 .content ul {
+  margin: 0;
+}
+/* line 568, ../sass/styles.scss */
+.page-id-14 .content ul li, .page-id-16 .content ul li, .page-id-84 .content ul li {
+  list-style: square;
+}
+/* line 573, ../sass/styles.scss */
+.page-id-14 .contentHighlight, .page-id-16 .contentHighlight, .page-id-84 .contentHighlight {
+  background: #293e41;
+  padding: 15px 0;
+  width: 70%;
+  margin: 25px 0 0;
+}
+/* line 579, ../sass/styles.scss */
+.page-id-14 .contentHighlight h4, .page-id-16 .contentHighlight h4, .page-id-84 .contentHighlight h4 {
+  text-transform: uppercase;
+  font-family: 'TradeGothicLTPro-BdCn20', 'helvetica', 'arial', 'sans-serif';
+  color: #90ca55;
+  width: 44%;
+  float: left;
+  margin: 15px 0 0 15px;
+  font-size: 16pt;
+  text-align: center;
+}
+/* line 589, ../sass/styles.scss */
+.page-id-14 .contentHighlight p, .page-id-16 .contentHighlight p, .page-id-84 .contentHighlight p {
+  color: #FFF;
+  float: right;
+  width: 50%;
+  font-family: 'SancoaleSlabNormMediumItal', 'times new roman', 'serif';
+  margin: 4px 0 0 0;
+}
+/* line 599, ../sass/styles.scss */
+.page-id-14 .cta .inner h4.left, .page-id-16 .cta .inner h4.left, .page-id-84 .cta .inner h4.left {
+  width: 100%;
+  margin: 90px 0 0 0;
+  line-height: 0.95;
+}
+/* line 609, ../sass/styles.scss */
+.page-id-14 #parallax2 .inner ul li, .page-id-16 #parallax2 .inner ul li, .page-id-84 #parallax2 .inner ul li {
+  min-width: 237px;
+}
+
+/* line 615, ../sass/styles.scss */
+.page-id-14 #parallax1 {
+  background-image: url("../images/parallax/methodology/header.jpg");
+}
+/* line 618, ../sass/styles.scss */
+.page-id-14 #cta-methodology1 {
+  background-image: url("../images/parallax/methodology/cta1.jpg");
+}
+/* line 621, ../sass/styles.scss */
+.page-id-14 #cta-methodology2 {
+  height: 277px;
+  background-image: url("../images/parallax/methodology/cta2.jpg");
+}
+/* line 625, ../sass/styles.scss */
+.page-id-14 #cta-methodology3 {
+  background-image: url("../images/parallax/methodology/cta3.jpg");
+}
+/* line 628, ../sass/styles.scss */
+.page-id-14 #cta-methodology4 {
+  background-image: url("../images/parallax/methodology/cta4.jpg");
+}
+
+/* line 635, ../sass/styles.scss */
+.page-id-16 .content.wrapper #block1, .page-id-84 .content.wrapper #block1 {
+  border-bottom: 1px solid #111;
+  padding-bottom: 35px;
+}
+/* line 640, ../sass/styles.scss */
+.page-id-16 #infographic, .page-id-84 #infographic {
+  position: relative;
+}
+/* line 642, ../sass/styles.scss */
+.page-id-16 #infographic > .seperator, .page-id-84 #infographic > .seperator {
+  background-image: url("../images/seperator-teal.png");
+  background-repeat: no-repeat;
+  background-position: 600px 37px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 80px;
+  width: 100%;
+}
+/* line 652, ../sass/styles.scss */
+.page-id-16 #infographic .ctaButton, .page-id-84 #infographic .ctaButton {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  width: 16%;
+  padding: 8px 1%;
+  margin-right: 1.3%;
+  background-color: white;
+  border: 1px solid #293e41;
+  position: absolute;
+  color: #293e41;
+  display: block;
+  top: 60px;
+  right: 120px;
+  font-size: 10pt;
+}
+/* line 58, ../sass/includes/_mixins.scss */
+.page-id-16 #infographic .ctaButton.last, .page-id-84 #infographic .ctaButton.last {
+  margin-right: 0;
+}
+/* line 61, ../sass/includes/_mixins.scss */
+.page-id-16 #infographic .ctaButton > span, .page-id-84 #infographic .ctaButton > span {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: 20px solid transparent;
+  /* left arrow slant */
+  border-top: 10px solid transparent;
+  /* right arrow slant */
+  border-right: 34px solid #293e41;
+  /* bottom, add background color here */
+  font-size: 0;
+  line-height: 0;
+}
+/* line 661, ../sass/styles.scss */
+.page-id-16 #infographic .ctaButton:hover, .page-id-84 #infographic .ctaButton:hover {
+  background-color: #293e41;
+  color: #fff;
+}
+/* line 664, ../sass/styles.scss */
+.page-id-16 #infographic .ctaButton:hover > span, .page-id-84 #infographic .ctaButton:hover > span {
+  border-right-color: #fff;
+}
+/* line 670, ../sass/styles.scss */
+.page-id-16 #caseStudies, .page-id-84 #caseStudies {
+  width: 55%;
+}
+/* line 673, ../sass/styles.scss */
+.page-id-16 #caseStudies .caseStudy, .page-id-84 #caseStudies .caseStudy {
+  background-color: #293e41;
+  max-width: 800px;
+  margin: 0 0 10px;
+}
+/* line 678, ../sass/styles.scss */
+.page-id-16 #caseStudies .caseStudy img, .page-id-84 #caseStudies .caseStudy img {
+  background-color: #fff;
+  border: 0;
+  display: block;
+  margin: 15px 0 7px 5%;
+  width: 137px;
+  height: 130px;
+}
+/* line 687, ../sass/styles.scss */
+.page-id-16 #caseStudies .caseStudy .participant p, .page-id-84 #caseStudies .caseStudy .participant p {
+  color: #fff;
+}
+/* line 690, ../sass/styles.scss */
+.page-id-16 #caseStudies .caseStudy .participant .left, .page-id-84 #caseStudies .caseStudy .participant .left {
+  width: 30%;
+  float: left;
+  margin-right: 2%;
+  padding: 0 0 0 15px;
+}
+/* line 696, ../sass/styles.scss */
+.page-id-16 #caseStudies .caseStudy .participant .left p, .page-id-84 #caseStudies .caseStudy .participant .left p {
+  color: #90ca55;
+}
+/* line 700, ../sass/styles.scss */
+.page-id-16 #caseStudies .caseStudy .participant .right, .page-id-84 #caseStudies .caseStudy .participant .right {
+  width: 60%;
+  float: right;
+  color: #FFF;
+  margin: 70px 5% 0 0;
+}
+/* line 708, ../sass/styles.scss */
+.page-id-16 #caseStudies .caseStudyPoints, .page-id-84 #caseStudies .caseStudyPoints {
+  width: 84%;
+}
+/* line 713, ../sass/styles.scss */
+.page-id-16 #parallax2 p, .page-id-84 #parallax2 p {
+  color: #fff;
+}
+/* line 719, ../sass/styles.scss */
+.page-id-16 #parallax2 .inner ul li a, .page-id-84 #parallax2 .inner ul li a {
+  padding: 10px 7px;
+}
+/* line 726, ../sass/styles.scss */
+.page-id-16 .parallax, .page-id-84 .parallax {
+  height: auto;
+}
+
+/* line 731, ../sass/styles.scss */
+.page-id-16 #parallax1 {
+  background-image: url("../images/parallax/case-study/header.jpg");
+  height: 233px;
+}
+/* line 736, ../sass/styles.scss */
+.page-id-16 #parallax2 > p {
+  margin: 10px 0 0 5%;
+}
+/* line 739, ../sass/styles.scss */
+.page-id-16 #parallax2 ul {
+  margin: 55px 1% 50px 10%;
+}
+/* line 742, ../sass/styles.scss */
+.page-id-16 #parallax2 .screen {
+  height: 345px;
+}
+
+/* line 748, ../sass/styles.scss */
+.page-id-84 #parallax1 {
+  background-image: url("../images/parallax/about/header.jpg");
+  height: 233px;
+}
+/* line 752, ../sass/styles.scss */
+.page-id-84 #cta-about1 {
+  background-image: url("../images/parallax/about/cta1.jpg");
+}
+/* line 757, ../sass/styles.scss */
+.page-id-84 #parallax2 .inner ul {
+  margin: 10px auto 20px;
+}
+/* line 761, ../sass/styles.scss */
+.page-id-84 #parallax2 .screen {
+  height: 345px;
+}
+
+/* line 768, ../sass/styles.scss */
+.page-id-87 #parallax1 {
+  background-image: url("../images/parallax/contact/header.jpg");
+}
+/* line 771, ../sass/styles.scss */
+.page-id-87 .content.wrapper {
+  margin-bottom: 80px;
+}
+/* line 774, ../sass/styles.scss */
+.page-id-87 .content.wrapper .content {
+  float: left;
+  width: 40%;
+}
+/* line 778, ../sass/styles.scss */
+.page-id-87 .content.wrapper .content h4 {
+  font-family: 'TradeGothicLTPro-BdCn20', 'helvetica', 'arial', 'sans-serif';
+  font-size: 20pt;
+}
+/* line 782, ../sass/styles.scss */
+.page-id-87 .content.wrapper .content#block1 {
+  border-bottom: 0;
+}
+/* line 785, ../sass/styles.scss */
+.page-id-87 .content.wrapper .content#block2 {
+  width: 50%;
+}
+/* line 788, ../sass/styles.scss */
+.page-id-87 .content.wrapper .content#block2 form {
+  width: 100%;
+}
+/* line 790, ../sass/styles.scss */
+.page-id-87 .content.wrapper .content#block2 form label {
+  display: block;
+  margin: 0 0 7px 0;
+}
+/* line 798, ../sass/styles.scss */
+.page-id-87 #block2 {
+  margin-left: 5%;
+}
+
+/*-- Media Queries ------------------------------------------------------------*/
+@media all and (max-width: 975px) {
+  /* line 807, ../sass/styles.scss */
+  #secondaryNav {
+    display: none;
+  }
+
+  /* line 812, ../sass/styles.scss */
+  header #nav li {
+    margin-right: 4%;
+  }
+  /* line 814, ../sass/styles.scss */
+  header #nav li.hidden {
+    display: block;
+  }
+  /* line 817, ../sass/styles.scss */
+  header #nav li span.seperator {
+    height: 20px;
+  }
+  /* line 820, ../sass/styles.scss */
+  header #nav li > ul.sub-nav {
+    top: 35px;
+  }
+  /* line 824, ../sass/styles.scss */
+  header #nav li:hover span.seperator, header #nav li:hover > ul.sub-nav, header #nav li.active span.seperator, header #nav li.active > ul.sub-nav {
+    display: none;
+  }
+
+  /* line 830, ../sass/styles.scss */
+  #parallax1 {
+    margin-top: -100px;
+  }
+}
+@media all and (max-width: 845px) {
+  /* line 836, ../sass/styles.scss */
+  #secondaryNav {
+    display: none;
+  }
+
+  /* line 841, ../sass/styles.scss */
+  header #nav li {
+    margin-right: 2%;
+  }
+
+  /* line 846, ../sass/styles.scss */
+  #parallax1 {
+    margin-top: -120px;
+  }
+
+  /* line 851, ../sass/styles.scss */
+  .page-id-9 #parallax1 h4 {
+    font-size: 43pt;
+  }
+  /* line 858, ../sass/styles.scss */
+  .page-id-9 #block2 > ul li.blue a, .page-id-9 #block2 > ul li.green a, .page-id-9 #block2 > ul li a {
+    width: 85%;
+  }
+  /* line 861, ../sass/styles.scss */
+  .page-id-9 #block2 > ul li.blue.green a, .page-id-9 #block2 > ul li.green.green a, .page-id-9 #block2 > ul li.green a {
+    margin-right: 18px;
+  }
+  /* line 869, ../sass/styles.scss */
+  .page-id-9 .cta .inner h4.left {
+    font-size: 45pt;
+    width: 80%;
+  }
+}
+@media all and (max-width: 720px) {
+  /* line 881, ../sass/styles.scss */
+  .page-id-5 #cta-home1 h4 {
+    margin-top: 85px;
+    font-size: 45pt;
+  }
+  /* line 886, ../sass/styles.scss */
+  .page-id-5 #cta-home1 .inner .right {
+    width: 45%;
+  }
+  /* line 892, ../sass/styles.scss */
+  .page-id-5 #block2 ul {
+    width: 98%;
+    margin: 0 auto;
+  }
+  /* line 896, ../sass/styles.scss */
+  .page-id-5 #block2 ul li {
+    float: none;
+    width: 100%;
+    border-bottom: 1px solid #1daadd;
+    border-right: 0;
+    padding: 12px 0 15px;
+  }
+}
+@media all and (max-width: 620px) {
+  /* line 910, ../sass/styles.scss */
+  #logo {
+    width: 14%;
+  }
+
+  /* line 913, ../sass/styles.scss */
+  #navControl {
+    position: absolute;
+    right: 8%;
+    top: 41px;
+    display: block;
+  }
+  /* line 918, ../sass/styles.scss */
+  #navControl > div {
+    height: 5px;
+    font-size: 17pt;
+  }
+  /* line 922, ../sass/styles.scss */
+  #navControl .one {
+    color: #90ca55;
+  }
+  /* line 925, ../sass/styles.scss */
+  #navControl .two {
+    color: #67675e;
+  }
+  /* line 928, ../sass/styles.scss */
+  #navControl .three {
+    color: #a4b2a5;
+  }
+
+  /* line 932, ../sass/styles.scss */
+  header #nav {
+    display: none;
+    width: 70%;
+    background: #90ca55;
+    padding: 0;
+    margin: 23px 0 0 2%;
+  }
+  /* line 939, ../sass/styles.scss */
+  header #nav li {
+    float: none;
+    margin: 0;
+    padding: 0;
+  }
+  /* line 944, ../sass/styles.scss */
+  header #nav li a {
+    padding: 4px;
+    border-bottom: 1px solid #5d8d2c;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+
+  /* line 957, ../sass/styles.scss */
+  #parallax1.parallax .inner h4 {
+    font-size: 33pt;
+    margin-top: 85px;
+  }
+
+  /* line 963, ../sass/styles.scss */
+  #parallax2.parallax {
+    padding: 20px 0 30px;
+  }
+  /* line 965, ../sass/styles.scss */
+  #parallax2.parallax .screen {
+    height: 290px;
+  }
+  /* line 969, ../sass/styles.scss */
+  #parallax2.parallax .inner > h4 {
+    font-size: 40pt;
+    margin: 0 auto;
+  }
+  /* line 973, ../sass/styles.scss */
+  #parallax2.parallax .inner h5 {
+    font-size: 19pt;
+    margin: 20px auto;
+  }
+  /* line 977, ../sass/styles.scss */
+  #parallax2.parallax .inner p {
+    margin: 0 auto;
+    width: 97%;
+  }
+  /* line 981, ../sass/styles.scss */
+  #parallax2.parallax .inner ul {
+    width: 90%;
+    margin: 0 auto;
+  }
+  /* line 984, ../sass/styles.scss */
+  #parallax2.parallax .inner ul li {
+    border: 1px solid #fff;
+    width: 98%;
+  }
+  /* line 988, ../sass/styles.scss */
+  #parallax2.parallax .inner ul li span.seperator, #parallax2.parallax .inner ul li .buttonCta {
+    display: none;
+  }
+  /* line 991, ../sass/styles.scss */
+  #parallax2.parallax .inner ul li a {
+    width: 100%;
+    border: 0;
+  }
+
+  /* line 1001, ../sass/styles.scss */
+  .page-id-5 #block1 {
+    width: 98%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  /* line 1006, ../sass/styles.scss */
+  .page-id-5 #block1 .left, .page-id-5 #block1 .right {
+    float: none;
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 0;
+  }
+  /* line 1012, ../sass/styles.scss */
+  .page-id-5 #block1 .left p, .page-id-5 #block1 .left ul, .page-id-5 #block1 .right p, .page-id-5 #block1 .right ul {
+    padding: 0;
+    margin: 0;
+  }
+  /* line 1018, ../sass/styles.scss */
+  .page-id-5 #block1 .right li {
+    width: 50%;
+    margin: 0 auto;
+  }
+  /* line 1025, ../sass/styles.scss */
+  .page-id-5 #block2 ul {
+    width: 70%;
+    margin: 0 auto;
+  }
+  /* line 1032, ../sass/styles.scss */
+  .page-id-5 #getInspired ul#cta-group-home1 li {
+    float: none;
+    width: 90%;
+  }
+  /* line 1038, ../sass/styles.scss */
+  .page-id-5 #logos {
+    width: 50%;
+  }
+  /* line 1040, ../sass/styles.scss */
+  .page-id-5 #logos li {
+    float: none;
+  }
+
+  /* line 1047, ../sass/styles.scss */
+  .page-id-9 #block2 > ul {
+    width: 85%;
+    margin: 0 auto;
+  }
+  /* line 1051, ../sass/styles.scss */
+  .page-id-9 #block2 > ul li {
+    float: none;
+    width: 100%;
+  }
+  /* line 1055, ../sass/styles.scss */
+  .page-id-9 #block2 > ul li.first {
+    border-right: none;
+    border-bottom: 1px solid #111;
+    width: 100%;
+  }
+  /* line 1060, ../sass/styles.scss */
+  .page-id-9 #block2 > ul li.second {
+    width: 100%;
+  }
+  /* line 1063, ../sass/styles.scss */
+  .page-id-9 #block2 > ul li.first, .page-id-9 #block2 > ul li.second, .page-id-9 #block2 > ul li.green {
+    padding: 0;
+  }
+  /* line 1066, ../sass/styles.scss */
+  .page-id-9 #block2 > ul li.first a, .page-id-9 #block2 > ul li.second a, .page-id-9 #block2 > ul li.green a {
+    width: 45%;
+    margin: 0 0 30px;
+    float: none;
+    padding: 10px 8px;
+  }
+  /* line 1076, ../sass/styles.scss */
+  .page-id-9 #predictionMarkets, .page-id-9 #brandPositioning {
+    width: 95%;
+    margin: 0 auto 70px;
+  }
+  /* line 1081, ../sass/styles.scss */
+  .page-id-9 table#productScreening th, .page-id-9 table#positioningAndCreative th {
+    font-size: 10pt;
+    padding: 4px;
+    height: auto;
+  }
+  /* line 1087, ../sass/styles.scss */
+  .page-id-9 table#productScreening tr td, .page-id-9 table#positioningAndCreative tr td {
+    padding: 5px;
+  }
+  /* line 1090, ../sass/styles.scss */
+  .page-id-9 table#productScreening tr td:first-child, .page-id-9 table#positioningAndCreative tr td:first-child {
+    font-size: 12pt;
+  }
+  /* line 1093, ../sass/styles.scss */
+  .page-id-9 table#productScreening tr h4, .page-id-9 table#positioningAndCreative tr h4 {
+    font-size: 10pt;
+  }
+  /* line 1096, ../sass/styles.scss */
+  .page-id-9 table#productScreening tr p, .page-id-9 table#positioningAndCreative tr p {
+    font-size: 10pt;
+  }
+
+  /* line 1104, ../sass/styles.scss */
+  .page-id-9 .contentHighlight, .page-id-16 .contentHighlight, .page-id-84 .contentHighlight,
+  .page-id-5 .contentHighlight, .page-id-14 .contentHighlight, .page-id-87 .contentHighlight {
+    width: 100%;
+  }
+  /* line 1105, ../sass/styles.scss */
+  .page-id-9 .contentHighlight h4, .page-id-16 .contentHighlight h4, .page-id-84 .contentHighlight h4,
+  .page-id-5 .contentHighlight h4, .page-id-14 .contentHighlight h4, .page-id-87 .contentHighlight h4 {
+    width: 35%;
+  }
+
+  /* line 1112, ../sass/styles.scss */
+  .page-id-16 #infographic {
+    padding-bottom: 60px;
+  }
+  /* line 1115, ../sass/styles.scss */
+  .page-id-16 #infographic img {
+    max-width: 900px;
+    width: 100%;
+  }
+  /* line 1119, ../sass/styles.scss */
+  .page-id-16 #infographic .seperator {
+    top: initial;
+    right: initial;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+  }
+  /* line 1127, ../sass/styles.scss */
+  .page-id-16 #infographic .seperator a {
+    top: initial;
+    right: initial;
+  }
+  /* line 1130, ../sass/styles.scss */
+  .page-id-16 #infographic .seperator a.ctaButton {
+    left: 22%;
+    width: 50%;
+  }
+  /* line 1137, ../sass/styles.scss */
+  .page-id-16 #caseStudies {
+    width: 95%;
+  }
+
+  /* line 1142, ../sass/styles.scss */
+  .page-id-84 #parallax2.parallax .screen, .page-id-16 #parallax2.parallax .screen {
+    height: 560px;
+  }
+
+  /* line 1148, ../sass/styles.scss */
+  .page-id-87 .content.wrapper .content #block1, .page-id-87 .content.wrapper .content #block2 {
+    width: 100%;
+    float: none;
+    margin-bottom: 15px;
+  }
+}
+@media all and (max-width: 400px) {
+  /* line 1158, ../sass/styles.scss */
+  #parallax1 {
+    margin-top: -150px;
+  }
+
+  /* line 1161, ../sass/styles.scss */
+  #parallax1.parallax, #cta-solutions1.cta, #cta-solutions2.cta,
+  #cta-solutions3.cta, #cta-solutions4.cta, #cta-methodology1.cta,
+  #cta-methodology2.cta, #cta-methodology3.cta, #cta-methodology4.cta, #cta-about1 {
+    height: 200px;
+  }
+  /* line 1165, ../sass/styles.scss */
+  #parallax1.parallax .inner h4, #cta-solutions1.cta .inner h4, #cta-solutions2.cta .inner h4,
+  #cta-solutions3.cta .inner h4, #cta-solutions4.cta .inner h4, #cta-methodology1.cta .inner h4,
+  #cta-methodology2.cta .inner h4, #cta-methodology3.cta .inner h4, #cta-methodology4.cta .inner h4, #cta-about1 .inner h4 {
+    font-size: 26pt;
+    margin-top: 78px;
+  }
+  /* line 1171, ../sass/styles.scss */
+  #parallax1.parallax#cta-about1 .inner h4, #cta-solutions1.cta#cta-about1 .inner h4, #cta-solutions2.cta#cta-about1 .inner h4,
+  #cta-solutions3.cta#cta-about1 .inner h4, #cta-solutions4.cta#cta-about1 .inner h4, #cta-methodology1.cta#cta-about1 .inner h4,
+  #cta-methodology2.cta#cta-about1 .inner h4, #cta-methodology3.cta#cta-about1 .inner h4, #cta-methodology4.cta#cta-about1 .inner h4, #cta-about1#cta-about1 .inner h4 {
+    margin-top: 55px;
+  }
+
+  /* line 1176, ../sass/styles.scss */
+  #cta-home1 .inner h4.left {
+    font-size: 32pt;
+    margin-top: 75px;
+    width: 42%;
+  }
+  /* line 1181, ../sass/styles.scss */
+  #cta-home1 .inner .right {
+    width: 57%;
+    margin: 20px;
+  }
+  /* line 1185, ../sass/styles.scss */
+  #cta-home1 .inner .right p {
+    font-size: 9pt;
+  }
+  /* line 1188, ../sass/styles.scss */
+  #cta-home1 .inner .right ul {
+    padding: 0;
+    margin: 0;
+  }
+  /* line 1191, ../sass/styles.scss */
+  #cta-home1 .inner .right ul li {
+    width: 85%;
+    margin: 0 auto 20px;
+  }
+
+  /* line 1200, ../sass/styles.scss */
+  .page.page-template-default .content.wrapper #block1.content {
+    width: 100%;
+    padding-right: 0;
+  }
+  /* line 1204, ../sass/styles.scss */
+  .page.page-template-default .content.wrapper .btn {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    margin-top: 30px;
+  }
+
+  /* line 1211, ../sass/styles.scss */
+  #parallax2.parallax {
+    padding: 20px 0 30px;
+  }
+  /* line 1213, ../sass/styles.scss */
+  #parallax2.parallax .screen {
+    height: 310px;
+  }
+  /* line 1217, ../sass/styles.scss */
+  #parallax2.parallax .inner > h4 {
+    font-size: 30pt;
+    margin: 10px auto 0;
+  }
+  /* line 1221, ../sass/styles.scss */
+  #parallax2.parallax .inner h5 {
+    font-size: 19pt;
+    margin: 20px auto;
+  }
+  /* line 1225, ../sass/styles.scss */
+  #parallax2.parallax .inner p {
+    font-size: 11pt;
+    margin: 0 auto;
+    width: 97%;
+  }
+  /* line 1230, ../sass/styles.scss */
+  #parallax2.parallax .inner ul {
+    margin: 10px auto 0;
+  }
+}

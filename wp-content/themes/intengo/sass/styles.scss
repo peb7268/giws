@@ -1,0 +1,1235 @@
+@import 'includes/fonts';
+@import 'includes/colors';
+@import 'includes/reset';
+@import 'includes/mixins';
+@import 'includes/globals';
+
+//Page Specific Styles
+//Home
+.page-id-5 {
+	#parallax1 {
+		@include i_img('parallax/home/header.jpg', 0 0);
+	}
+	#cta-home1 {
+		@include i_img('parallax/home/cta1.jpg', 0 0);
+	}
+	#parallax2 {
+		.inner {
+			li {
+				border: 0;
+				a {
+					border: 1px solid #FFF;
+					width: 93%;
+				}
+			}
+		}
+	}
+}
+#block1 {
+	border-bottom: 1px solid $light-gray;
+	.left {
+		width: w(448, 824);
+		float: left;
+		& > p {
+			padding-left: 35px;
+		}
+	}
+	.right {
+		width: w(206, 824);
+		float: right;
+		margin: 0 w(52, 900) 0 0;
+
+		li {
+			position: relative;
+			overflow: hidden;
+			.yellow {
+
+			}
+			& > span {
+				@include triangle($green);
+			}
+
+			a {
+				@include button($nav-text, #fff);
+				line-height: 1.2;
+				font-size: 14pt;
+				padding: 12px 7px 10px 7px;
+				margin: 0 0 20px 0;
+
+				p {
+					color: #fff;
+					font-size: 11pt;
+					margin: 0 0 2px 0;
+				}
+			}
+			p,a {
+				font-family: 'TradeGothicLTPro-Cn18', 'helvetica', 'arial', 'sans-serif';
+			}
+		}
+	}
+}
+#block2 {
+	h2 {
+		color: $teal;
+		margin-top: 42px;
+	}
+
+	ul {
+		padding: 0;
+		margin: 0 0 50px 0;
+
+		li {
+			font-family: 'TradeGothicLTPro-Cn18', 'times new roman', 'serif';
+			width: w(180, 900);
+			float: left;
+			border-right: 1px solid $light-blue;
+			padding: 0 13px;
+			box-sizing: border-box;
+			-moz-box-sizing: border-box;
+
+			&.last {
+				border-right: none;
+			}
+			span{
+				margin: 0 auto 23px;
+				display: block;
+				@include i_img('icon_sprite.png', 0 0);
+				width: 63px;
+				height: 61px;
+
+				&#clear{
+					background-position: -73px 0;
+				}
+				&#high{
+					background-position: -146px 0;
+				}
+				&#wild{
+					background-position: -220px 0;
+				}
+				&#rich{
+					background-position: -295px 0;
+				}
+			}
+			p {
+				font-family: 'TradeGothicLTPro-BdCn20', 'times new roman', 'serif';
+				color: $light-blue;
+				font-size: 11pt;
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+.cta {
+	height: 281px;
+	margin-bottom: 37px;
+	@include i_img('parallax_demo.jpg', 0 0);
+
+	.inner {
+		overflow: hidden;
+		margin: 0 auto;
+		width: 88%;
+
+		h4.left {
+			font-family: 'SancoaleSlabCondRegular', 'times new roman', 'serif';
+			float: left;
+			color: $parallax-text;
+			width: 50%;
+			font-size: 50pt;
+			margin: 50px 0 0 0;
+			font-weight: normal;
+		}
+		.right{
+			float: right;
+			width: 35%;
+			margin: 60px 0 0 0;
+
+			p {
+				color: #fff;
+				font-size: 12pt;
+				text-align: center;
+			}
+			@include transparentWhiteButton;
+			li {
+				width: 80%;
+				margin: 0 0 20px 0;
+
+				a {
+					margin: 0;
+					line-height: 1;
+				}
+			}
+			a {
+				font-family: 'TradeGothicLTPro-BdCn20', 'times new roman', 'serif';
+				font-size: 16pt;
+			}
+		}
+	}
+}
+.inner {
+	width: 88%;
+	margin: 0 auto;
+	& > h4 {
+		font-family: 'TradeGothicLTPro-BdCn20', 'times new roman', 'serif';
+		margin: 0 0 20px 0;
+		font-size: 24pt;
+	}
+	#cta-group-home1 {
+		margin: 0 0 38px;
+		padding: 0  15px 25px;
+		border-bottom: 1px solid $light-gray;
+
+		.inner {
+			//display: none;
+			overflow: hidden;
+			margin: 0;
+			padding-top: 12px;
+
+			a {
+				font-family: 'TradeGothicLTPro-BdCn20', 'arial', 'sans-serif';
+				display: block;
+				margin-top: 12px;
+			}
+		}
+
+		li {
+			//&:hover { cursor: pointer; }
+			@include ctaButton(20%, 14px 2%, left, 1.3%, $nav-text, red);
+			&.yellow {
+				& > span {
+					border-right-color: $yellow;
+				}
+				.inner > a {
+					color: $yellow;
+				}
+			}
+			&.green {
+				& > span {
+					border-right-color: $green;
+				}
+				.inner > a {
+					color: $green;
+				}
+			}
+			&.blue {
+				& > span {
+					border-right-color: $light-blue;
+				}
+				.inner > a {
+					color: $light-blue;
+				}
+			}
+			&.gray {
+				& > span {
+					border-right-color: $light-gray;
+				}
+				.inner > a {
+					color: $light-gray;
+				}
+			}
+
+			p, h4 {
+				color: #fff;
+			}
+			h4 {
+				font-family: 'SancoaleSlabNormRegularItal', 'times new roman', 'serif';
+				margin: 0;
+			}
+			p {
+				font-family: 'TradeGothicLT-Light', 'times new roman', 'serif';
+				margin: 0;
+				font-size: 10pt;
+			}
+			a {
+				font-family: 'TradeGothicLT-Light', 'times new roman', 'serif';
+			}
+			//put triangles in here
+		}
+	}
+}
+#getInspired {
+	& > h4 {
+		font-family: 'TradeGothicLTPro-BdCn20', 'arial', 'sans-serif';
+		margin: 0 0 17px 6%;
+		font-size: 24pt;
+	}
+}
+#logos {
+	margin-bottom: 70px;
+	li {
+		float: left;
+		margin-right: 7%;
+		max-width: 170px;
+
+		&.last {
+			margin-right: 0;
+		}
+	}
+	.img {
+		background-color: #999;
+		width: 100%;
+	}
+}
+#parallax1 {
+	// margin-top: -80px;
+	margin-top: -90px;
+}
+#parallax2 {
+	@include i_img('parallax/footer.jpg', 0 0);
+	background-position: 0 5%;
+
+	.inner {
+		& > ul  {
+			margin: 55px 1% 0 10%;
+
+			& > li {
+				@include ctaButton(24.6%, 0, left, 2%, transparent, #fff);
+				border: 1px solid #FFF;
+
+				&, p, a, span {
+					font-family: 'TradeGothicLTPro-Cn18', 'helvetica', 'arial', sans-serif;
+				}
+				strong {
+					font-family: 'TradeGothicLTPro-BdCn20', 'helvetica', 'arial', sans-serif;
+					font-size: 18pt;
+					line-height: 1;
+				}
+
+				a {
+					display: block;
+					color: #fff;
+					border: 0;
+					width: 100%;
+					padding: 15px 7px;
+					margin-bottom: -2px;
+
+					&:hover {
+						background-color: $nav-text;
+					}
+				}
+				span.seperator {
+					display: block;
+					height: 25px;
+				}
+			}
+		}
+	}
+	&.solutions .inner > ul > li a {
+		margin: 0;
+	}
+}
+//Solutions
+.page-id-9 {
+	#block1 {
+		border-bottom: 0;
+		margin-bottom: 40px;
+	}
+	.content {
+		width: 61%;
+	}
+	#predictionMarkets, #brandPositioning {
+		width: 73%;
+		margin-bottom: 70px;
+	}
+	#block2 {
+		margin: 0 auto 50px;
+		em {
+			font-family: 'SancoaleSlabNormBold', 'Times New Roman', 'serif'
+		}
+		& > ul {
+			width: 100%;
+			margin: 0;
+			padding: 0 0 0 15px;
+
+			li {
+				width: 33%;
+				border: 0;
+				&.first {
+					width: 28%;
+					margin-left: 0;
+					padding-left: 0;
+					border-right: 1px solid $text-color;
+					margin-right: 10px;
+				}
+				&.second {
+					margin-right: 1%;
+					width: 28%;
+				}
+				&.blue {
+					h4 { color: $light-blue; }
+				}
+				&.green {
+					h4 { color: $green; }
+				}
+
+				&.green a {
+					@include button($green, #fff);
+					float: right;
+					padding: 5px 4px;
+					margin: 10px 190px 30px 0;
+					font-size: 10pt;
+					width: 45%;
+				}
+				&.blue a {
+					@include button($light-blue, #fff);
+					float: right;
+					padding: 5px 4px;
+					margin: 10px 15px 30px 0;
+					font-size: 10pt;
+					width: 45%;
+				}
+				&.green a, &.blue a {
+					position: relative;
+					overflow: hidden;
+					span {
+						@include triangle($teal);
+						background-image: none;
+					}
+				}
+				h4 {
+					margin: 4px 0;
+					font-family: 'TradeGothicLTPro-BdCn20', 'times new roman', 'serif';
+				}
+				p {
+					font-family: 'TradeGothicLTPro-Cn18', 'helvetica', 'sans-serif';
+					font-weight: normal;
+					color: $text-color;
+					font-size: 10pt;
+				}
+			}
+		}
+		#creative {
+			span {
+				font-size: 16pt;
+				font-family: 'TradeGothicLTPro-BdCn20', 'helvetica', 'sans-serif';
+				font-weight: bold;
+			}
+		}
+	}
+	#predictionMarkets, #brandPositioning {
+		h4 {
+			font-family: 'TradeGothicLTPro-BdCn20', 'helvetica', 'arial', 'sans-serif';
+			font-size: 20pt;
+			margin: 0 0 15px 0;
+			color: $teal;
+		}
+	}
+	table#productScreening, #brandPositioning table#positioningAndCreative {
+		width: 100%;
+		th {
+			text-transform: uppercase;
+			font-family: 'TradeGothicLTPro-BdCn20', 'helvetica', 'arial', 'sans-serif';
+			color: #fff;
+			height: 85px;
+			background-color: $light-blue;
+			font-size: 15pt;
+			border-right: 1px solid #fff;
+		}
+		tr {
+			border-bottom: 1px solid $teal;
+			h4 {
+				font-size: 12pt;
+				margin: 0 0 4px;
+			}
+			td {
+				padding: 9px;
+				vertical-align: top;
+
+				&:first-child {
+					font-family: 'SancoaleSlabNormMediumItal', 'times new roman', 'serif';
+					font-size: 14pt;
+					color: $teal;
+					text-align: center;
+
+					span {
+						@include i_img('solutions_icon_sprite.png', 0 0);
+						display: block;
+						width: 65px;
+						height: 80px;
+						background-repeat: no-repeat;
+					}
+				&.stm {
+					span {
+						margin: 7px 0 0 15px;
+					}
+				}
+				&.bts {
+					span {
+						width: 72px;
+						background-position: 0 -88px;
+						margin: 0 0 0 14px;
+					}
+				}
+				&.co {
+					span {
+						background-position: 0 -184px;
+						margin: 0 0 0 14px;
+					}
+				}
+				&.is {
+					span {
+						background-position: 0 -285px;
+						margin: 0 0 0 14px;
+					}
+				}
+				}
+				p {
+					font-size: 11pt;
+					line-height: 1.2;
+				}
+			}
+			&.last {
+				border-bottom: 0;
+			}
+		}
+	}
+	#brandPositioning table#positioningAndCreative {
+		th {
+			background-color: $green;
+		}
+		tr td:first-child{
+			& .nas {
+				width: 105px;
+				background-position: -96px 0;
+			}
+			& .ed {
+				width: 77px;
+				background-position: -95px -90px;
+				margin: 0 0 0 14px;
+			}
+			& .ami {
+				height: 95px;
+				width: 77px;
+				background-position: -95px -185px;
+				margin: 0 0 0 14px;
+			}
+		}
+	}
+}
+.page-id-9 {
+	#parallax1 {
+		@include i_img('parallax/solutions/header.jpg', 0 0);
+	}
+	#cta-solutions1 {
+		@include i_img('parallax/solutions/cta1.jpg', 0 0);
+		height: 236px;
+	}
+	#cta-solutions2 {
+		height: 235px;
+		@include i_img('parallax/solutions/cta2.jpg', 0 0);
+	}
+	#parallax2 {
+		@include i_img('parallax/footer.jpg', 0 0);
+	}
+}
+//Methodology & Case Study
+.page-id-14, .page-id-16, .page-id-84 {
+	.content.wrapper {
+		position: relative;
+		width: 85%;
+		margin: 0 0 35px 6%;
+
+		& > h4 {
+			font-family: 'TradeGothicLTPro-BdCn20', 'helvetica', sans-serif;
+			font-size: 24pt;
+			color: $teal;
+			margin: 0 0 32px;
+		}
+		#block1 {
+			width: 90%;
+			margin: 0 3.5% 0 4%;
+			border-bottom: 0;
+			padding-right: 205px;
+			box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+		}
+	 	& > .btn {
+	 		@include ctaButton(200px, 7px 4px 7px 12px, none, 0, $teal, $green);
+	 		position: absolute;
+			bottom: 12px;
+			right: 0;
+			a {
+				text-transform: uppercase;
+				color: #fff;
+				font-family: 'TradeGothicLTPro-BdCn20', 'helvetica', 'arial', sans-serif;
+				font-size: 14pt;
+				span {
+					text-transform: none;
+					font-size: 11pt;
+				}
+			}
+	 	}
+	}
+	.content {
+		ul {
+			margin: 0;
+
+			li {
+				list-style: square;
+			}
+		}
+	}
+	.contentHighlight {
+		background: $teal;
+		padding: 15px 0;
+		width: 70%;
+		margin: 25px 0 0;
+
+		h4 {
+			text-transform: uppercase;
+			font-family: 'TradeGothicLTPro-BdCn20', 'helvetica', 'arial', 'sans-serif';
+			color: $green;
+			width: 44%;
+			float: left;
+			margin: 15px 0 0 15px;
+			font-size: 16pt;
+			text-align: center;
+		}
+		p {
+			color: #FFF;
+			float: right;
+			width: 50%;
+			font-family: 'SancoaleSlabNormMediumItal', 'times new roman', 'serif';
+			margin: 4px 0 0 0;
+		}
+	}
+	.cta {
+		.inner {
+			h4.left {
+				width: 100%;
+				margin: 90px 0 0 0;
+				line-height: 0.95;
+			}
+		}
+	}
+	#parallax2 {
+		.inner {
+			ul {
+				li { min-width: 237px; }
+			}
+		}
+	}
+}
+.page-id-14 {
+	#parallax1 {
+		@include i_img('parallax/methodology/header.jpg', 0 0);
+	}
+	#cta-methodology1 {
+		@include i_img('parallax/methodology/cta1.jpg', 0 0);
+	}
+	#cta-methodology2 {
+		height: 277px;
+		@include i_img('parallax/methodology/cta2.jpg', 0 0);
+	}
+	#cta-methodology3 {
+		@include i_img('parallax/methodology/cta3.jpg', 0 0);
+	}
+	#cta-methodology4 {
+		@include i_img('parallax/methodology/cta4.jpg', 0 0);
+	}
+}
+//Case Study & About
+.page-id-16, .page-id-84 {
+	.content.wrapper {
+		#block1 {
+			border-bottom: 1px solid #111;
+			padding-bottom: 35px;
+		}
+	}
+	#infographic {
+		position: relative;
+		& > .seperator {
+			@include i_img('seperator-teal.png', 0 0);
+			background-repeat: no-repeat;
+			background-position: 600px 37px;
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 80px;
+			width: 100%;
+		}
+		.ctaButton {
+			@include ctaButton(16%, 8px 1%, left, 1.3%, #fff, $teal);
+			border: 1px solid $teal;
+			position: absolute;
+			color: $teal;
+			display: block;
+			top: 60px;
+			right: 120px;
+			font-size: 10pt;
+			&:hover {
+				background-color: $teal;
+				color: #fff;
+				& > span {
+					border-right-color: #fff;
+				}
+			}
+		}
+	}
+	#caseStudies {
+		width: 55%;
+
+		.caseStudy {
+			background-color: $teal;
+			max-width: 800px;
+			margin: 0 0 10px;
+
+			img {
+				background-color: #fff;
+				border: 0;
+				display: block;
+				margin: 15px 0 7px 5%;
+				width: 137px;
+				height: 130px;
+			}
+			.participant {
+				p {
+					color: #fff;
+				}
+				.left {
+					width: 30%;
+					float: left;
+					margin-right: 2%;
+					padding: 0 0 0 15px;
+
+					p {
+						color: $green;
+					}
+				}
+				.right {
+					width: 60%;
+					float: right;
+					color: #FFF;
+					margin: 70px 5% 0 0;
+				}
+			}
+		}
+		.caseStudyPoints {
+			width: 84%;
+		}
+	}
+	#parallax2 {
+		p {
+			color: #fff;
+		}
+		.inner {
+			ul {
+				li {
+					a {
+						padding: 10px 7px;
+					}
+				}
+			}
+		}
+	}
+	.parallax {
+		height: auto;
+	}
+}
+.page-id-16 {
+	#parallax1 {
+		@include i_img('parallax/case-study/header.jpg', 0 0);
+		height: 233px;
+	}
+	#parallax2 {
+		& > p {
+			margin: 10px 0 0 5%;
+		}
+		ul {
+			margin: 55px 1% 50px 10%;
+		}
+		.screen {
+			height: 345px;
+		}
+	}
+}
+.page-id-84 {
+	#parallax1 {
+		@include i_img('parallax/about/header.jpg', 0 0);
+		height: 233px;
+	}
+	#cta-about1 {
+		@include i_img('parallax/about/cta1.jpg', 0 0);
+	}
+	#parallax2 {
+		.inner {
+			ul {
+				margin: 10px auto 20px;
+			}
+		}
+		.screen {
+			height: 345px;
+		}
+	}
+}
+//Contact Us
+.page-id-87 {
+	#parallax1 {
+		@include i_img('parallax/contact/header.jpg', 0 0);
+	}
+	.content.wrapper {
+		margin-bottom: 80px;
+
+		.content {
+			float: left;
+			width: 40%;
+
+			h4 {
+				font-family: 'TradeGothicLTPro-BdCn20', 'helvetica', 'arial', 'sans-serif';
+				font-size: 20pt;
+			}
+			&#block1 {
+				border-bottom: 0;
+			}
+			&#block2 {
+				width: 50%;
+
+				form {
+					width: 100%;
+					label {
+						display: block;
+						margin: 0 0 7px 0;
+					}
+				}
+			}
+		}
+	}
+	#block2 {
+		margin-left: 5%;
+	}
+}
+
+
+/*-- Media Queries ------------------------------------------------------------*/
+//improve the layout
+@media all and (max-width: 975px){
+  #secondaryNav {
+  	display: none;
+  }
+  header {
+	  #nav {
+	  	li{
+	  		margin-right: 4%;
+	  		&.hidden {
+	  			display: block;
+	  		}
+	  		span.seperator {
+	  			height: 20px;
+	  		}
+	  		& > ul.sub-nav {
+	  			top: 35px;
+	  		}
+	  		&:hover span.seperator, &:hover > ul.sub-nav,
+	  		&.active span.seperator, &.active > ul.sub-nav {
+	  			display: none;
+	  		}
+	  	}
+	  }
+  }
+  #parallax1 {
+  	margin-top: -100px;
+  }
+}
+//Misc fixes ( nav ... )
+@media all and (max-width: 845px){
+	#secondaryNav {
+		display: none;
+	}
+	header {
+	  #nav {
+	  	li{
+	  		margin-right: 2%;
+	  	}
+	  }
+	}
+	#parallax1 {
+		margin-top: -120px;
+	}
+	.page-id-9 {
+		#parallax1 {
+			h4 {
+				font-size: 43pt;
+			}
+		}
+		#block2 {
+			& > ul {
+				li.blue, li.green, li {
+					a {
+						width: 85%;
+					}
+					&.green a {
+						margin-right: 18px;
+					}
+				}
+			}
+		}
+		.cta {
+			.inner {
+				h4.left {
+					font-size: 45pt;
+					width: 80%;
+				}
+			}
+		}
+	}
+}
+//Start Applying Mobile Styles
+@media all and (max-width: 720px){
+	.page-id-5 {
+		#cta-home1 {
+			h4 {
+				margin-top: 85px;
+				font-size: 45pt;
+			}
+			.inner {
+				.right {
+					width: 45%;
+				}
+			}
+		}
+		#block2 {
+			ul {
+				width: 98%;
+				margin: 0 auto;
+
+				li {
+					float: none;
+					width: 100%;
+					border-bottom: 1px solid $light-blue;
+					border-right: 0;
+					padding: 12px 0 15px;
+				}
+			}
+		}
+	}
+}
+//Start Applying Mobile Styles ( Mobile Nav, stacks instead of floats )
+@media all and (max-width: 620px){
+	//Global Stuff
+	#logo {
+		width: 14%;
+	}
+	#navControl {
+		position: absolute;
+		right: 8%;
+		top: 41px;
+		display: block;
+		& > div {
+			height: 5px;
+			font-size: 17pt;
+		}
+		.one {
+			color: $green;
+		}
+		.two {
+			color: $dark-gray;
+		}
+		.three {
+			color: $light-gray;
+		}
+	}
+	header #nav {
+		display: none;
+		width: 70%;
+		background: $green;
+		padding: 0;
+		margin: 23px 0 0 2%;
+
+		li {
+			float: none;
+			margin: 0;
+			padding: 0;
+
+			a {
+				padding: 4px;
+				border-bottom: 1px solid darken($green, 20%);
+				width: 100%;
+				display: block;
+				box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+			}
+		}
+	}
+	#parallax1.parallax {
+		.inner {
+			h4 {
+				font-size: 33pt;
+				margin-top: 85px;
+			}
+		}
+	}
+	#parallax2.parallax {
+		padding: 20px 0 30px;
+		.screen {
+			height: 290px;
+		}
+		.inner {
+			& > h4 {
+				font-size: 40pt;
+				margin: 0 auto;
+			}
+			h5 {
+				font-size: 19pt;
+				margin: 20px auto;
+			}
+			p {
+				margin: 0 auto;
+				width: 97%;
+			}
+			ul {
+				width: 90%;
+				margin: 0 auto;
+				li {
+					border: 1px solid #fff;
+					width: 98%;
+
+					span.seperator, .buttonCta {
+						display: none;
+					}
+					a {
+						width: 100%;
+						border: 0;
+					}
+				}
+			}
+		}
+	}
+	//Page Specific Stuff
+	.page-id-5 {
+		#block1 {
+			width: 98%;
+			margin: 0 auto;
+			padding: 0;
+
+			.left, .right {
+				float: none;
+				width: 100%;
+				margin-bottom: 5px;
+				padding: 0;
+
+				p, ul {
+					padding: 0;
+					margin: 0;
+				}
+			}
+			.right {
+				li {
+					width: 50%;
+					margin: 0 auto;
+				}
+			}
+		}
+		#block2 {
+			ul {
+				width: 70%;
+				margin: 0 auto;
+			}
+		}
+		#getInspired {
+			ul#cta-group-home1 {
+				li {
+					float: none;
+					width: 90%;
+				}
+			}
+		}
+		#logos {
+			width: 50%;
+			li {
+				float: none;
+			}
+		}
+	}
+	.page-id-9 {
+		#block2 {
+			& > ul {
+				width: 85%;
+				margin: 0 auto;
+
+				li {
+					float: none;
+					width: 100%;
+
+					&.first {
+						border-right: none;
+						border-bottom: 1px solid #111;
+						width: 100%;
+					}
+					&.second {
+						width: 100%;
+					}
+					&.first, &.second, &.green {
+						padding: 0;
+
+						a {
+							width: 45%;
+							margin: 0 0 30px;
+							float: none;
+							padding: 10px 8px;
+						}
+					}
+				}
+			}
+		}
+		#predictionMarkets, #brandPositioning {
+			width: 95%;
+			margin: 0 auto 70px;
+		}
+		table#productScreening, table#positioningAndCreative {
+			th {
+				font-size: 10pt;
+				padding: 4px;
+				height: auto;
+			}
+			tr {
+				td {
+					padding: 5px;
+				}
+				td:first-child {
+					font-size: 12pt;
+				}
+				h4 {
+					font-size: 10pt;
+				}
+				p {
+					font-size: 10pt;
+				}
+			}
+		}
+	}
+	.page-id-9, .page-id-16, .page-id-84,
+	.page-id-5, .page-id-14, .page-id-87 {
+		.contentHighlight {
+			h4 {
+				width: 35%;
+			}
+			width: 100%;
+		}
+	}
+	.page-id-16 {
+		#infographic {
+			padding-bottom: 60px;
+
+			&  img {
+				max-width: 900px;
+				width: 100%;
+			}
+			.seperator {
+				top: initial;
+				right: initial;
+
+				left: 0;
+				bottom: 0;
+				height: 50px;
+
+				a {
+					top: initial;
+					right: initial;
+					&.ctaButton {
+						left: 22%;
+						width: 50%;
+					}
+				}
+			}
+		}
+		#caseStudies {
+			width: 95%;
+		}
+	}
+	.page-id-84, .page-id-16 {
+		#parallax2.parallax .screen {
+			height: 560px;
+		}
+	}
+	.page-id-87 {
+		.content.wrapper {
+			.content #block1, .content #block2 {
+				width: 100%;
+				float: none;
+				margin-bottom: 15px;
+			}
+		}
+	}
+}
+//Apply full mobile styling
+@media all and (max-width: 400px){
+	#parallax1 { margin-top: -150px; }
+	#parallax1.parallax, #cta-solutions1.cta, #cta-solutions2.cta,
+	#cta-solutions3.cta, #cta-solutions4.cta, #cta-methodology1.cta,
+	#cta-methodology2.cta, #cta-methodology3.cta, #cta-methodology4.cta, #cta-about1 {
+		height: 200px;
+
+		.inner {
+			h4 {
+				font-size: 26pt;
+				margin-top: 78px;
+			}
+		}
+		&#cta-about1 {
+			.inner h4 {	margin-top: 55px; }
+		}
+	}
+	#cta-home1 {
+		.inner {
+			h4.left {
+				font-size: 32pt;
+				margin-top: 75px;
+				width: 42%;
+			}
+			.right {
+				width: 57%;
+				margin: 20px;
+
+				p {
+					font-size: 9pt;
+				}
+				ul {
+					padding: 0;
+					margin: 0;
+					li {
+						width: 85%;
+						margin: 0 auto 20px;
+					}
+				}
+			}
+		}
+	}
+	.page.page-template-default .content.wrapper {
+		#block1.content {
+			width: 100%;
+			padding-right: 0;
+		}
+		& .btn {
+			position: relative;
+			right: 0;
+			bottom: 0;
+			margin-top: 30px;
+		}
+	}
+	#parallax2.parallax {
+		padding: 20px 0 30px;
+		.screen {
+			height: 310px;
+		}
+		.inner {
+			& > h4 {
+				font-size: 30pt;
+				margin: 10px auto 0;
+			}
+			h5 {
+				font-size: 19pt;
+				margin: 20px auto;
+			}
+			p {
+				font-size: 11pt;
+				margin: 0 auto;
+				width: 97%;
+			}
+			ul {
+				margin: 10px auto 0;
+			}
+		}
+	}
+}
