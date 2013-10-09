@@ -1,6 +1,6 @@
 window.plax = {
 	'startVal' : 0,
-	'scrollSpeed' : 3,
+	'scrollSpeed' : 1,
 	'thresholds':{
 		'page-id-5':{
 			'header' : 0,
@@ -53,7 +53,6 @@ jQuery(document).ready(function($) {
 	var footerCeil 		= plax.getFooterCeil(pageId);
 	var footerFloor 	= plax.getfooterFloor(pageId);
 
-
     $(window).scroll(function(){
 		// console.log('Y coord: ', getScrollTop());
 
@@ -87,8 +86,8 @@ jQuery(document).ready(function($) {
             }
 			if (getScrollTop() >= footerCeil && getScrollTop() <= footerFloor)
             {
-                  a = a - plax.scrollSpeed; 	// Position for the first background, it decreases in x #of pixels ( 5 in this case )
-                  $('#parallax2').css('backgroundPosition', '0' + a +'px');
+                 a = a - plax.scrollSpeed; 	// Position for the first background, it decreases in x #of pixels ( 5 in this case )
+                 $('#parallax2').css('backgroundPosition', '0' + a +'px');
             }
         }
 
@@ -96,10 +95,10 @@ jQuery(document).ready(function($) {
         if (getScrollTop() == 0)
         {
             a=parseFloat(plax.startVal);
-            $('#parallax1, #parallax2').css('backgroundPosition', '0 0');
+            $('#parallax1, #parallax2').css('backgroundPosition', '0 0');
         }
 
-        scrollTop = $(this).scrollTop();
+        //scrollTop = $(this).scrollTop();
     });
 });
 

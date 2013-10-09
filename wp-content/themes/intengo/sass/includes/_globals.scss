@@ -1,5 +1,6 @@
 body {
 	background: $background;
+	font-size: 100%;
 }
 p, li {
 	font-family: 'SancoaleSlabNormRegular', 'Times New Roman', 'serif';
@@ -32,7 +33,7 @@ p, li {
 .wrapper {
 	//width: 90%;
 	width: 100%;
-	max-width: 1900px;
+	max-width: 1100px;
 	margin: 0 auto;
 	overflow: hidden;
 }
@@ -40,7 +41,8 @@ p, li {
 	position: relative;
 	height: 225px;
 	width: 100%;
-	max-width: 1900px;
+	//max-width: 1100px;
+	max-width: initial;
 }
 header, .parallax {
 	position: relative;
@@ -107,7 +109,7 @@ header {
 	li {
 		position: relative;
 		span.seperator {
-			@include seperator(45px, 16px, 36px, 48px);
+			@include seperator(1.1em, 16px, 36px, 48px);
 			display: none;
 		}
 		&#solutions {
@@ -147,11 +149,11 @@ header {
 			display: none;
 			position: absolute;
 			left: -15px;
-			top: 45px;
+			top: 2em;
 			margin: 0;
 			padding: 4px 0 0 0;
 			border-top: 1px solid $light-blue;
-			width: 350px;
+			width: 25em;
 
 			li {
 				list-style-image: url('../images/bullet.png');

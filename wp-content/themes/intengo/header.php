@@ -78,13 +78,13 @@
 		<div id="secondaryNav">
 			<ul id="socialIcons">
 				<li><a href="https://www.facebook.com/intengo">&nbsp;</a></li>
-				<li><a href="www.twitter.com/gointengo">&nbsp;</a></li>
+				<li><a href="http://www.twitter.com/gointengo">&nbsp;</a></li>
 				<li><a href="http://www.youtube.com/channel/UCNAfn8gqP5poB8q9HkJmpNw">&nbsp;</a></li>
 				<li class="last"><a href="http://www.linkedin.com/company/intengo">&nbsp;</a></li>
 			</ul>
 			<a href="http://gointengo.com/?page_id=84" id="about"></a>
 			<a href="http://gointengo.com/?page_id=87" id="contact-us"></a>
 			<p class="tagline">Explore Your Possibilities</p>
-			<p class="phone">(800) 262-3186</p>
+			<p class="phone">855.844.3172</p>
 		</div>
 	</div>
