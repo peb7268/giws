@@ -492,6 +492,7 @@
 						width: 65px;
 						height: 80px;
 						background-repeat: no-repeat;
+
 					}
 				&.stm {
 					span {
@@ -1241,6 +1242,7 @@
 				li {
 					float: none;
 					width: 100%;
+					min-height: initial;
 
 					&.first {
 						border-right: none;
