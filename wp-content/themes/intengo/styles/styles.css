@@ -1803,9 +1803,9 @@ header {
 .page-id-14 .contentHighlight p, .page-id-16 .contentHighlight p, .page-id-84 .contentHighlight p {
   color: #FFF;
   float: right;
-  width: 50%;
+  width: 48%;
   font-family: 'SancoaleSlabNormMediumItal', 'times new roman', 'serif';
-  margin: 4px 0 0 0;
+  margin: 4px 7% 0 0;
 }
 /* line 649, ../sass/styles.scss */
 .page-id-14 .cta .inner h4.left, .page-id-16 .cta .inner h4.left, .page-id-84 .cta .inner h4.left {
@@ -2032,93 +2032,93 @@ header {
   width: 70%;
   margin: 25px 0 0;
 }
-/* line 845, ../sass/styles.scss */
+/* line 846, ../sass/styles.scss */
 .page-id-84 .contentHighlight h4 {
   width: 40%;
   text-align: left;
   margin: 10px 5% 0 0;
 }
-/* line 850, ../sass/styles.scss */
+/* line 851, ../sass/styles.scss */
 .page-id-84 .contentHighlight > h4 {
   width: 100%;
   text-align: left;
   margin: 0 0 10px;
 }
-/* line 855, ../sass/styles.scss */
+/* line 856, ../sass/styles.scss */
 .page-id-84 .contentHighlight p {
   float: none;
   width: 95%;
 }
-/* line 859, ../sass/styles.scss */
+/* line 860, ../sass/styles.scss */
 .page-id-84 .contentHighlight div.green {
   margin-bottom: 10px;
 }
-/* line 861, ../sass/styles.scss */
+/* line 862, ../sass/styles.scss */
 .page-id-84 .contentHighlight div.green h4 {
   border-right: 1px solid #fff;
 }
-/* line 862, ../sass/styles.scss */
+/* line 863, ../sass/styles.scss */
 .page-id-84 .contentHighlight div.green p {
   color: #90ca55;
 }
-/* line 866, ../sass/styles.scss */
+/* line 867, ../sass/styles.scss */
 .page-id-84 .content.wrapper #block1, .page-id-84 .content.wrapper #block2 {
   border-bottom: 0;
 }
 
-/* line 873, ../sass/styles.scss */
+/* line 874, ../sass/styles.scss */
 .page-id-87 #parallax1 {
   background-image: url("../images/parallax/contact/header.jpg");
 }
-/* line 876, ../sass/styles.scss */
+/* line 877, ../sass/styles.scss */
 .page-id-87 .content.wrapper {
   margin-bottom: 80px;
 }
-/* line 879, ../sass/styles.scss */
+/* line 880, ../sass/styles.scss */
 .page-id-87 .content.wrapper .content {
   float: left;
   width: 40%;
 }
-/* line 883, ../sass/styles.scss */
+/* line 884, ../sass/styles.scss */
 .page-id-87 .content.wrapper .content h4 {
   font-family: 'TradeGothicLTPro-BdCn20', 'helvetica', 'arial', 'sans-serif';
   font-size: 20pt;
 }
-/* line 887, ../sass/styles.scss */
+/* line 888, ../sass/styles.scss */
 .page-id-87 .content.wrapper .content#block1 {
   border-bottom: 0;
 }
-/* line 890, ../sass/styles.scss */
+/* line 891, ../sass/styles.scss */
 .page-id-87 .content.wrapper .content#block2 {
   width: 50%;
 }
-/* line 893, ../sass/styles.scss */
+/* line 894, ../sass/styles.scss */
 .page-id-87 .content.wrapper .content#block2 form {
   width: 100%;
 }
-/* line 895, ../sass/styles.scss */
+/* line 896, ../sass/styles.scss */
 .page-id-87 .content.wrapper .content#block2 form label {
   display: block;
   margin: 0 0 7px 0;
 }
-/* line 903, ../sass/styles.scss */
+/* line 904, ../sass/styles.scss */
 .page-id-87 #block2 {
   margin-left: 5%;
 }
 
 /*-- Media Queries ------------------------------------------------------------*/
 @media all and (max-width: 1195px) {
-  /* line 913, ../sass/styles.scss */
+  /* line 914, ../sass/styles.scss */
   .page-id-16 .contentHighlight h4 {
     margin-top: 5%;
   }
 }
 @media all and (max-width: 1150px) {
-  /* line 921, ../sass/styles.scss */
+  /* line 922, ../sass/styles.scss */
   .page-id-16 #infographic {
     padding-bottom: 60px;
   }
-  /* line 923, ../sass/styles.scss */
+  /* line 924, ../sass/styles.scss */
   .page-id-16 #infographic .seperator {
     top: initial;
     right: initial;
@@ -2126,44 +2126,44 @@ header {
     bottom: 0;
     height: 50px;
   }
-  /* line 931, ../sass/styles.scss */
+  /* line 932, ../sass/styles.scss */
   .page-id-16 #infographic .seperator a {
     top: initial;
     right: initial;
   }
-  /* line 934, ../sass/styles.scss */
+  /* line 935, ../sass/styles.scss */
   .page-id-16 #infographic .seperator a.ctaButton {
     left: 22%;
     width: 50%;
   }
 }
 @media all and (max-width: 975px) {
-  /* line 945, ../sass/styles.scss */
+  /* line 946, ../sass/styles.scss */
   #secondaryNav {
     display: none;
   }
 
-  /* line 952, ../sass/styles.scss */
+  /* line 953, ../sass/styles.scss */
   .page-id-5 header #nav li, .page-id-9 header #nav li, .page-id-14 header #nav li, .page-id-16 header #nav li,
   .page-id-84 header #nav li, .page-id-87 header #nav li {
     margin-right: 4%;
   }
-  /* line 954, ../sass/styles.scss */
+  /* line 955, ../sass/styles.scss */
   .page-id-5 header #nav li.hidden, .page-id-9 header #nav li.hidden, .page-id-14 header #nav li.hidden, .page-id-16 header #nav li.hidden,
   .page-id-84 header #nav li.hidden, .page-id-87 header #nav li.hidden {
     display: block;
   }
-  /* line 957, ../sass/styles.scss */
+  /* line 958, ../sass/styles.scss */
   .page-id-5 header #nav li span.seperator, .page-id-9 header #nav li span.seperator, .page-id-14 header #nav li span.seperator, .page-id-16 header #nav li span.seperator,
   .page-id-84 header #nav li span.seperator, .page-id-87 header #nav li span.seperator {
     height: 20px;
   }
-  /* line 960, ../sass/styles.scss */
+  /* line 961, ../sass/styles.scss */
   .page-id-5 header #nav li > ul.sub-nav, .page-id-9 header #nav li > ul.sub-nav, .page-id-14 header #nav li > ul.sub-nav, .page-id-16 header #nav li > ul.sub-nav,
   .page-id-84 header #nav li > ul.sub-nav, .page-id-87 header #nav li > ul.sub-nav {
     top: 35px;
   }
-  /* line 969, ../sass/styles.scss */
+  /* line 970, ../sass/styles.scss */
   .page-id-5 header #nav li#home:hover span.seperator, .page-id-5 header #nav li#home:hover > ul.sub-nav, .page-id-5 header #nav li#home.active span.seperator, .page-id-5 header #nav li#home.active > ul.sub-nav, .page-id-5 header #nav li#home span.seperator, .page-id-5 header #nav li#home > ul.sub-nav, .page-id-5 header #nav li#about:hover span.seperator, .page-id-5 header #nav li#about:hover > ul.sub-nav, .page-id-5 header #nav li#about.active span.seperator, .page-id-5 header #nav li#about.active > ul.sub-nav, .page-id-5 header #nav li#about span.seperator, .page-id-5 header #nav li#about > ul.sub-nav, .page-id-5 header #nav li#solutions:hover span.seperator, .page-id-5 header #nav li#solutions:hover > ul.sub-nav, .page-id-5 header #nav li#solutions.active span.seperator, .page-id-5 header #nav li#solutions.active > ul.sub-nav, .page-id-5 header #nav li#solutions span.seperator, .page-id-5 header #nav li#solutions > ul.sub-nav, .page-id-5 header #nav li#methodology:hover span.seperator, .page-id-5 header #nav li#methodology:hover > ul.sub-nav, .page-id-5 header #nav li#methodology.active span.seperator, .page-id-5 header #nav li#methodology.active > ul.sub-nav, .page-id-5 header #nav li#methodology span.seperator, .page-id-5 header #nav li#methodology > ul.sub-nav, .page-id-5 header #nav li#case-study:hover span.seperator, .page-id-5 header #nav li#case-study:hover > ul.sub-nav, .page-id-5 header #nav li#case-study.active span.seperator, .page-id-5 header #nav li#case-study.active > ul.sub-nav, .page-id-5 header #nav li#case-study span.seperator, .page-id-5 header #nav li#case-study > ul.sub-nav, .page-id-9 header #nav li#home:hover span.seperator, .page-id-9 header #nav li#home:hover > ul.sub-nav, .page-id-9 header #nav li#home.active span.seperator, .page-id-9 header #nav li#home.active > ul.sub-nav, .page-id-9 header #nav li#home span.seperator, .page-id-9 header #nav li#home > ul.sub-nav, .page-id-9 header #nav li#about:hover span.seperator, .page-id-9 header #nav li#about:hover > ul.sub-nav, .page-id-9 header #nav li#about.active span.seperator, .page-id-9 header #nav li#about.active > ul.sub-nav, .page-id-9 header #nav li#about span.seperator, .page-id-9 header #nav li#about > ul.sub-nav, .page-id-9 header #nav li#solutions:hover span.seperator, .page-id-9 header #nav li#solutions:hover > ul.sub-nav, .page-id-9 header #nav li#solutions.active span.seperator, .page-id-9 header #nav li#solutions.active > ul.sub-nav, .page-id-9 header #nav li#solutions span.seperator, .page-id-9 header #nav li#solutions > ul.sub-nav, .page-id-9 header #nav li#methodology:hover span.seperator, .page-id-9 header #nav li#methodology:hover > ul.sub-nav, .page-id-9 header #nav li#methodology.active span.seperator, .page-id-9 header #nav li#methodology.active > ul.sub-nav, .page-id-9 header #nav li#methodology span.seperator, .page-id-9 header #nav li#methodology > ul.sub-nav, .page-id-9 header #nav li#case-study:hover span.seperator, .page-id-9 header #nav li#case-study:hover > ul.sub-nav, .page-id-9 header #nav li#case-study.active span.seperator, .page-id-9 header #nav li#case-study.active > ul.sub-nav, .page-id-9 header #nav li#case-study span.seperator, .page-id-9 header #nav li#case-study > ul.sub-nav, .page-id-14 header #nav li#home:hover span.seperator, .page-id-14 header #nav li#home:hover > ul.sub-nav, .page-id-14 header #nav li#home.active span.seperator, .page-id-14 header #nav li#home.active > ul.sub-nav, .page-id-14 header #nav li#home span.seperator, .page-id-14 header #nav li#home > ul.sub-nav, .page-id-14 header #nav li#about:hover span.seperator, .page-id-14 header #nav li#about:hover > ul.sub-nav, .page-id-14 header #nav li#about.active span.seperator, .page-id-14 header #nav li#about.active > ul.sub-nav, .page-id-14 header #nav li#about span.seperator, .page-id-14 header #nav li#about > ul.sub-nav, .page-id-14 header #nav li#solutions:hover span.seperator, .page-id-14 header #nav li#solutions:hover > ul.sub-nav, .page-id-14 header #nav li#solutions.active span.seperator, .page-id-14 header #nav li#solutions.active > ul.sub-nav, .page-id-14 header #nav li#solutions span.seperator, .page-id-14 header #nav li#solutions > ul.sub-nav, .page-id-14 header #nav li#methodology:hover span.seperator, .page-id-14 header #nav li#methodology:hover > ul.sub-nav, .page-id-14 header #nav li#methodology.active span.seperator, .page-id-14 header #nav li#methodology.active > ul.sub-nav, .page-id-14 header #nav li#methodology span.seperator, .page-id-14 header #nav li#methodology > ul.sub-nav, .page-id-14 header #nav li#case-study:hover span.seperator, .page-id-14 header #nav li#case-study:hover > ul.sub-nav, .page-id-14 header #nav li#case-study.active span.seperator, .page-id-14 header #nav li#case-study.active > ul.sub-nav, .page-id-14 header #nav li#case-study span.seperator, .page-id-14 header #nav li#case-study > ul.sub-nav, .page-id-16 header #nav li#home:hover span.seperator, .page-id-16 header #nav li#home:hover > ul.sub-nav, .page-id-16 header #nav li#home.active span.seperator, .page-id-16 header #nav li#home.active > ul.sub-nav, .page-id-16 header #nav li#home span.seperator, .page-id-16 header #nav li#home > ul.sub-nav, .page-id-16 header #nav li#about:hover span.seperator, .page-id-16 header #nav li#about:hover > ul.sub-nav, .page-id-16 header #nav li#about.active span.seperator, .page-id-16 header #nav li#about.active > ul.sub-nav, .page-id-16 header #nav li#about span.seperator, .page-id-16 header #nav li#about > ul.sub-nav, .page-id-16 header #nav li#solutions:hover span.seperator, .page-id-16 header #nav li#solutions:hover > ul.sub-nav, .page-id-16 header #nav li#solutions.active span.seperator, .page-id-16 header #nav li#solutions.active > ul.sub-nav, .page-id-16 header #nav li#solutions span.seperator, .page-id-16 header #nav li#solutions > ul.sub-nav, .page-id-16 header #nav li#methodology:hover span.seperator, .page-id-16 header #nav li#methodology:hover > ul.sub-nav, .page-id-16 header #nav li#methodology.active span.seperator, .page-id-16 header #nav li#methodology.active > ul.sub-nav, .page-id-16 header #nav li#methodology span.seperator, .page-id-16 header #nav li#methodology > ul.sub-nav, .page-id-16 header #nav li#case-study:hover span.seperator, .page-id-16 header #nav li#case-study:hover > ul.sub-nav, .page-id-16 header #nav li#case-study.active span.seperator, .page-id-16 header #nav li#case-study.active > ul.sub-nav, .page-id-16 header #nav li#case-study span.seperator, .page-id-16 header #nav li#case-study > ul.sub-nav,
   .page-id-84 header #nav li#home:hover span.seperator,
   .page-id-84 header #nav li#home:hover > ul.sub-nav,
@@ -2199,66 +2199,66 @@ header {
     display: none !important;
   }
 
-  /* line 978, ../sass/styles.scss */
+  /* line 979, ../sass/styles.scss */
   #parallax1 {
     margin-top: -100px;
   }
 
-  /* line 983, ../sass/styles.scss */
+  /* line 984, ../sass/styles.scss */
   .page-id-16 .contentHighlight h4 {
     margin-top: 9.7%;
   }
 }
 @media all and (max-width: 845px) {
-  /* line 991, ../sass/styles.scss */
+  /* line 992, ../sass/styles.scss */
   #secondaryNav {
     display: none;
   }
 
-  /* line 996, ../sass/styles.scss */
+  /* line 997, ../sass/styles.scss */
   header #nav li {
     margin-right: 2%;
   }
 
-  /* line 1001, ../sass/styles.scss */
+  /* line 1002, ../sass/styles.scss */
   #parallax1 {
     margin-top: -120px;
   }
 
-  /* line 1006, ../sass/styles.scss */
+  /* line 1007, ../sass/styles.scss */
   .page-id-9 #parallax1 h4 {
     font-size: 43pt;
   }
-  /* line 1013, ../sass/styles.scss */
+  /* line 1014, ../sass/styles.scss */
   .page-id-9 #block2 > ul li.blue a, .page-id-9 #block2 > ul li.green a, .page-id-9 #block2 > ul li a {
     width: 85%;
   }
-  /* line 1016, ../sass/styles.scss */
+  /* line 1017, ../sass/styles.scss */
   .page-id-9 #block2 > ul li.blue.green a, .page-id-9 #block2 > ul li.green.green a, .page-id-9 #block2 > ul li.green a {
     margin-right: 18px;
   }
-  /* line 1024, ../sass/styles.scss */
+  /* line 1025, ../sass/styles.scss */
   .page-id-9 .cta .inner h4.left {
     font-size: 45pt;
     width: 80%;
   }
 }
 @media all and (max-width: 720px) {
-  /* line 1036, ../sass/styles.scss */
+  /* line 1037, ../sass/styles.scss */
   .page-id-5 #cta-home1 h4 {
     margin-top: 85px;
     font-size: 45pt;
   }
-  /* line 1041, ../sass/styles.scss */
+  /* line 1042, ../sass/styles.scss */
   .page-id-5 #cta-home1 .inner .right {
     width: 45%;
   }
-  /* line 1047, ../sass/styles.scss */
+  /* line 1048, ../sass/styles.scss */
   .page-id-5 #block2 ul {
     width: 98%;
     margin: 0 auto;
   }
-  /* line 1051, ../sass/styles.scss */
+  /* line 1052, ../sass/styles.scss */
   .page-id-5 #block2 ul li {
     float: none;
     width: 100%;
@@ -2267,19 +2267,19 @@ header {
     padding: 12px 0 15px;
   }
 
-  /* line 1062, ../sass/styles.scss */
+  /* line 1063, ../sass/styles.scss */
   .page-id-9 table#productScreening,
   .page-id-9 #brandPositioning table#positioningAndCreative {
     width: 99%;
     margin: 0 auto;
   }
-  /* line 1065, ../sass/styles.scss */
+  /* line 1066, ../sass/styles.scss */
   .page-id-9 table#productScreening th,
   .page-id-9 #brandPositioning table#positioningAndCreative th {
     font-size: 14pt;
     background-image: none;
   }
-  /* line 1069, ../sass/styles.scss */
+  /* line 1070, ../sass/styles.scss */
   .page-id-9 table#productScreening th .textWrapper,
   .page-id-9 #brandPositioning table#positioningAndCreative th .textWrapper {
     float: none;
@@ -2289,48 +2289,48 @@ header {
     right: initial;
   }
 
-  /* line 1082, ../sass/styles.scss */
+  /* line 1083, ../sass/styles.scss */
   .page-id-16 #caseStudies #study1 .participant .left {
     padding: 0 0 0 2%;
   }
-  /* line 1084, ../sass/styles.scss */
+  /* line 1085, ../sass/styles.scss */
   .page-id-16 #caseStudies #study1 .participant .left img {
     max-width: 137px;
     width: 100%;
   }
 }
 @media all and (max-width: 620px) {
-  /* line 1098, ../sass/styles.scss */
+  /* line 1099, ../sass/styles.scss */
   #logo {
     width: 14%;
   }
 
-  /* line 1101, ../sass/styles.scss */
+  /* line 1102, ../sass/styles.scss */
   #navControl {
     position: absolute;
     right: 8%;
     top: 16px;
     display: block;
   }
-  /* line 1106, ../sass/styles.scss */
+  /* line 1107, ../sass/styles.scss */
   #navControl > div {
     height: 5px;
     font-size: 17pt;
   }
-  /* line 1110, ../sass/styles.scss */
+  /* line 1111, ../sass/styles.scss */
   #navControl .one {
     color: #90ca55;
   }
-  /* line 1113, ../sass/styles.scss */
+  /* line 1114, ../sass/styles.scss */
   #navControl .two {
     color: #67675e;
   }
-  /* line 1116, ../sass/styles.scss */
+  /* line 1117, ../sass/styles.scss */
   #navControl .three {
     color: #a4b2a5;
   }
 
-  /* line 1120, ../sass/styles.scss */
+  /* line 1121, ../sass/styles.scss */
   header #nav {
     display: none;
     width: 70%;
@@ -2338,13 +2338,13 @@ header {
     padding: 0;
     margin: 23px 0 0 2%;
   }
-  /* line 1127, ../sass/styles.scss */
+  /* line 1128, ../sass/styles.scss */
   header #nav li {
     float: none;
     margin: 0;
     padding: 0;
   }
-  /* line 1132, ../sass/styles.scss */
+  /* line 1133, ../sass/styles.scss */
   header #nav li a {
     padding: 4px;
     border-bottom: 1px solid #5d8d2c;
@@ -2355,181 +2355,181 @@ header {
     -webkit-box-sizing: border-box;
   }
 
-  /* line 1145, ../sass/styles.scss */
+  /* line 1146, ../sass/styles.scss */
   #parallax1.parallax .inner h4 {
     font-size: 33pt;
     margin-top: 85px;
   }
 
-  /* line 1151, ../sass/styles.scss */
+  /* line 1152, ../sass/styles.scss */
   #parallax2.parallax {
     padding: 20px 0 30px;
   }
-  /* line 1153, ../sass/styles.scss */
+  /* line 1154, ../sass/styles.scss */
   #parallax2.parallax .screen {
     height: 290px;
   }
-  /* line 1157, ../sass/styles.scss */
+  /* line 1158, ../sass/styles.scss */
   #parallax2.parallax .inner > h4 {
     font-size: 40pt;
     margin: 0 auto;
   }
-  /* line 1161, ../sass/styles.scss */
+  /* line 1162, ../sass/styles.scss */
   #parallax2.parallax .inner h5 {
     font-size: 19pt;
     margin: 20px auto;
   }
-  /* line 1165, ../sass/styles.scss */
+  /* line 1166, ../sass/styles.scss */
   #parallax2.parallax .inner p {
     margin: 0 auto;
     width: 97%;
   }
-  /* line 1169, ../sass/styles.scss */
+  /* line 1170, ../sass/styles.scss */
   #parallax2.parallax .inner ul {
     width: 90%;
     margin: 0 auto;
   }
-  /* line 1172, ../sass/styles.scss */
+  /* line 1173, ../sass/styles.scss */
   #parallax2.parallax .inner ul li {
     border: 1px solid #fff;
     width: 98%;
   }
-  /* line 1176, ../sass/styles.scss */
+  /* line 1177, ../sass/styles.scss */
   #parallax2.parallax .inner ul li span.seperator, #parallax2.parallax .inner ul li .buttonCta {
     display: none;
   }
-  /* line 1179, ../sass/styles.scss */
+  /* line 1180, ../sass/styles.scss */
   #parallax2.parallax .inner ul li a {
     width: 100%;
     border: 0;
   }
 
-  /* line 1189, ../sass/styles.scss */
+  /* line 1190, ../sass/styles.scss */
   .page-id-5 #block1 {
     width: 98%;
     margin: 0 auto;
     padding: 0;
   }
-  /* line 1194, ../sass/styles.scss */
+  /* line 1195, ../sass/styles.scss */
   .page-id-5 #block1 .left, .page-id-5 #block1 .right {
     float: none;
     width: 100%;
     margin-bottom: 5px;
     padding: 0;
   }
-  /* line 1200, ../sass/styles.scss */
+  /* line 1201, ../sass/styles.scss */
   .page-id-5 #block1 .left p, .page-id-5 #block1 .left ul, .page-id-5 #block1 .right p, .page-id-5 #block1 .right ul {
     padding: 0;
     margin: 0;
   }
-  /* line 1206, ../sass/styles.scss */
+  /* line 1207, ../sass/styles.scss */
   .page-id-5 #block1 .right li {
     width: 50%;
     margin: 0 auto;
   }
-  /* line 1213, ../sass/styles.scss */
+  /* line 1214, ../sass/styles.scss */
   .page-id-5 #block2 ul {
     width: 70%;
     margin: 0 auto;
   }
-  /* line 1220, ../sass/styles.scss */
+  /* line 1221, ../sass/styles.scss */
   .page-id-5 #getInspired ul#cta-group-home1 li {
     float: none;
     width: 90%;
   }
-  /* line 1226, ../sass/styles.scss */
+  /* line 1227, ../sass/styles.scss */
   .page-id-5 #logos {
     width: 50%;
   }
-  /* line 1228, ../sass/styles.scss */
+  /* line 1229, ../sass/styles.scss */
   .page-id-5 #logos li {
     float: none;
   }
 
-  /* line 1235, ../sass/styles.scss */
+  /* line 1236, ../sass/styles.scss */
   .page-id-9 #block2 > ul {
     width: 85%;
     margin: 0 auto;
   }
-  /* line 1239, ../sass/styles.scss */
+  /* line 1240, ../sass/styles.scss */
   .page-id-9 #block2 > ul li {
     float: none;
     width: 100%;
   }
-  /* line 1243, ../sass/styles.scss */
+  /* line 1244, ../sass/styles.scss */
   .page-id-9 #block2 > ul li.first {
     border-right: none;
     border-bottom: 1px solid #111;
     width: 100%;
   }
-  /* line 1248, ../sass/styles.scss */
+  /* line 1249, ../sass/styles.scss */
   .page-id-9 #block2 > ul li.second {
     width: 100%;
   }
-  /* line 1251, ../sass/styles.scss */
+  /* line 1252, ../sass/styles.scss */
   .page-id-9 #block2 > ul li.first, .page-id-9 #block2 > ul li.second, .page-id-9 #block2 > ul li.green {
     padding: 0;
   }
-  /* line 1254, ../sass/styles.scss */
+  /* line 1255, ../sass/styles.scss */
   .page-id-9 #block2 > ul li.first a, .page-id-9 #block2 > ul li.second a, .page-id-9 #block2 > ul li.green a {
     width: 45%;
     margin: 0 0 30px;
     float: none;
     padding: 10px 8px;
   }
-  /* line 1264, ../sass/styles.scss */
+  /* line 1265, ../sass/styles.scss */
   .page-id-9 #predictionMarkets, .page-id-9 #brandPositioning {
     width: 95%;
     margin: 0 auto 70px;
   }
-  /* line 1269, ../sass/styles.scss */
+  /* line 1270, ../sass/styles.scss */
   .page-id-9 table#productScreening th, .page-id-9 table#positioningAndCreative th {
     font-size: 10pt;
     padding: 4px;
     height: auto;
   }
-  /* line 1275, ../sass/styles.scss */
+  /* line 1276, ../sass/styles.scss */
   .page-id-9 table#productScreening tr td, .page-id-9 table#positioningAndCreative tr td {
     padding: 5px;
   }
-  /* line 1277, ../sass/styles.scss */
+  /* line 1278, ../sass/styles.scss */
   .page-id-9 table#productScreening tr td.cr, .page-id-9 table#positioningAndCreative tr td.cr {
     width: 33%;
   }
-  /* line 1281, ../sass/styles.scss */
+  /* line 1282, ../sass/styles.scss */
   .page-id-9 table#productScreening tr td:first-child, .page-id-9 table#positioningAndCreative tr td:first-child {
     font-size: 12pt;
   }
-  /* line 1284, ../sass/styles.scss */
+  /* line 1285, ../sass/styles.scss */
   .page-id-9 table#productScreening tr h4, .page-id-9 table#positioningAndCreative tr h4 {
     font-size: 10pt;
   }
-  /* line 1287, ../sass/styles.scss */
+  /* line 1288, ../sass/styles.scss */
   .page-id-9 table#productScreening tr p, .page-id-9 table#positioningAndCreative tr p {
     font-size: 10pt;
   }
 
-  /* line 1295, ../sass/styles.scss */
+  /* line 1296, ../sass/styles.scss */
   .page-id-9 .contentHighlight, .page-id-16 .contentHighlight, .page-id-84 .contentHighlight,
   .page-id-5 .contentHighlight, .page-id-14 .contentHighlight, .page-id-87 .contentHighlight {
     width: 100%;
   }
-  /* line 1296, ../sass/styles.scss */
+  /* line 1297, ../sass/styles.scss */
   .page-id-9 .contentHighlight h4, .page-id-16 .contentHighlight h4, .page-id-84 .contentHighlight h4,
   .page-id-5 .contentHighlight h4, .page-id-14 .contentHighlight h4, .page-id-87 .contentHighlight h4 {
     width: 35%;
   }
 
-  /* line 1303, ../sass/styles.scss */
+  /* line 1304, ../sass/styles.scss */
   .page-id-16 #infographic {
     padding-bottom: 60px;
   }
-  /* line 1306, ../sass/styles.scss */
+  /* line 1307, ../sass/styles.scss */
   .page-id-16 #infographic img {
     max-width: 900px;
     width: 100%;
   }
-  /* line 1310, ../sass/styles.scss */
+  /* line 1311, ../sass/styles.scss */
   .page-id-16 #infographic .seperator {
     top: initial;
     right: initial;
@@ -2537,27 +2537,27 @@ header {
     bottom: 0;
     height: 50px;
   }
-  /* line 1318, ../sass/styles.scss */
+  /* line 1319, ../sass/styles.scss */
   .page-id-16 #infographic .seperator a {
     top: initial;
     right: initial;
   }
-  /* line 1321, ../sass/styles.scss */
+  /* line 1322, ../sass/styles.scss */
   .page-id-16 #infographic .seperator a.ctaButton {
     left: 22%;
     width: 50%;
   }
-  /* line 1328, ../sass/styles.scss */
+  /* line 1329, ../sass/styles.scss */
   .page-id-16 #caseStudies {
     width: 95%;
   }
 
-  /* line 1333, ../sass/styles.scss */
+  /* line 1334, ../sass/styles.scss */
   .page-id-84 #parallax2.parallax .screen, .page-id-16 #parallax2.parallax .screen {
     height: 560px;
   }
 
-  /* line 1339, ../sass/styles.scss */
+  /* line 1340, ../sass/styles.scss */
   .page-id-87 .content.wrapper .content #block1, .page-id-87 .content.wrapper .content #block2 {
     width: 100%;
     float: none;
@@ -2565,63 +2565,63 @@ header {
   }
 }
 @media all and (max-width: 400px) {
-  /* line 1349, ../sass/styles.scss */
+  /* line 1350, ../sass/styles.scss */
   #parallax1 {
     margin-top: -150px;
   }
 
-  /* line 1352, ../sass/styles.scss */
+  /* line 1353, ../sass/styles.scss */
   #parallax1.parallax, #cta-solutions1.cta, #cta-solutions2.cta,
   #cta-solutions3.cta, #cta-solutions4.cta, #cta-methodology1.cta,
   #cta-methodology2.cta, #cta-methodology3.cta, #cta-methodology4.cta, #cta-about1 {
     height: 200px;
   }
-  /* line 1356, ../sass/styles.scss */
+  /* line 1357, ../sass/styles.scss */
   #parallax1.parallax .inner h4, #cta-solutions1.cta .inner h4, #cta-solutions2.cta .inner h4,
   #cta-solutions3.cta .inner h4, #cta-solutions4.cta .inner h4, #cta-methodology1.cta .inner h4,
   #cta-methodology2.cta .inner h4, #cta-methodology3.cta .inner h4, #cta-methodology4.cta .inner h4, #cta-about1 .inner h4 {
     font-size: 26pt;
     margin-top: 78px;
   }
-  /* line 1362, ../sass/styles.scss */
+  /* line 1363, ../sass/styles.scss */
   #parallax1.parallax#cta-about1 .inner h4, #cta-solutions1.cta#cta-about1 .inner h4, #cta-solutions2.cta#cta-about1 .inner h4,
   #cta-solutions3.cta#cta-about1 .inner h4, #cta-solutions4.cta#cta-about1 .inner h4, #cta-methodology1.cta#cta-about1 .inner h4,
   #cta-methodology2.cta#cta-about1 .inner h4, #cta-methodology3.cta#cta-about1 .inner h4, #cta-methodology4.cta#cta-about1 .inner h4, #cta-about1#cta-about1 .inner h4 {
     margin-top: 55px;
   }
 
-  /* line 1367, ../sass/styles.scss */
+  /* line 1368, ../sass/styles.scss */
   #cta-home1 .inner h4.left {
     font-size: 32pt;
     margin-top: 75px;
     width: 42%;
   }
-  /* line 1372, ../sass/styles.scss */
+  /* line 1373, ../sass/styles.scss */
   #cta-home1 .inner .right {
     width: 57%;
     margin: 20px;
   }
-  /* line 1376, ../sass/styles.scss */
+  /* line 1377, ../sass/styles.scss */
   #cta-home1 .inner .right p {
     font-size: 9pt;
   }
-  /* line 1379, ../sass/styles.scss */
+  /* line 1380, ../sass/styles.scss */
   #cta-home1 .inner .right ul {
     padding: 0;
     margin: 0;
   }
-  /* line 1382, ../sass/styles.scss */
+  /* line 1383, ../sass/styles.scss */
   #cta-home1 .inner .right ul li {
     width: 85%;
     margin: 0 auto 20px;
   }
 
-  /* line 1391, ../sass/styles.scss */
+  /* line 1392, ../sass/styles.scss */
   .page.page-template-default .content.wrapper #block1.content {
     width: 100%;
     padding-right: 0;
   }
-  /* line 1395, ../sass/styles.scss */
+  /* line 1396, ../sass/styles.scss */
   .page.page-template-default .content.wrapper .btn {
     position: relative;
     right: 0;
@@ -2629,55 +2629,55 @@ header {
     margin-top: 30px;
   }
 
-  /* line 1403, ../sass/styles.scss */
+  /* line 1404, ../sass/styles.scss */
   .contentHighlight h4 {
     margin-top: 7.7%;
   }
 
-  /* line 1407, ../sass/styles.scss */
+  /* line 1408, ../sass/styles.scss */
   #parallax2.parallax {
     padding: 20px 0 30px;
   }
-  /* line 1409, ../sass/styles.scss */
+  /* line 1410, ../sass/styles.scss */
   #parallax2.parallax .screen {
     height: 310px;
   }
-  /* line 1413, ../sass/styles.scss */
+  /* line 1414, ../sass/styles.scss */
   #parallax2.parallax .inner > h4 {
     font-size: 30pt;
     margin: 10px auto 0;
   }
-  /* line 1417, ../sass/styles.scss */
+  /* line 1418, ../sass/styles.scss */
   #parallax2.parallax .inner h5 {
     font-size: 19pt;
     margin: 20px auto;
   }
-  /* line 1421, ../sass/styles.scss */
+  /* line 1422, ../sass/styles.scss */
   #parallax2.parallax .inner p {
     font-size: 11pt;
     margin: 0 auto;
     width: 97%;
   }
-  /* line 1426, ../sass/styles.scss */
+  /* line 1427, ../sass/styles.scss */
   #parallax2.parallax .inner ul {
     margin: 10px auto 0;
   }
 
-  /* line 1433, ../sass/styles.scss */
+  /* line 1434, ../sass/styles.scss */
   .page-id-16 #caseStudies #study1 {
     width: 100%;
   }
-  /* line 1436, ../sass/styles.scss */
+  /* line 1437, ../sass/styles.scss */
   .page-id-16 #caseStudies #study1 .participant {
     padding: 10px 2%;
   }
-  /* line 1438, ../sass/styles.scss */
+  /* line 1439, ../sass/styles.scss */
   .page-id-16 #caseStudies #study1 .participant .left {
     float: none;
     width: 50%;
     margin: 0 auto;
   }
-  /* line 1443, ../sass/styles.scss */
+  /* line 1444, ../sass/styles.scss */
   .page-id-16 #caseStudies #study1 .participant .right {
     float: none;
     margin: 10px auto;
