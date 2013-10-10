@@ -38,7 +38,7 @@
 						<span class="seperator"></span>
 						<a href="http://gointengo.com/solutions">Solutions</a>
 						<ul class="sub-nav">
-							<li><a href="http://gointengo.com/solutions#parallax1">Product Concepts</a></li>
+							<li><a href="http://gointengo.com/solutions#cta-solutions1">Product Concepts</a></li>
 							<li><a href="http://gointengo.com/solutions#cta-solutions2">Brand Positioning &amp; Creative</a></li>
 						</ul>
 					</li>
@@ -62,11 +62,9 @@
 						</ul>
 					</li>
 					<li id="about" class="hidden">
-						<span class="seperator"></span>
 						<a href="http://gointengo.com/about">About</a>
 					</li>
 					<li id="contactUs" class="hidden">
-						<span class="seperator"></span>
 						<a href="http://gointengo.com/contact-us">Contact Us</a>
 					</li>
 				</ul>

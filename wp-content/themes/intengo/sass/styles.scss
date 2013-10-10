@@ -343,10 +343,12 @@
 		margin-bottom: 40px;
 	}
 	.content {
-		width: 61%;
+		//width: 61%;
+		width: 78%;
 	}
 	#predictionMarkets, #brandPositioning {
-		width: 73%;
+		//width: 73%;
+		width: 100%;
 		margin-bottom: 70px;
 	}
 	#block2 {
@@ -384,7 +386,7 @@
 					@include button($green, #fff);
 					float: right;
 					padding: 5px 4px;
-					margin: 10px 190px 30px 0;
+					margin: 28px 190px 30px 0;
 					font-size: 10pt;
 					width: 45%;
 				}
@@ -431,6 +433,16 @@
 			margin: 0 0 15px 0;
 			color: $teal;
 		}
+		th {
+			position: relative;
+		}
+		.textWrapper {
+			float: left;
+			text-align: right;
+			position: absolute;
+			top: 19px;
+			left: 125px;
+		}
 	}
 	table#productScreening, #brandPositioning table#positioningAndCreative {
 		width: 100%;
@@ -442,6 +454,9 @@
 			background-color: $light-blue;
 			font-size: 15pt;
 			border-right: 1px solid #fff;
+			&.first {
+				width: 1%;
+			}
 			&#circular-logo {
 				@include i_img('circular-logo.png', 0 0);
 				background-repeat: no-repeat;
@@ -455,12 +470,15 @@
 				margin: 10px 0 4px;
 			}
 			td {
-				padding: 9px;
+				padding: 1% 2.2%;
+				box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
 				vertical-align: top;
-				&.cr {
-					width: 33%;
+				width: 47.5%;
+				&.first {
+					width: 1%;
 				}
-
 				&:first-child {
 					font-family: 'SancoaleSlabNormMediumItal', 'times new roman', 'serif';
 					font-size: 14pt;
@@ -701,7 +719,8 @@
 		}
 	}
 	#caseStudies {
-		width: 55%;
+		// width: 55%;
+		width: 77%;
 
 		.caseStudy {
 			background-color: $teal;
@@ -712,7 +731,7 @@
 				background-color: #fff;
 				border: 0;
 				display: block;
-				margin: 15px 0 7px 5%;
+				margin: 15px 0 7px 0;
 				width: 137px;
 				height: 130px;
 			}
@@ -923,24 +942,34 @@
   #secondaryNav {
   	display: none;
   }
-  header {
-	  #nav {
-	  	li{
-	  		margin-right: 4%;
-	  		&.hidden {
-	  			display: block;
-	  		}
-	  		span.seperator {
-	  			height: 20px;
-	  		}
-	  		& > ul.sub-nav {
-	  			top: 35px;
-	  		}
-	  		&:hover span.seperator, &:hover > ul.sub-nav,
-	  		&.active span.seperator, &.active > ul.sub-nav {
-	  			display: none;
-	  		}
-	  	}
+  .page-id-5, .page-id-9, .page-id-14, .page-id-16,
+  .page-id-84, .page-id-87 {
+	  header {
+		  #nav {
+		  	li{
+		  		margin-right: 4%;
+		  		&.hidden {
+		  			display: block;
+		  		}
+		  		span.seperator {
+		  			height: 20px;
+		  		}
+		  		& > ul.sub-nav {
+		  			top: 35px;
+		  		}
+		  		&#home, &#about, &#solutions, &#methodology, &#case-study {
+			  		&:hover span.seperator,
+			  		&:hover > ul.sub-nav,
+			  		&.active span.seperator,
+			  		&.active > ul.sub-nav,
+			  		& span.seperator,
+			  		& > ul.sub-nav {
+			  			background-color: red;
+			  			display: none !important;
+			  		}
+		  		}
+		  	}
+		  }
 	  }
   }
   #parallax1 {
@@ -1026,6 +1055,39 @@
 			}
 		}
 	}
+	.page-id-9 table#productScreening,
+	.page-id-9 #brandPositioning table#positioningAndCreative {
+		width: 99%;
+		margin: 0 auto;
+		th {
+			font-size: 14pt;
+			background-image: none;
+
+			.textWrapper {
+				float: none;
+				text-align: center;
+				position: static;
+				top: initial;
+				right: initial;
+			}
+		}
+	}
+	.page-id-16 {
+		#caseStudies {
+			#study1 {
+				.participant {
+					.left{
+						padding: 0 0 0 2%;
+						img {
+							max-width: 137px;
+							width: 100%;
+						}
+					}
+					.right{}
+				}
+			}
+		}
+	}
 }
 //Start Applying Mobile Styles ( Mobile Nav, stacks instead of floats )
 @media all and (max-width: 620px){
@@ -1036,7 +1098,7 @@
 	#navControl {
 		position: absolute;
 		right: 8%;
-		top: 41px;
+		top: 16px;
 		display: block;
 		& > div {
 			height: 5px;
@@ -1360,6 +1422,27 @@
 			}
 			ul {
 				margin: 10px auto 0;
+			}
+		}
+	}
+	.page-id-16 {
+		#caseStudies {
+			#study1 {
+				width: 100%;
+
+				.participant {
+					padding: 10px 2%;
+					.left{
+						float: none;
+						width: 50%;
+						margin: 0 auto;
+					}
+					.right{
+						float: none;
+						margin: 10px auto;
+						width: 90%;
+					}
+				}
 			}
 		}
 	}
