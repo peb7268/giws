@@ -1368,14 +1368,16 @@
 	}
 	#cta-home1 {
 		.inner {
+			width: 98%;
+
 			h4.left {
-				font-size: 32pt;
-				margin-top: 75px;
+				font-size: 28pt;
+				margin-top: 115px;
 				width: 42%;
 			}
 			.right {
-				width: 57%;
-				margin: 20px;
+				width: 50%;
+				margin: 80px 0 0;
 
 				p {
 					font-size: 9pt;
@@ -1386,6 +1388,9 @@
 					li {
 						width: 85%;
 						margin: 0 auto 20px;
+						a {
+							font-size: 11pt;
+						}
 					}
 				}
 			}

@@ -551,7 +551,7 @@ p strong, li strong {
   position: relative;
   height: 225px;
   width: 100%;
-  max-width: initial;
+  max-width: none;
 }
 
 /* line 47, ../sass/includes/_globals.scss */
@@ -2592,38 +2592,46 @@ header {
     margin-top: 55px;
   }
 
-  /* line 1371, ../sass/styles.scss */
+  /* line 1370, ../sass/styles.scss */
+  #cta-home1 .inner {
+    width: 98%;
+  }
+  /* line 1373, ../sass/styles.scss */
   #cta-home1 .inner h4.left {
-    font-size: 32pt;
-    margin-top: 75px;
+    font-size: 28pt;
+    margin-top: 115px;
     width: 42%;
   }
-  /* line 1376, ../sass/styles.scss */
+  /* line 1378, ../sass/styles.scss */
   #cta-home1 .inner .right {
-    width: 57%;
-    margin: 20px;
+    width: 50%;
+    margin: 80px 0 0;
   }
-  /* line 1380, ../sass/styles.scss */
+  /* line 1382, ../sass/styles.scss */
   #cta-home1 .inner .right p {
     font-size: 9pt;
   }
-  /* line 1383, ../sass/styles.scss */
+  /* line 1385, ../sass/styles.scss */
   #cta-home1 .inner .right ul {
     padding: 0;
     margin: 0;
   }
-  /* line 1386, ../sass/styles.scss */
+  /* line 1388, ../sass/styles.scss */
   #cta-home1 .inner .right ul li {
     width: 85%;
     margin: 0 auto 20px;
   }
+  /* line 1391, ../sass/styles.scss */
+  #cta-home1 .inner .right ul li a {
+    font-size: 11pt;
+  }
 
-  /* line 1395, ../sass/styles.scss */
+  /* line 1400, ../sass/styles.scss */
   .page.page-template-default .content.wrapper #block1.content {
     width: 100%;
     padding-right: 0;
   }
-  /* line 1399, ../sass/styles.scss */
+  /* line 1404, ../sass/styles.scss */
   .page.page-template-default .content.wrapper .btn {
     position: relative;
     right: 0;
@@ -2631,55 +2639,55 @@ header {
     margin-top: 30px;
   }
 
-  /* line 1407, ../sass/styles.scss */
+  /* line 1412, ../sass/styles.scss */
   .contentHighlight h4 {
     margin-top: 7.7%;
   }
 
-  /* line 1411, ../sass/styles.scss */
+  /* line 1416, ../sass/styles.scss */
   #parallax2.parallax {
     padding: 20px 0 30px;
   }
-  /* line 1413, ../sass/styles.scss */
+  /* line 1418, ../sass/styles.scss */
   #parallax2.parallax .screen {
     height: 310px;
   }
-  /* line 1417, ../sass/styles.scss */
+  /* line 1422, ../sass/styles.scss */
   #parallax2.parallax .inner > h4 {
     font-size: 30pt;
     margin: 10px auto 0;
   }
-  /* line 1421, ../sass/styles.scss */
+  /* line 1426, ../sass/styles.scss */
   #parallax2.parallax .inner h5 {
     font-size: 19pt;
     margin: 20px auto;
   }
-  /* line 1425, ../sass/styles.scss */
+  /* line 1430, ../sass/styles.scss */
   #parallax2.parallax .inner p {
     font-size: 11pt;
     margin: 0 auto;
     width: 97%;
   }
-  /* line 1430, ../sass/styles.scss */
+  /* line 1435, ../sass/styles.scss */
   #parallax2.parallax .inner ul {
     margin: 10px auto 0;
   }
 
-  /* line 1437, ../sass/styles.scss */
+  /* line 1442, ../sass/styles.scss */
   .page-id-16 #caseStudies #study1 {
     width: 100%;
   }
-  /* line 1440, ../sass/styles.scss */
+  /* line 1445, ../sass/styles.scss */
   .page-id-16 #caseStudies #study1 .participant {
     padding: 10px 2%;
   }
-  /* line 1442, ../sass/styles.scss */
+  /* line 1447, ../sass/styles.scss */
   .page-id-16 #caseStudies #study1 .participant .left {
     float: none;
     width: 50%;
     margin: 0 auto;
   }
-  /* line 1447, ../sass/styles.scss */
+  /* line 1452, ../sass/styles.scss */
   .page-id-16 #caseStudies #study1 .participant .right {
     float: none;
     margin: 10px auto;
