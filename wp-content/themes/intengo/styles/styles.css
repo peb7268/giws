@@ -2485,29 +2485,29 @@ header {
     margin: 0 auto 70px;
   }
   /* line 1273, ../sass/styles.scss */
-  .page-id-9 table#productScreening th, .page-id-9 table#positioningAndCreative th {
+  .page-id-9 #predictionMarkets table#productScreening th, .page-id-9 #brandPositioning table#positioningAndCreative th {
     font-size: 10pt;
     padding: 4px;
     height: auto;
   }
   /* line 1279, ../sass/styles.scss */
-  .page-id-9 table#productScreening tr td, .page-id-9 table#positioningAndCreative tr td {
+  .page-id-9 #predictionMarkets table#productScreening tr td, .page-id-9 #brandPositioning table#positioningAndCreative tr td {
     padding: 5px;
   }
   /* line 1281, ../sass/styles.scss */
-  .page-id-9 table#productScreening tr td.cr, .page-id-9 table#positioningAndCreative tr td.cr {
+  .page-id-9 #predictionMarkets table#productScreening tr td.cr, .page-id-9 #brandPositioning table#positioningAndCreative tr td.cr {
     width: 33%;
   }
   /* line 1285, ../sass/styles.scss */
-  .page-id-9 table#productScreening tr td:first-child, .page-id-9 table#positioningAndCreative tr td:first-child {
+  .page-id-9 #predictionMarkets table#productScreening tr td:first-child, .page-id-9 #brandPositioning table#positioningAndCreative tr td:first-child {
     font-size: 12pt;
   }
   /* line 1288, ../sass/styles.scss */
-  .page-id-9 table#productScreening tr h4, .page-id-9 table#positioningAndCreative tr h4 {
+  .page-id-9 #predictionMarkets table#productScreening tr h4, .page-id-9 #brandPositioning table#positioningAndCreative tr h4 {
     font-size: 10pt;
   }
   /* line 1291, ../sass/styles.scss */
-  .page-id-9 table#productScreening tr p, .page-id-9 table#positioningAndCreative tr p {
+  .page-id-9 #predictionMarkets table#productScreening tr p, .page-id-9 #brandPositioning table#positioningAndCreative tr p {
     font-size: 10pt;
   }
 
