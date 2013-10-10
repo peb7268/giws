@@ -29,6 +29,9 @@
 			}
 		}
 	}
+	ul#nav li#home ul.sub-nav, ul#nav li#home .seperator {
+		display: block;
+	}
 }
 #block1 {
 	border-bottom: 1px solid $light-gray;
@@ -328,6 +331,9 @@
 }
 //Solutions
 .page-id-9 {
+	ul#nav li#solutions ul.sub-nav, ul#nav li#solutions .seperator {
+		display: block;
+	}
 	#block1 {
 		border-bottom: 0;
 		margin-bottom: 40px;
@@ -600,7 +606,8 @@
 			color: $green;
 			width: 44%;
 			float: left;
-			margin: 15px 0 0 15px;
+			// margin: 15px 0 0 15px;
+			margin: 3% 0 0 15px;
 			font-size: 16pt;
 			text-align: center;
 		}
@@ -630,6 +637,9 @@
 	}
 }
 .page-id-14 {
+	ul#nav li#methodology ul.sub-nav, ul#nav li#methodology .seperator {
+		display: block;
+	}
 	#parallax1 {
 		@include i_img('parallax/methodology/header.jpg', 0 0);
 		height: 255px;
@@ -765,6 +775,9 @@
 	}
 }
 .page-id-16 {
+	ul#nav li#case-study ul.sub-nav, ul#nav li#case-study .seperator {
+		display: block;
+	}
 	#parallax1 {
 		@include i_img('parallax/case-study/header.jpg', 0 0);
 		height: 233px;
@@ -797,6 +810,35 @@
 		}
 		.screen {
 			height: 345px;
+		}
+	}
+	.contentHighlight {
+		padding: 4% 5%;
+		width: 70%;
+		margin: 25px 0 0;
+		h4 {
+			width: 40%;
+			text-align: left;
+			margin: 10px 5% 0 0;
+		}
+		& > h4 {
+			width: 100%;
+			text-align: left;
+			margin: 0 0 10px;
+		}
+		p {
+			float: none;
+			width: 95%;
+		}
+		& div.green {
+			margin-bottom: 10px;
+			h4 { border-right: 1px solid #fff; }
+			p { color: $green; }
+		}
+	}
+	.content.wrapper {
+		#block1, #block2 {
+			border-bottom: 0;
 		}
 	}
 }
@@ -839,6 +881,39 @@
 
 
 /*-- Media Queries ------------------------------------------------------------*/
+@media all and (max-width: 1195px){
+	.page-id-16 {
+		.contentHighlight {
+			h4 {
+				margin-top: 5%;
+			}
+		}
+	}
+}
+@media all and (max-width: 1150px){
+	.page-id-16 {
+		#infographic {
+			padding-bottom: 60px;
+			.seperator {
+				top: initial;
+				right: initial;
+
+				left: 0;
+				bottom: 0;
+				height: 50px;
+
+				a {
+					top: initial;
+					right: initial;
+					&.ctaButton {
+						left: 22%;
+						width: 50%;
+					}
+				}
+			}
+		}
+	}
+}
 //improve the layout
 @media all and (max-width: 975px){
   #secondaryNav {
@@ -867,6 +942,13 @@
   #parallax1 {
   	margin-top: -100px;
   }
+  .page-id-16 {
+		.contentHighlight {
+			h4 {
+				margin-top: 9.7%;
+			}
+		}
+	}
 }
 //Misc fixes ( nav ... )
 @media all and (max-width: 845px){
@@ -1246,6 +1328,11 @@
 			right: 0;
 			bottom: 0;
 			margin-top: 30px;
+		}
+	}
+	.contentHighlight {
+		h4 {
+			margin-top: 7.7%;
 		}
 	}
 	#parallax2.parallax {

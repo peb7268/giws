@@ -1,11 +1,16 @@
 (function($){
 	$(document).ready(function($) {
-		$('#nav li').hover(function(){
+		$lis  = $('#nav li:not("ul.sub-nav li")');
+		$subs = $lis.find('ul.sub-nav, .seperator');
+
+		$lis.hover(function(){
+			$subs.hide();
 			$(this).parent().find('li').removeClass('active');
-			$(this).addClass('active');
+			$(this).addClass('active').find('.sub-nav, .seperator').removeAttr('style');
 		}, function(){
 			$('body:not("#nav"), header').hover(function(){
-				$('#nav li').removeClass('active');
+				$lis.removeClass('active');
+				$subs.hide();
 			});
 		});
 	});
