@@ -488,6 +488,8 @@
 					color: $teal;
 					text-align: center;
 					padding-top: 18px;
+					width: 1%;
+					max-width: 145px;
 
 					span {
 						@include i_img('solutions_icon_sprite.png', 0 0);

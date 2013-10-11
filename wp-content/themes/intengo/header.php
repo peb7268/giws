@@ -9,7 +9,7 @@
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="all">
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-	<script type="text/javascript" src="http://gointengo.com/wp-content/themes/intengo/js/shiv.js"></script>
+	<script type="text/javascript" src="http://demo.gointengo.com/wp-content/themes/intengo/js/shiv.js"></script>
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class();?>>
