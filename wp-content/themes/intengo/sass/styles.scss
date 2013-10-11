@@ -446,6 +446,8 @@
 	}
 	table#productScreening, #brandPositioning table#positioningAndCreative {
 		width: 100%;
+		border-collapse: none;
+
 		th {
 			text-transform: uppercase;
 			font-family: 'TradeGothicLTPro-BdCn20', 'helvetica', 'arial', 'sans-serif';
@@ -456,6 +458,7 @@
 			border-right: 1px solid #fff;
 			&.first {
 				width: 1%;
+				min-width: 145px;
 			}
 			&#circular-logo {
 				@include i_img('circular-logo.png', 0 0);
@@ -1457,6 +1460,13 @@
 						width: 90%;
 					}
 				}
+			}
+		}
+	}
+	table#productScreening, #brandPositioning table#positioningAndCreative {
+		th {
+			&.first {
+				min-width: 75px;
 			}
 		}
 	}
