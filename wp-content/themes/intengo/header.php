@@ -3,14 +3,14 @@
 <!--[if IE 7]><html class="ie7"> <![endif]-->
 <!--[if IE 8]><html class="ie8"> <![endif]-->
 <!--[if gt IE 8]><!--> <html><!--<![endif]-->
-
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="initial-scale=1">
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="all">
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-	<?php wp_head();?>
+	<script type="text/javascript" src="http://gointengo.com/wp-content/themes/intengo/js/shiv.js"></script>
+	<?php wp_head(); ?>
 </head>
 <body <?php body_class();?>>
 <!-- <div id="pageWrapper"> -->

@@ -588,46 +588,47 @@ header {
 
 /* line 72, ../sass/includes/_globals.scss */
 #logo {
-  max-height: 123px;
+  max-height: 109px;
+  max-width: 123px;
   width: 9.5%;
   margin-right: 2.4%;
   float: left;
   margin: 0;
 }
 
-/* line 79, ../sass/includes/_globals.scss */
+/* line 80, ../sass/includes/_globals.scss */
 .content, .cta {
   width: 91%;
   margin: auto;
 }
 
-/* line 82, ../sass/includes/_globals.scss */
+/* line 83, ../sass/includes/_globals.scss */
 .content {
   max-width: 1100px;
 }
 
-/* line 85, ../sass/includes/_globals.scss */
+/* line 86, ../sass/includes/_globals.scss */
 .cta {
   position: relative;
   width: 100%;
 }
-/* line 88, ../sass/includes/_globals.scss */
+/* line 89, ../sass/includes/_globals.scss */
 .cta > .inner {
   max-width: 1100px;
 }
 
-/* line 94, ../sass/includes/_globals.scss */
+/* line 95, ../sass/includes/_globals.scss */
 #cta-home1 .right p {
   font-family: 'TradeGothicLTPro-Cn18', 'helvetica', 'arial', 'sans-serif';
   font-size: 12pt;
 }
 
-/* line 100, ../sass/includes/_globals.scss */
+/* line 101, ../sass/includes/_globals.scss */
 #navControl {
   display: none;
 }
 
-/* line 103, ../sass/includes/_globals.scss */
+/* line 104, ../sass/includes/_globals.scss */
 #nav {
   width: 70%;
   float: left;
@@ -638,11 +639,11 @@ header {
   float: left;
   margin-right: 7%;
 }
-/* line 109, ../sass/includes/_globals.scss */
+/* line 110, ../sass/includes/_globals.scss */
 #nav li {
   position: relative;
 }
-/* line 111, ../sass/includes/_globals.scss */
+/* line 112, ../sass/includes/_globals.scss */
 #nav li span.seperator {
   background-image: url("../images/line_seperator.png");
   display: block;
@@ -653,32 +654,32 @@ header {
   width: 48px;
   display: none;
 }
-/* line 116, ../sass/includes/_globals.scss */
+/* line 117, ../sass/includes/_globals.scss */
 #nav li#solutions span.seperator {
   left: 70px;
 }
-/* line 119, ../sass/includes/_globals.scss */
+/* line 120, ../sass/includes/_globals.scss */
 #nav li#solutions > ul.sub-nav {
   width: 400px;
 }
-/* line 124, ../sass/includes/_globals.scss */
+/* line 125, ../sass/includes/_globals.scss */
 #nav li#methodology span.seperator {
   left: 92px;
 }
-/* line 127, ../sass/includes/_globals.scss */
+/* line 128, ../sass/includes/_globals.scss */
 #nav li#methodology > ul.sub-nav {
   width: 680px;
   left: -145px;
 }
-/* line 133, ../sass/includes/_globals.scss */
+/* line 134, ../sass/includes/_globals.scss */
 #nav li#case-study span.seperator {
   left: 75px;
 }
-/* line 136, ../sass/includes/_globals.scss */
+/* line 137, ../sass/includes/_globals.scss */
 #nav li#case-study > ul.sub-nav {
   left: -145px;
 }
-/* line 140, ../sass/includes/_globals.scss */
+/* line 141, ../sass/includes/_globals.scss */
 #nav li a {
   font-family: 'TradeGothicLTPro-BdCn20', 'helvetica', 'arial', 'sans-serif';
   color: #303e48;
@@ -686,7 +687,7 @@ header {
   font-weight: bold;
   text-transform: uppercase;
 }
-/* line 148, ../sass/includes/_globals.scss */
+/* line 149, ../sass/includes/_globals.scss */
 #nav li > ul.sub-nav {
   display: none;
   position: absolute;
@@ -697,26 +698,26 @@ header {
   border-top: 1px solid #1daadd;
   width: 25em;
 }
-/* line 158, ../sass/includes/_globals.scss */
+/* line 159, ../sass/includes/_globals.scss */
 #nav li > ul.sub-nav li {
   list-style-image: url("../images/bullet.png");
   margin-right: 22px;
   float: left;
 }
-/* line 162, ../sass/includes/_globals.scss */
+/* line 163, ../sass/includes/_globals.scss */
 #nav li > ul.sub-nav li:first-child {
   list-style-image: none;
 }
-/* line 167, ../sass/includes/_globals.scss */
+/* line 168, ../sass/includes/_globals.scss */
 #nav li.hidden {
   display: none;
 }
-/* line 172, ../sass/includes/_globals.scss */
+/* line 173, ../sass/includes/_globals.scss */
 #nav li:hover span.seperator, #nav li:hover > ul.sub-nav, #nav li.active span.seperator, #nav li.active > ul.sub-nav {
   display: block;
 }
 
-/* line 177, ../sass/includes/_globals.scss */
+/* line 178, ../sass/includes/_globals.scss */
 #secondaryNav {
   position: absolute;
   right: -11px;
@@ -727,43 +728,43 @@ header {
   background-image: url("../images/secondaryNav.png");
   background-repeat: no-repeat;
 }
-/* line 186, ../sass/includes/_globals.scss */
+/* line 187, ../sass/includes/_globals.scss */
 #secondaryNav p {
   margin: 0 0 0 188px;
   width: 122px;
 }
-/* line 190, ../sass/includes/_globals.scss */
+/* line 191, ../sass/includes/_globals.scss */
 #secondaryNav p.tagline {
   color: #90ca55;
   font-size: 9pt;
   margin-top: 50px;
 }
-/* line 195, ../sass/includes/_globals.scss */
+/* line 196, ../sass/includes/_globals.scss */
 #secondaryNav p.phone {
   color: #fff;
   font-size: 13pt;
   text-align: right;
 }
-/* line 202, ../sass/includes/_globals.scss */
+/* line 203, ../sass/includes/_globals.scss */
 #secondaryNav a {
   display: block;
   position: absolute;
 }
-/* line 205, ../sass/includes/_globals.scss */
+/* line 206, ../sass/includes/_globals.scss */
 #secondaryNav a#about {
   height: 34px;
   width: 44px;
   top: 10px;
   left: 43px;
 }
-/* line 211, ../sass/includes/_globals.scss */
+/* line 212, ../sass/includes/_globals.scss */
 #secondaryNav a#contact-us {
   width: 65px;
   height: 46px;
   top: 47px;
   left: 103px;
 }
-/* line 218, ../sass/includes/_globals.scss */
+/* line 219, ../sass/includes/_globals.scss */
 #secondaryNav ul#socialIcons {
   background-image: url("../images/social_icons.png");
   background-repeat: no-repeat;
@@ -775,7 +776,7 @@ header {
   margin: 0;
   padding: 0;
 }
-/* line 229, ../sass/includes/_globals.scss */
+/* line 230, ../sass/includes/_globals.scss */
 #secondaryNav ul#socialIcons li {
   position: relative;
   float: left;
@@ -783,31 +784,31 @@ header {
   height: 30px;
   margin-right: 10px;
 }
-/* line 235, ../sass/includes/_globals.scss */
+/* line 236, ../sass/includes/_globals.scss */
 #secondaryNav ul#socialIcons li.last {
   margin-right: 0;
 }
-/* line 238, ../sass/includes/_globals.scss */
+/* line 239, ../sass/includes/_globals.scss */
 #secondaryNav ul#socialIcons li a {
   display: block;
   height: 28px;
   width: 100%;
 }
 
-/* line 246, ../sass/includes/_globals.scss */
+/* line 247, ../sass/includes/_globals.scss */
 .parallax {
   height: 255px;
   margin-bottom: 37px;
   background-image: url("../images/parallax_demo.jpg");
 }
-/* line 251, ../sass/includes/_globals.scss */
+/* line 252, ../sass/includes/_globals.scss */
 .parallax .inner {
   overflow: hidden;
   width: 88%;
   max-width: 1100px;
   margin: 0 auto;
 }
-/* line 256, ../sass/includes/_globals.scss */
+/* line 257, ../sass/includes/_globals.scss */
 .parallax .inner h4, .parallax .inner h5 {
   font-family: 'SancoaleSlabNormRegular', 'Times New Roman', 'serif';
   color: white;
@@ -816,25 +817,25 @@ header {
   font-weight: normal;
   line-height: 0.95;
 }
-/* line 264, ../sass/includes/_globals.scss */
+/* line 265, ../sass/includes/_globals.scss */
 .parallax .inner h5 {
   margin-top: 10px;
   font-size: 21pt;
 }
-/* line 268, ../sass/includes/_globals.scss */
+/* line 269, ../sass/includes/_globals.scss */
 .parallax .inner > ul {
   margin: 55px 1% 0;
 }
-/* line 272, ../sass/includes/_globals.scss */
+/* line 273, ../sass/includes/_globals.scss */
 .parallax .button {
   float: left;
   margin-right: 1.625%;
 }
-/* line 275, ../sass/includes/_globals.scss */
+/* line 276, ../sass/includes/_globals.scss */
 .parallax .button.last {
   margin-right: 0;
 }
-/* line 278, ../sass/includes/_globals.scss */
+/* line 279, ../sass/includes/_globals.scss */
 .parallax .button a {
   color: #fff;
   border: 1px solid #fff;
@@ -842,7 +843,7 @@ header {
   width: 220px;
   display: block;
 }
-/* line 285, ../sass/includes/_globals.scss */
+/* line 286, ../sass/includes/_globals.scss */
 .parallax .button a strong {
   display: block;
   font-size: 14pt;
@@ -850,7 +851,7 @@ header {
   padding: 0;
 }
 
-/* line 294, ../sass/includes/_globals.scss */
+/* line 295, ../sass/includes/_globals.scss */
 .parallax div.screen {
   position: absolute;
   top: 0;
@@ -859,16 +860,16 @@ header {
   width: 100%;
   height: 255px;
 }
-/* line 302, ../sass/includes/_globals.scss */
+/* line 303, ../sass/includes/_globals.scss */
 .parallax div.screen.white {
   background-image: url("../images/parallax/screens/white.png");
 }
-/* line 305, ../sass/includes/_globals.scss */
+/* line 306, ../sass/includes/_globals.scss */
 .parallax div.screen.black {
   background-image: url("../images/parallax/screens/black.png");
 }
 
-/* line 309, ../sass/includes/_globals.scss */
+/* line 310, ../sass/includes/_globals.scss */
 .cta div.screen {
   position: absolute;
   top: 0;
@@ -877,29 +878,29 @@ header {
   width: 100%;
   height: 281px;
 }
-/* line 316, ../sass/includes/_globals.scss */
+/* line 317, ../sass/includes/_globals.scss */
 .cta div.screen.white {
   background-image: url("../images/parallax/screens/white.png");
 }
-/* line 319, ../sass/includes/_globals.scss */
+/* line 320, ../sass/includes/_globals.scss */
 .cta div.screen.black {
   background-image: url("../images/parallax/screens/black.png");
 }
 
-/* line 324, ../sass/includes/_globals.scss */
+/* line 325, ../sass/includes/_globals.scss */
 .buttonCta span, .buttonCta p {
   font-family: 'TradeGothicLTPro-Cn18', 'helvetica', 'sans-serif';
   line-height: 1;
   color: #fff;
 }
-/* line 329, ../sass/includes/_globals.scss */
+/* line 330, ../sass/includes/_globals.scss */
 .buttonCta span.seperator {
   background-image: url("../images/seperator-white.png");
   background-position: 12px 0;
   background-repeat: no-repeat;
 }
 
-/* line 335, ../sass/includes/_globals.scss */
+/* line 336, ../sass/includes/_globals.scss */
 .modal {
   display: none;
   z-index: 9999;
@@ -914,7 +915,7 @@ header {
   -moz-box-shadow: 0px 2px 10px #777;
   -webkit-box-shadow: 0px 2px 10px #777;
 }
-/* line 349, ../sass/includes/_globals.scss */
+/* line 350, ../sass/includes/_globals.scss */
 .modal .close {
   position: absolute;
   top: 2%;
@@ -922,16 +923,16 @@ header {
   color: #fff;
   font-weight: bold;
 }
-/* line 356, ../sass/includes/_globals.scss */
+/* line 357, ../sass/includes/_globals.scss */
 .modal .inner {
   padding: 0 0 30px;
 }
-/* line 358, ../sass/includes/_globals.scss */
+/* line 359, ../sass/includes/_globals.scss */
 .modal .inner h2, .modal .inner p {
   color: #fff;
 }
 
-/* line 364, ../sass/includes/_globals.scss */
+/* line 365, ../sass/includes/_globals.scss */
 .hbspt-form form#hsForm_ce338ae7-08ae-4ccd-a10a-644c278d5a26 input.hs-button.primary {
   background: none;
   border-radius: 0;
