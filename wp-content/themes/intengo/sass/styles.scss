@@ -772,8 +772,10 @@
 				margin: 15px 0 7px 0;
 				width: 137px;
 				height: 130px;
+				display: none; //temporary
 			}
 			.participant {
+				border-right: 1px solid $green;
 				p {
 					color: #fff;
 				}
@@ -781,7 +783,8 @@
 					width: 30%;
 					min-width: 175px;
 					float: left;
-					margin-right: 2%;
+					border-right: 1px solid $green;
+					margin: 20px 2% 0 0;
 					padding: 0 0 0 15px;
 					box-sizing: border-box;
 					-moz-box-sizing: border-box;
@@ -792,14 +795,15 @@
 						font-family: 'TradeGothicLTPro-Cn18', 'helvetica', 'arial', 'sans-serif';
 						font-size: 12pt;
 						margin: 0 0 7px 5px;
+						padding: 42px 0 25px;
 					}
 				}
 				.right {
 					width: 57%;
 					float: left;
 					color: #FFF;
-					margin: 45px 5% 20px 0;
-					font-size: 20pt;
+					margin: 25px 5% 20px 2%;
+					font-size: 19pt;
 					line-height: 1.1;
 
 					box-sizing: border-box;
@@ -1074,7 +1078,10 @@
 			#study1 {}
 			.caseStudy {
 				.participant {
+					border-right: none;
+
 					.left {
+						border-right: none;
 						width: 50%;
 						float: left;
 						margin: 0 auto;
