@@ -470,18 +470,19 @@
 			}
 		}
 		tr {
-			border-bottom: 1px solid $teal;
 			h4 {
-				font-size: 12pt;
+				font-size: 14pt;
 				margin: 10px 0 4px;
 			}
 			td {
-				padding: 1% 2.2%;
+				padding: 2%;
 				box-sizing: border-box;
 				-webkit-box-sizing: border-box;
 				-moz-box-sizing: border-box;
-				vertical-align: top;
+				vertical-align: middle;
 				width: 47.5%;
+				border-bottom: 1px solid #a4aaae;
+
 				&.first {
 					width: 1%;
 				}
@@ -510,7 +511,7 @@
 				&.bts {
 					span {
 						width: 72px;
-						background-position: 0 -88px;
+						background-position: 2px -88px;
 						margin: 0 0 0 14px;
 					}
 				}
@@ -522,18 +523,21 @@
 				}
 				&.is {
 					span {
+						width: 70px;
 						background-position: 0 -285px;
 						margin: 0 0 0 14px;
 					}
 				}
 				}
 				p {
-					font-size: 11pt;
+					font-size: 12pt;
 					line-height: 1.2;
 				}
 			}
 			&.last {
-				border-bottom: 0;
+				td {
+					border-bottom: 0;
+				}
 			}
 		}
 	}
@@ -678,6 +682,23 @@
 		@include i_img('parallax/methodology/header.jpg', 0 0);
 		height: 255px;
 	}
+	#parallax2 {
+		.screen.white {
+			height: 305px;
+		}
+		.inner {
+			& > ul {
+				margin: 45px 1% 0 10%;
+
+				& > li {
+					a {
+						padding: 8px 7px 0;
+						min-height: 75px;
+					}
+				}
+			}
+		}
+	}
 	#cta-methodology1 {
 		@include i_img('parallax/methodology/cta1.jpg', 0 0);
 	}
@@ -719,7 +740,7 @@
 			color: $teal;
 			display: block;
 			top: 60px;
-			right: 120px;
+			right: 130px;
 			font-size: 10pt;
 			&:hover {
 				background-color: $teal;
@@ -819,13 +840,19 @@
 	}
 	#parallax2 {
 		& > p {
+			font-size: 12pt;
 			margin: 10px 0 0 5%;
 		}
 		ul {
-			margin: 55px 1% 50px 10%;
+			margin: 35px 1% 50px 10%;
 		}
 		.screen {
 			height: 345px;
+		}
+		.inner {
+			h4 {
+				font-size: 30pt;
+			}
 		}
 	}
 }

@@ -41,7 +41,9 @@ window.plax = {
 	},
 	getFooterCeil: function(pageId){
 		return this.thresholds[pageId].footerCeil;
-	}
+	},
+	// targets: ['#parallax1', '#parallax2'];
+	targets: ['#parallaxXXX', '#parallaxXXX']	//temporarily disabling the parallax, uncomment the previous line and comment this out to renable
 };
 
 jQuery(document).ready(function($) {
@@ -63,14 +65,14 @@ jQuery(document).ready(function($) {
             if(getScrollTop() <= footerFloor && getScrollTop() >= 0)
             {
                     a = a + plax.scrollSpeed;// Position for the first background, it decreases in 3plax.scrollSpeed pixels
-                    $('#parallax1').css('backgroundPosition', '0' + a +'px');
+                    $(plax.targets[0]).css('backgroundPosition', '0' + a +'px');
             }
 			if(getScrollTop() <= footerFloor && getScrollTop() >= 0)
 			{
                     a = a + plax.scrollSpeed;
-					var xPos = Number($('#parallax2').css('backgroundPosition').split(" ")[0].split('%')[0])
-					var yPos = Number($('#parallax2').css('backgroundPosition').split(" ")[1].split('px')[0]);
-                    $('#parallax2').css('backgroundPosition', '0' + a +'px');
+					var xPos = Number($(plax.targets[1]).css('backgroundPosition').split(" ")[0].split('%')[0])
+					var yPos = Number($(plax.targets[1]).css('backgroundPosition').split(" ")[1].split('px')[0]);
+                    $(plax.targets[1]).css('backgroundPosition', '0' + a +'px');
             }
         } else {
 			//When Scrolling down
@@ -82,12 +84,12 @@ jQuery(document).ready(function($) {
             if (getScrollTop() >= 0 && getScrollTop() <= footerFloor)
             {
                   a = a - plax.scrollSpeed; 	// Position for the first background, it decreases in x #of pixels ( 5 in this case )
-                  $('#parallax1').css('backgroundPosition', '0' + a +'px');
+                  $(plax.targets[0]).css('backgroundPosition', '0' + a +'px');
             }
 			if (getScrollTop() >= footerCeil && getScrollTop() <= footerFloor)
             {
                  a = a - plax.scrollSpeed; 	// Position for the first background, it decreases in x #of pixels ( 5 in this case )
-                 $('#parallax2').css('backgroundPosition', '0' + a +'px');
+                 $(plax.targets[1]).css('backgroundPosition', '0' + a +'px');
             }
         }
 
