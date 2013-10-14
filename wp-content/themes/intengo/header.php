@@ -58,7 +58,7 @@
 						<a href="http://demo.gointengo.com/case-study-JFM">Case Study</a>
 						<ul class="sub-nav">
 							<li><a href="http://demo.gointengo.com/case-study-JFM#twoPaths">Two Paths For Screening</a></li>
-							<li><a href="http://demo.gointengo.com/case-study-JFM#caseStudies">The Big Picture</a></li>
+							<li><a href="http://demo.gointengo.com/case-study-JFM#bigPicture">The Big Picture</a></li>
 						</ul>
 					</li>
 					<li id="about" class="hidden">
