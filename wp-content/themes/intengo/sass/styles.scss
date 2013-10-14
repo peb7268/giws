@@ -1,4 +1,4 @@
- @import 'includes/fonts';
+@import 'includes/fonts';
 @import 'includes/colors';
 @import 'includes/reset';
 @import 'includes/mixins';
@@ -642,7 +642,7 @@
 			text-transform: uppercase;
 			font-family: 'TradeGothicLTPro-BdCn20', 'helvetica', 'arial', 'sans-serif';
 			color: $green;
-			width: 44%;
+			width: 40%;
 			float: left;
 			// margin: 15px 0 0 15px;
 			margin: 3% 0 0 15px;
@@ -780,13 +780,18 @@
 
 					p {
 						color: $green;
+						font-family: 'TradeGothicLTPro-Cn18', 'helvetica', 'arial', 'sans-serif';
+						font-size: 12pt;
+						margin: 0 0 7px 5px;
 					}
 				}
 				.right {
 					width: 60%;
 					float: right;
 					color: #FFF;
-					margin: 70px 5% 0 0;
+					margin: 60px 5% 20px 0;
+					font-size: 20pt;
+					line-height: 1.2;
 				}
 			}
 		}
@@ -1065,6 +1070,20 @@
 			}
 		}
 	}
+	#block1, #block2 {
+		.contentHighlight {
+			width: 70%;
+
+			h4 {
+				width: 33%;
+				font-size: 14pt;
+			}
+			p {
+				float: right;
+				width: 48%;
+			}
+		}
+	}
 }
 //Start Applying Mobile Styles
 @media all and (max-width: 720px){
@@ -1125,6 +1144,22 @@
 					}
 					.right{}
 				}
+			}
+		}
+	}
+	#block1, #block2 {
+		.contentHighlight {
+			h4 {
+				float: none;
+				margin: 0 auto 10px;
+				width: 95%;
+				font-size: 14pt;
+			}
+			p {
+				float: none;
+				margin: 0 auto;
+				width: 85%;
+				text-align: center;
 			}
 		}
 	}
