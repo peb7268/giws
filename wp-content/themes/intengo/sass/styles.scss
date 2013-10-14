@@ -778,9 +778,13 @@
 				}
 				.left {
 					width: 30%;
+					min-width: 175px;
 					float: left;
 					margin-right: 2%;
 					padding: 0 0 0 15px;
+					box-sizing: border-box;
+					-moz-box-sizing: border-box;
+					-webkit-box-sizing: border-box;
 
 					p {
 						color: $green;
@@ -790,12 +794,16 @@
 					}
 				}
 				.right {
-					width: 60%;
-					float: right;
+					width: 57%;
+					float: left;
 					color: #FFF;
 					margin: 45px 5% 20px 0;
 					font-size: 20pt;
 					line-height: 1.1;
+
+					box-sizing: border-box;
+					-moz-box-sizing: border-box;
+					-webkit-box-sizing: border-box;
 				}
 			}
 		}
@@ -973,6 +981,7 @@
 				left: 0;
 				bottom: 0;
 				height: 50px;
+				background-image: none;
 
 				a {
 					top: initial;
@@ -980,6 +989,26 @@
 					&.ctaButton {
 						left: 22%;
 						width: 50%;
+					}
+				}
+			}
+		}
+		#caseStudies {
+			#study1 {}
+			.caseStudy {
+				.participant {
+					.left {
+						width: 30%;
+						min-width: 175px;
+						float: left;
+						margin-right: 2%;
+						padding: 0 0 0 15px;
+					}
+					.right {
+						width: 47%;
+						font-size: 14pt;
+						margin-top: 50px;
+						line-height: 1.2;
 					}
 				}
 			}
@@ -1028,6 +1057,28 @@
 		.contentHighlight {
 			h4 {
 				margin-top: 9.7%;
+			}
+		}
+		#caseStudies {
+			#study1 {}
+			.caseStudy {
+				.participant {
+					.left {
+						width: 50%;
+						float: left;
+						margin: 0 auto;
+						padding: 10px 0 0 15px;
+						float: none;
+					}
+					.right {
+						width: 80%;
+						font-size: 14pt;
+						margin: 10px auto 0;
+						line-height: 1.2;
+						padding: 0 0 20px 0;
+						float: none;
+					}
+				}
 			}
 		}
 	}
@@ -1140,7 +1191,7 @@
 			#study1 {
 				.participant {
 					.left{
-						padding: 0 0 0 2%;
+						padding: 10px 0 0 2%;
 						img {
 							max-width: 137px;
 							width: 100%;
