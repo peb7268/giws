@@ -754,6 +754,10 @@
 	#caseStudies {
 		// width: 55%;
 		width: 77%;
+		#study1 {
+			margin-bottom: 40px;
+			width: 55%;
+		}
 
 		.caseStudy {
 			background-color: $teal;
@@ -789,9 +793,9 @@
 					width: 60%;
 					float: right;
 					color: #FFF;
-					margin: 60px 5% 20px 0;
+					margin: 45px 5% 20px 0;
 					font-size: 20pt;
-					line-height: 1.2;
+					line-height: 1.1;
 				}
 			}
 		}

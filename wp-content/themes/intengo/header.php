@@ -55,10 +55,10 @@
 					</li>
 					<li id="case-study">
 						<span class="seperator"></span>
-						<a href="http://demo.gointengo.com/case-study">Case Study</a>
+						<a href="http://demo.gointengo.com/case-study-JFM">Case Study</a>
 						<ul class="sub-nav">
-							<li><a href="http://demo.gointengo.com/case-study#parallax1">Two Paths For Screening</a></li>
-							<li><a href="http://demo.gointengo.com/case-study#infographic">The Big Picture</a></li>
+							<li><a href="http://demo.gointengo.com/case-study-JFM#parallax1">Two Paths For Screening</a></li>
+							<li><a href="http://demo.gointengo.com/case-study-JFM#infographic">The Big Picture</a></li>
 						</ul>
 					</li>
 					<li id="about" class="hidden">
