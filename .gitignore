@@ -1,3 +1,4 @@
 Capfile
 config
 local-config.php
+wp-content/debug.log
