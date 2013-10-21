@@ -24,8 +24,8 @@ if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
 	define('DB_CHARSET', 'utf8');
 	define('DB_COLLATE', '');
 
-	define('WP_SITEURL', 'http://demo.gointengo.com/');
-	define('WP_SITEHOME', 'http://demo.gointengo.com/');
+	//define('WP_SITEURL', 'http://demo.gointengo.com/');
+	//define('WP_SITEHOME', 'http://demo.gointengo.com/');
 }
 
 /**#@+
