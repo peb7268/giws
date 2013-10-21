@@ -977,7 +977,7 @@
 //No-header templates
 .page-template-page-no-header-php {
 	div.content.wrapper {
-		.center-small {
+		&.center-small {
 			width: 500px;
 			margin-top: 90px;
 		}
