@@ -2126,42 +2126,42 @@ header {
 }
 
 /* line 942, ../sass/styles.scss */
-.page-id-87 #parallax1 {
+.page-id-87 #parallax1, .page-id-181 #parallax1 {
   background-image: url("../images/parallax/contact/header.jpg");
 }
 /* line 945, ../sass/styles.scss */
-.page-id-87 .content.wrapper {
+.page-id-87 .content.wrapper, .page-id-181 .content.wrapper {
   margin-bottom: 80px;
 }
 /* line 948, ../sass/styles.scss */
-.page-id-87 .content.wrapper .content {
+.page-id-87 .content.wrapper .content, .page-id-181 .content.wrapper .content {
   float: left;
   width: 40%;
 }
 /* line 952, ../sass/styles.scss */
-.page-id-87 .content.wrapper .content h4 {
+.page-id-87 .content.wrapper .content h4, .page-id-181 .content.wrapper .content h4 {
   font-family: 'TradeGothicLTPro-BdCn20', 'helvetica', 'arial', 'sans-serif';
   font-size: 20pt;
 }
 /* line 956, ../sass/styles.scss */
-.page-id-87 .content.wrapper .content#block1 {
+.page-id-87 .content.wrapper .content#block1, .page-id-181 .content.wrapper .content#block1 {
   border-bottom: 0;
 }
 /* line 959, ../sass/styles.scss */
-.page-id-87 .content.wrapper .content#block2 {
+.page-id-87 .content.wrapper .content#block2, .page-id-181 .content.wrapper .content#block2 {
   width: 50%;
 }
 /* line 962, ../sass/styles.scss */
-.page-id-87 .content.wrapper .content#block2 form {
+.page-id-87 .content.wrapper .content#block2 form, .page-id-181 .content.wrapper .content#block2 form {
   width: 100%;
 }
 /* line 964, ../sass/styles.scss */
-.page-id-87 .content.wrapper .content#block2 form label {
+.page-id-87 .content.wrapper .content#block2 form label, .page-id-181 .content.wrapper .content#block2 form label {
   display: block;
   margin: 0 0 7px 0;
 }
 /* line 972, ../sass/styles.scss */
-.page-id-87 #block2 {
+.page-id-87 #block2, .page-id-181 #block2 {
   margin-left: 5%;
 }
 
