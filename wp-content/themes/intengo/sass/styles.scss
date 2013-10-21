@@ -974,6 +974,15 @@
 	}
 }
 
+//No-header templates
+.page-template-page-no-header-php {
+	& div.content.wrapper {
+		.center-small {
+			width: 500px;
+			margin-top: 90px;
+		}
+	}
+}
 
 /*-- Media Queries ------------------------------------------------------------*/
 @media all and (max-width: 1195px){
