@@ -12,16 +12,16 @@ function my_function_admin_bar(){ return false; }
 
 //nickname, path, dependencies, version, in footer
 wp_register_script('home', THEME_DIR.'/js/home.js', array(), '', true);
-wp_register_script('global', THEME_DIR.'/js/global.js', array(), '', true);
-wp_register_script('parallax', THEME_DIR.'/js/parallax.js', array(), '', true);
+wp_register_script('parallax', THEME_DIR.'/js/parallax.js', array(), '', false);
+wp_register_script('global', THEME_DIR.'/js/global.js', array(), null, true);
 wp_register_script('shiv', THEME_DIR.'/js/shiv.js', array(), '', false);
 wp_register_script('scrollTo', VENDOR_DIR.'/jquery.scrollTo/jquery.scrollTo.js', array(), '', false);
 wp_register_script('localScroll', VENDOR_DIR.'/jquery.localScroll/jquery.localScroll.js', array('scrollTo'), '', false);
 
 wp_enqueue_script('localScroll');
-wp_enqueue_script('global');
-wp_enqueue_script('parallax');
 wp_enqueue_script('home');
+wp_enqueue_script('parallax');
+wp_enqueue_script('global');
 
 #Shortcodes
 function get_theme_dir(){

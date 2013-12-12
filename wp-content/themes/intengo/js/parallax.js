@@ -47,61 +47,60 @@ window.plax = {
 };
 
 jQuery(document).ready(function($) {
-    a = parseFloat(plax.startVal); 								// Initial value for the first background (bk 0)
+    window.plax.init = function(){
+		a = parseFloat(plax.startVal); 								// Initial value for the first background (bk 0)
+	    var scrollTop   	= $(window).scrollTop(); 				//Get the initial Scroll value
+	    var pageId 			= plax.getPageId();
 
-    var scrollTop   	= $(window).scrollTop(); 				//Get the initial Scroll value
-    var pageId 			= plax.getPageId();
+		var footerCeil 		= plax.getFooterCeil(pageId);
+		var footerFloor 	= plax.getfooterFloor(pageId);
 
-	var footerCeil 		= plax.getFooterCeil(pageId);
-	var footerFloor 	= plax.getfooterFloor(pageId);
-
-    $(window).scroll(function(){
-		console.log('Y coord: ', getScrollTop());
-
-		//When Scrolling up
-        if(scrollingUp(scrollTop))
-        {
-			// Identifies the position for the first background when a scroll event occurs
-            if(getScrollTop() <= footerFloor && getScrollTop() >= 0)
-            {
-                    a = a + plax.scrollSpeed;// Position for the first background, it decreases in 3plax.scrollSpeed pixels
-                    $(plax.targets[0]).css('backgroundPosition', '0' + a +'px');
-            }
-			if(getScrollTop() <= footerFloor && getScrollTop() >= 0)
-			{
+	    $(window).scroll(function(){
+			//When Scrolling up
+	        if(scrollingUp(scrollTop)) {
+				// Identifies the position for the first background when a scroll event occurs
+	            if(getScrollTop() <= footerFloor && getScrollTop() >= 0) {
+	                    a = a + plax.scrollSpeed;// Position for the first background, it decreases in 3plax.scrollSpeed pixels
+	                    $(plax.targets[0]).css('backgroundPosition', '0' + a +'px');
+	            }
+				if(getScrollTop() <= footerFloor && getScrollTop() >= 0) {
                     a = a + plax.scrollSpeed;
 					var xPos = Number($(plax.targets[1]).css('backgroundPosition').split(" ")[0].split('%')[0])
 					var yPos = Number($(plax.targets[1]).css('backgroundPosition').split(" ")[1].split('px')[0]);
                     $(plax.targets[1]).css('backgroundPosition', '0' + a +'px');
-            }
-        } else {
-			//When Scrolling down
-			//when you reach 1000px down slide the cta's up
-			if (getScrollTop() >= 1000){
-				$('.inner #cta-group-home1 .inner').slideUp(150);
-			}
+	            }
+	        }
+			else {
+				//When Scrolling down
+				//when you reach 1000px down slide the cta's up
+				if (getScrollTop() >= 1000){
+					$('.inner #cta-group-home1 .inner').slideUp(150);
+				}
 
-            if (getScrollTop() >= 0 && getScrollTop() <= footerFloor)
-            {
-                  a = a - plax.scrollSpeed; 	// Position for the first background, it decreases in x #of pixels ( 5 in this case )
-                  $(plax.targets[0]).css('backgroundPosition', '0' + a +'px');
-            }
-			if (getScrollTop() >= footerCeil && getScrollTop() <= footerFloor)
-            {
-                 a = a - plax.scrollSpeed; 	// Position for the first background, it decreases in x #of pixels ( 5 in this case )
-                 $(plax.targets[1]).css('backgroundPosition', '0' + a +'px');
-            }
-        }
+	            if (getScrollTop() >= 0 && getScrollTop() <= footerFloor){
+	                  a = a - plax.scrollSpeed; 	// Position for the first background, it decreases in x #of pixels ( 5 in this case )
+	                  $(plax.targets[0]).css('backgroundPosition', '0' + a +'px');
+	            }
+				if (getScrollTop() >= footerCeil && getScrollTop() <= footerFloor)
+	            {
+	                 a = a - plax.scrollSpeed; 	// Position for the first background, it decreases in x #of pixels ( 5 in this case )
+	                 $(plax.targets[1]).css('backgroundPosition', '0' + a +'px');
+	            }
+	        }
 
-		// Adjusts the positions values and resets them to zero during a scroll up event
-        if (getScrollTop() == 0)
-        {
-            a=parseFloat(plax.startVal);
-            $('#parallax1, #parallax2').css('backgroundPosition', '0 0');
-        }
+			// Adjusts the positions values and resets them to zero during a scroll up event
+	        if (getScrollTop() == 0)
+	        {
+	            a=parseFloat(plax.startVal);
+	            $('#parallax1, #parallax2').css('backgroundPosition', '0 0');
+	        }
 
-        //scrollTop = $(this).scrollTop();
-    });
+	        //scrollTop = $(this).scrollTop();
+	    });
+	};
+
+	//Kickoff the parallax
+	//plax.init();
 });
 
 /* Returns true if scrolling up
