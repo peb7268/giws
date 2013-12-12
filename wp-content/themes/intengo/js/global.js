@@ -1,5 +1,7 @@
 (function($){
 	$(document).ready(function($) {
+		console.log('prod push worked');
+
 		$lis  = $('#nav li:not("ul.sub-nav li")');
 		$subs = $lis.find('ul.sub-nav, .seperator');
 
