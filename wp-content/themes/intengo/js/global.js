@@ -13,10 +13,30 @@
 				$subs.hide();
 			});
 		});
+
+
+		var oHeight = - Number($('#headerWrapper').outerHeight());
+
+		$.localScroll.hash({
+			axis: 'y',
+			queue:true,
+			duration:1500,
+			offset: oHeight,
+		});
+
+		//LocalScroll
+		$.localScroll({
+			axis: 'y',
+	        queue: true,
+	        duration: 1500,
+	        offset: oHeight,
+	        hash: false
+		});
 	});
 	var $navToggle 	= $('#navControl');
 	var $nav 		= $('#nav');
-	$navToggle.on('click', function(){
+	$navToggle.on('click', function(e){
+		e.preventDefault();
 		$nav.slideToggle(100);
 	});
 })(jQuery)

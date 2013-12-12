@@ -30,7 +30,7 @@
 						<a href="http://gointengo.com/home">Home</a>
 						<span class="seperator"></span>
 						<ul class="sub-nav">
-							<li><a href="http://gointengo.com/home#block1">Superior Prediction Markets</a></li>
+							<li><a href="http://gointengo.com/home#block2">Superior Prediction Markets</a></li>
 							<li><a href="http://gointengo.com/home#cta-home1">Get Inspired</a></li>
 						</ul>
 					</li>
@@ -58,7 +58,7 @@
 						<a href="http://gointengo.com/case-study-JFM">Case Study</a>
 						<ul class="sub-nav">
 							<li><a href="http://gointengo.com/case-study-JFM#twoPaths">Two Paths For Screening</a></li>
-							<li><a href="http://gointengo.com/case-study-JFM#bigPicture">The Big Picture</a></li>
+							<li><a href="http://gointengo.com/case-study-JFM#caseStudies">The Big Picture</a></li>
 						</ul>
 					</li>
 					<li id="about" class="hidden">

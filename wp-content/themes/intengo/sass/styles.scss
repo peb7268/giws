@@ -4,18 +4,21 @@
 @import 'includes/mixins';
 @import 'includes/globals';
 
-//Page Specific Styles
-//Home
-.page-id-5 {
-	#parallax1 {
-		@include i_img('parallax/home/header.jpg', 0 0);
+.page.page-template-default {
+#parallax2 {
+	&.headline {
+		h4 {
+			position: static;
+			margin: 35px 0 0 0;
+		}
+		h5 {
+			position: static;
+			margin: 5px 0 15px 4.8%;
+		}
 	}
-	#cta-home1 {
-		@include i_img('parallax/home/cta1.jpg', 0 0);
-	}
-	#parallax2 {
 		.inner {
 			li {
+				font-size: 11pt;
 				border: 0;
 				a {
 					border: 1px solid #FFF;
@@ -28,6 +31,17 @@
 				}
 			}
 		}
+	}
+}
+
+//Page Specific Styles
+//Home
+.page-id-5, .page-template-template-landing-php {
+	#parallax1 {
+		@include i_img('parallax/home/header.jpg', 0 0);
+	}
+	#cta-home1 {
+		@include i_img('parallax/home/cta1.jpg', 0 0);
 	}
 	ul#nav li#home ul.sub-nav, ul#nav li#home .seperator {
 		display: block;
@@ -63,6 +77,9 @@
 				font-size: 14pt;
 				padding: 12px 7px 10px 7px;
 				margin: 0 0 20px 0;
+				&:hover {
+					background-color: $light-blue;
+				}
 
 				p {
 					color: #fff;
@@ -134,28 +151,33 @@
 	}
 }
 .cta {
-	height: 281px;
+	//height: 281px;
+	height: 245px;
 	margin-bottom: 37px;
-	@include i_img('parallax_demo.jpg', 0 0);
+	//@include i_img('parallax_demo.jpg', 0 0);
 
 	.inner {
 		overflow: hidden;
 		margin: 0 auto;
 		width: 88%;
+		position: relative;
+		min-height: 240px;
 
 		h4.left {
 			font-family: 'SancoaleSlabCondRegular', 'times new roman', 'serif';
 			float: left;
 			color: $parallax-text;
-			width: 50%;
+			width: 60%;
 			font-size: 50pt;
-			margin: 50px 0 0 0;
 			font-weight: normal;
+			position: absolute;
+			margin-top: -60px;
+			top: 50%;
 		}
 		.right{
 			float: right;
 			width: 35%;
-			margin: 60px 0 0 0;
+			margin: 30px 0 0 0;
 
 			p {
 				color: #fff;
@@ -270,6 +292,8 @@
 #logos {
 	margin: 0 auto 70px;
 	max-width: 930px;
+	max-height: 105px;
+	overflow: hidden;
 
 	li {
 		float: left;
@@ -287,7 +311,8 @@
 }
 #parallax1 {
 	// margin-top: -80px;
-	margin-top: -90px;
+	//margin-top: -90px;
+	margin-top: -77px;
 }
 #parallax2 {
 	@include i_img('parallax/footer.jpg', 0 0);
@@ -298,8 +323,12 @@
 			margin: 55px 1% 0 10%;
 
 			& > li {
-				@include ctaButton(24.6%, 0, left, 2%, transparent, #fff);
-				border: 1px solid #FFF;
+				width: 30%;
+
+				a {
+					@include ctaButton(24.6%, 0, none, 2%, transparent, #fff);
+					border: 1px solid #FFF;
+				}
 
 				&, p, a, span {
 					font-family: 'TradeGothicLTPro-Cn18', 'helvetica', 'arial', sans-serif;
@@ -382,12 +411,12 @@
 				&.green {
 					h4 { color: $green; }
 				}
-
+				&.green a, &.blue a { text-align: center; }
 				&.green a {
 					@include button($green, #fff);
 					float: right;
 					padding: 5px 4px;
-					margin: 28px 255px 30px 0;
+					margin: 28px 90% 30px 0;
 					font-size: 10pt;
 					width: 45%;
 				}
@@ -395,7 +424,7 @@
 					@include button($light-blue, #fff);
 					float: right;
 					padding: 5px 4px;
-					margin: 28px 15px 30px 0;
+					margin: 28px 35% 30px 0;
 					font-size: 10pt;
 					width: 45%;
 				}
@@ -404,6 +433,7 @@
 					overflow: hidden;
 					span {
 						@include triangle($teal);
+						border-top: none;
 						background-image: none;
 					}
 				}
@@ -604,7 +634,7 @@
 			-webkit-box-sizing: border-box;
 		}
 	 	& > .btn {
-	 		@include ctaButton(200px, 7px 4px 7px 12px, none, 0, $teal, $green);
+	 		@include ctaButton(200px, 0, none, 0, $teal, $green);
 	 		position: absolute;
 			bottom: 12px;
 			right: 0;
@@ -613,6 +643,11 @@
 				color: #fff;
 				font-family: 'TradeGothicLTPro-BdCn20', 'helvetica', 'arial', sans-serif;
 				font-size: 14pt;
+				display: block;
+				padding:  7px 4px 7px 12px;
+				&:hover {
+					background-color: #1DAADD;
+				}
 				span {
 					text-transform: none;
 					font-size: 11pt;
@@ -658,10 +693,14 @@
 		}
 	}
 	.cta {
+		overflow: hidden;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+
 		.inner {
 			h4.left {
 				width: 100%;
-				margin: 90px 0 0 0;
+
 				line-height: 0.95;
 				text-shadow: 0px 1px 1px #000;
 			}
@@ -670,7 +709,9 @@
 	#parallax2 {
 		.inner {
 			ul {
-				li { min-width: 237px; }
+				li {
+				//min-width: 237px;
+				}
 			}
 		}
 	}
@@ -681,7 +722,7 @@
 	}
 	#parallax1 {
 		@include i_img('parallax/methodology/header.jpg', 0 0);
-		height: 255px;
+		//height: 255px;
 	}
 	#parallax2 {
 		.screen.white {
@@ -689,12 +730,13 @@
 		}
 		.inner {
 			& > ul {
-				margin: 45px 1% 0 10%;
+				width: 75%;
+				margin: 30px auto;
 
 				& > li {
 					a {
 						padding: 8px 7px 0;
-						min-height: 75px;
+						min-height: 68px;
 					}
 				}
 			}
@@ -704,7 +746,6 @@
 		@include i_img('parallax/methodology/cta1.jpg', 0 0);
 	}
 	#cta-methodology2 {
-		height: 277px;
 		@include i_img('parallax/methodology/cta2.jpg', 0 0);
 	}
 	#cta-methodology3 {
@@ -830,9 +871,6 @@
 			}
 		}
 	}
-	.parallax {
-		height: auto;
-	}
 }
 .page-id-14 {
 	#parallax2 {
@@ -841,7 +879,7 @@
 		}
 		.inner {
 			h4 {
-				font-size: 43pt;
+				font-size: 41pt;
 			}
 			ul {
 				padding-bottom: 25px;
@@ -866,7 +904,7 @@
 			margin: 10px 0 0 5%;
 		}
 		ul {
-			margin: 35px 1% 50px 10%;
+			margin: 20px 1% 50px 10%;
 		}
 		.screen {
 			height: 345px;
@@ -938,7 +976,7 @@
 	}
 }
 //Contact Us
-.page-id-87, .page-id-181 {
+.page-id-87, .page-id-181, .page-template-template-landing-php {
 	#parallax1 {
 		@include i_img('parallax/contact/header.jpg', 0 0);
 	}
@@ -971,6 +1009,11 @@
 	}
 	#block2 {
 		margin-left: 5%;
+	}
+}
+.page-id-87 #parallax1 .inner {
+	h4 {
+		margin-top: -15px;
 	}
 }
 
@@ -1112,6 +1155,9 @@
 }
 //Misc fixes ( nav ... )
 @media all and (max-width: 845px){
+	#logos {
+		max-height: initial;
+	}
 	#secondaryNav {
 		display: none;
 	}
@@ -1166,13 +1212,35 @@
 			}
 		}
 	}
+	.page-id-14 {
+		#parallax2 {
+			&.headline {
+				h4 {
+					font-size: 30pt;
+				}
+			}
+			.inner > ul {
+				margin: 20px auto;
+
+				& > li {
+					font-size: 10pt;
+					width: 30%;
+					margin-right: 2.5%;
+					a {
+						strong {
+							font-size: 14pt;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 //Start Applying Mobile Styles
 @media all and (max-width: 720px){
 	.page-id-5 {
 		#cta-home1 {
 			h4 {
-				margin-top: 85px;
 				font-size: 45pt;
 			}
 			.inner {
@@ -1192,6 +1260,19 @@
 					border-bottom: 1px solid $light-blue;
 					border-right: 0;
 					padding: 12px 0 15px;
+				}
+			}
+		}
+		.cta .inner {
+			h4.left {
+				margin-top: -70px;
+			}
+			 .right {
+				li {
+					margin-bottom: 10px;
+					a {
+						font-size: 13pt;
+					}
 				}
 			}
 		}
@@ -1245,10 +1326,22 @@
 			}
 		}
 	}
+	.page.page-template-default {
+		.content.wrapper {
+			#block1 {
+				padding-right: 0;
+			}
+		}
+	}
 }
 //Start Applying Mobile Styles ( Mobile Nav, stacks instead of floats )
 @media all and (max-width: 620px){
 	//Global Stuff
+	.page.page-template-default {
+		.content {
+			width: 96%;
+		}
+	}
 	#logo {
 		width: 14%;
 	}
@@ -1291,6 +1384,9 @@
 				box-sizing: border-box;
 				-moz-box-sizing: border-box;
 				-webkit-box-sizing: border-box;
+				&:hover {
+					color: #fff;
+				}
 			}
 		}
 	}
@@ -1298,7 +1394,8 @@
 		.inner {
 			h4 {
 				font-size: 33pt;
-				margin-top: 85px;
+				// margin-top: 85px;
+				margin-top: -15px;
 			}
 		}
 	}
@@ -1339,6 +1436,7 @@
 			}
 		}
 	}
+
 	//Page Specific Stuff
 	.page-id-5 {
 		#block1 {
@@ -1388,13 +1486,22 @@
 	.page-id-9 {
 		#block2 {
 			& > ul {
-				width: 85%;
+				width: 94%;
 				margin: 0 auto;
+				padding: 0 4px;
 
 				li {
 					float: none;
 					width: 100%;
 					min-height: initial;
+
+					h4 {
+						text-align: center;
+					}
+					p { width: 50%; margin: 0 auto 10px; }
+					&.first, &.second, &.green {
+						a.green, a.blue,  a { margin: 0 0 30px 21%; }
+					}
 
 					&.first {
 						border-right: none;
@@ -1404,12 +1511,11 @@
 					&.second {
 						width: 100%;
 					}
-					&.first, &.second, &.green {
+					&.first, &.second, &.green, &.green {
 						padding: 0;
 
 						a {
 							width: 45%;
-							margin: 0 0 30px;
 							float: none;
 							padding: 10px 8px;
 						}
@@ -1499,6 +1605,31 @@
 			}
 		}
 	}
+	.page-id-14 {
+		#parallax2 {
+			&.headline {
+				h4 {
+					margin: 5px 0 0 0;
+					//font-size: 35pt;
+				}
+			}
+			.inner > ul {
+				width: 85%;
+
+				& > li {
+					font-size: 10pt;
+					//width: 30%;
+					//margin-right: 2.5%;
+					a {
+						min-height: initial;
+						strong {
+							//font-size: 14pt;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 //Apply full mobile styling
 @media all and (max-width: 400px){
@@ -1511,11 +1642,25 @@
 		.inner {
 			h4 {
 				font-size: 22pt;
-				margin-top: 78px;
 			}
 		}
-		&#cta-about1 {
-			.inner h4 {	margin-top: 55px; }
+
+	}
+	.page.page-template-default #parallax2 .inner {
+		p, h4, h5 { display: none; }
+		li {
+			margin-bottom: 15px;
+			a {
+				padding: 10px 7px;
+				strong { font-size: 16pt; }
+			}
+		}
+	}
+	.page-id-5 #block1 .right {
+		margin-top: 15px;
+
+		li {
+			width: 70%;
 		}
 	}
 	.page-id-5{
@@ -1525,12 +1670,12 @@
 
 				h4.left {
 					font-size: 28pt;
-					margin-top: 115px;
+					margin-top: -45px;
 					width: 52%;
 				}
 				div.right {
 					width: 47%;
-					margin: 80px 0 0;
+					margin: 35px 0 0;
 
 					p {
 						font-size: 9pt;
@@ -1554,12 +1699,20 @@
 		#block1.content {
 			width: 100%;
 			padding-right: 0;
+			margin: 0 auto;
+			div.contentHighlight.clearfix {
+				margin: 25px auto 0px;
+				width: 98%;
+			}
 		}
 		& .btn {
 			position: relative;
 			right: 0;
 			bottom: 0;
-			margin-top: 30px;
+			margin: 30px auto 0;
+			width: 80%;
+			max-width: 310px;
+			min-width: 200px;
 		}
 	}
 	.contentHighlight {
@@ -1591,6 +1744,7 @@
 			}
 		}
 	}
+	.page-id-14 {}
 	.page-id-16 {
 		#caseStudies {
 			#study1 {
@@ -1618,5 +1772,11 @@
 				min-width: 75px;
 			}
 		}
+	}
+}
+
+.page-template-template-landing-php {
+	#parallax1 {
+		@include i_img('parallax/home/header.jpg', 0 0);
 	}
 }

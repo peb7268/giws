@@ -42,8 +42,8 @@ window.plax = {
 	getFooterCeil: function(pageId){
 		return this.thresholds[pageId].footerCeil;
 	},
-	// targets: ['#parallax1', '#parallax2'];
-	targets: ['#parallaxXXX', '#parallaxXXX']	//temporarily disabling the parallax, uncomment the previous line and comment this out to renable
+	targets: ['#parallax1', '#parallax2']
+	//targets: ['#parallaxXXX', '#parallaxXXX']	//temporarily disabling the parallax, uncomment the previous line and comment this out to renable
 };
 
 jQuery(document).ready(function($) {
@@ -56,7 +56,7 @@ jQuery(document).ready(function($) {
 	var footerFloor 	= plax.getfooterFloor(pageId);
 
     $(window).scroll(function(){
-		// console.log('Y coord: ', getScrollTop());
+		console.log('Y coord: ', getScrollTop());
 
 		//When Scrolling up
         if(scrollingUp(scrollTop))

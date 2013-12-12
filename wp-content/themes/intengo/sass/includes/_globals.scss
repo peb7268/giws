@@ -55,11 +55,13 @@ header, .parallax {
 	width: 100%;
 	padding: 23px 0 16px;
 	background: #FFF;
-	overflow: visible;
 	z-index: 10;
 	box-shadow: 7px 1px 10px #777;
 	-webkit-box-shadow: 7px 1px 10px #777;
 	-moz-box-shadow: 7px 1px 10px #777;
+	box-sizing: border-box;
+	height: 148px;
+	opacity: .88;
 }
 header {
 	z-index: 9;
@@ -109,6 +111,15 @@ header {
 
 	li {
 		position: relative;
+		&.active .sub-nav {
+			li {
+				a {
+					&:hover {
+						color: #1daadd;
+					}
+				}
+			}
+		}
 		span.seperator {
 			@include seperator(1.1em, 16px, 36px, 48px);
 			display: none;
@@ -127,7 +138,7 @@ header {
 			}
 			& > ul.sub-nav {
 				width: 680px;
-				left: -145px;
+				left: -225px;
 			}
 		}
 		&#case-study {
@@ -244,8 +255,8 @@ header {
 		}
 	}
 }
-.parallax {
-	height: 255px;
+.parallax, .cta {
+	height: 235px;
 	margin-bottom: 37px;
 
 	@include i_img('parallax_demo.jpg', 0 0);
@@ -254,13 +265,18 @@ header {
 		width: 88%;
 		max-width: 1100px;
 		margin: 0 auto;
+		position: relative;
+		height: 245px;
+
 		h4, h5 {
 			font-family: 'SancoaleSlabNormRegular', 'Times New Roman', 'serif';
 			color: $parallax-text;
 			font-size: 50pt;
-			margin: 55px 0 0 0;
+			margin: -50px 0 0 0;
 			font-weight: normal;
 			line-height: 0.95;
+			position: absolute;
+			top: 50%;
 		}
 		h5 {
 			margin-top: 10px;
@@ -298,7 +314,8 @@ header {
 	left: 0;
 	background-repeat: repeat;
 	width: 100%;
-	height: 255px;
+	//height: 255px;
+	height: 235px;
 
 	&.white {
 		@include i_img('parallax/screens/white.png', 0 0);
@@ -313,7 +330,7 @@ header {
 	left: 0;
 	background-repeat: repeat;
 	width: 100%;
-	height: 281px;
+	height: 245px;
 	&.white {
 		@include i_img('parallax/screens/white.png', 0 0);
 	}
