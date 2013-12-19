@@ -61,7 +61,7 @@ header, .parallax {
 	-moz-box-shadow: 7px 1px 10px #777;
 	box-sizing: border-box;
 	height: 148px;
-	opacity: .88;
+	opacity: .95;
 }
 header {
 	z-index: 9;
@@ -314,8 +314,7 @@ header {
 	left: 0;
 	background-repeat: repeat;
 	width: 100%;
-	//height: 255px;
-	height: 235px;
+	height: 245px;
 
 	&.white {
 		@include i_img('parallax/screens/white.png', 0 0);

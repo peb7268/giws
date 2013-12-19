@@ -1,0 +1,11 @@
+{
+  "name": "intengo",
+  "version": "0.0.1",
+  "homepage": "http://www.gointengo.com",
+  "authors": [
+    "Paul Barrick <peb7268@gmail.com>"
+  ],
+  "description": "intengo website",
+  "license": "MIT",
+  "private": true
+}

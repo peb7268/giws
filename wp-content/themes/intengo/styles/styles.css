@@ -575,7 +575,7 @@ header .inner, .parallax .inner {
   -moz-box-shadow: 7px 1px 10px #777;
   box-sizing: border-box;
   height: 148px;
-  opacity: .88;
+  opacity: .95;
 }
 
 /* line 66, ../sass/includes/_globals.scss */
@@ -868,18 +868,18 @@ header {
   left: 0;
   background-repeat: repeat;
   width: 100%;
-  height: 235px;
+  height: 245px;
 }
-/* line 320, ../sass/includes/_globals.scss */
+/* line 319, ../sass/includes/_globals.scss */
 .parallax div.screen.white {
   background-image: url("../images/parallax/screens/white.png");
 }
-/* line 323, ../sass/includes/_globals.scss */
+/* line 322, ../sass/includes/_globals.scss */
 .parallax div.screen.black {
   background-image: url("../images/parallax/screens/black.png");
 }
 
-/* line 327, ../sass/includes/_globals.scss */
+/* line 326, ../sass/includes/_globals.scss */
 .cta div.screen {
   position: absolute;
   top: 0;
@@ -888,29 +888,29 @@ header {
   width: 100%;
   height: 245px;
 }
-/* line 334, ../sass/includes/_globals.scss */
+/* line 333, ../sass/includes/_globals.scss */
 .cta div.screen.white {
   background-image: url("../images/parallax/screens/white.png");
 }
-/* line 337, ../sass/includes/_globals.scss */
+/* line 336, ../sass/includes/_globals.scss */
 .cta div.screen.black {
   background-image: url("../images/parallax/screens/black.png");
 }
 
-/* line 342, ../sass/includes/_globals.scss */
+/* line 341, ../sass/includes/_globals.scss */
 .buttonCta span, .buttonCta p {
   font-family: 'TradeGothicLTPro-Cn18', 'helvetica', 'sans-serif';
   line-height: 1;
   color: #fff;
 }
-/* line 347, ../sass/includes/_globals.scss */
+/* line 346, ../sass/includes/_globals.scss */
 .buttonCta span.seperator {
   background-image: url("../images/seperator-white.png");
   background-position: 12px 0;
   background-repeat: no-repeat;
 }
 
-/* line 353, ../sass/includes/_globals.scss */
+/* line 352, ../sass/includes/_globals.scss */
 .modal {
   display: none;
   z-index: 9999;
@@ -925,7 +925,7 @@ header {
   -moz-box-shadow: 0px 2px 10px #777;
   -webkit-box-shadow: 0px 2px 10px #777;
 }
-/* line 367, ../sass/includes/_globals.scss */
+/* line 366, ../sass/includes/_globals.scss */
 .modal .close {
   position: absolute;
   top: 2%;
@@ -933,16 +933,16 @@ header {
   color: #fff;
   font-weight: bold;
 }
-/* line 374, ../sass/includes/_globals.scss */
+/* line 373, ../sass/includes/_globals.scss */
 .modal .inner {
   padding: 0 0 30px;
 }
-/* line 376, ../sass/includes/_globals.scss */
+/* line 375, ../sass/includes/_globals.scss */
 .modal .inner h2, .modal .inner p {
   color: #fff;
 }
 
-/* line 382, ../sass/includes/_globals.scss */
+/* line 381, ../sass/includes/_globals.scss */
 .hbspt-form form#hsForm_ce338ae7-08ae-4ccd-a10a-644c278d5a26 input.hs-button.primary {
   background: none;
   border-radius: 0;
@@ -962,29 +962,29 @@ header {
 }
 
 /* line 10, ../sass/styles.scss */
-.page.page-template-default #parallax2.headline h4 {
+.page.page-template-default #parallax2.headline h4, .page.page-template #parallax2.headline h4 {
   position: static;
   margin: 35px 0 0 0;
 }
 /* line 14, ../sass/styles.scss */
-.page.page-template-default #parallax2.headline h5 {
+.page.page-template-default #parallax2.headline h5, .page.page-template #parallax2.headline h5 {
   position: static;
   margin: 5px 0 15px 4.8%;
 }
 /* line 20, ../sass/styles.scss */
-.page.page-template-default #parallax2 .inner li {
+.page.page-template-default #parallax2 .inner li, .page.page-template #parallax2 .inner li {
   font-size: 11pt;
   border: 0;
 }
 /* line 23, ../sass/styles.scss */
-.page.page-template-default #parallax2 .inner li a {
+.page.page-template-default #parallax2 .inner li a, .page.page-template #parallax2 .inner li a {
   border: 1px solid #FFF;
   width: 93%;
   font-family: 'SancoaleSlabCondRegular', 'times new roman', 'serif';
   font-size: 1.2em;
 }
 /* line 28, ../sass/styles.scss */
-.page.page-template-default #parallax2 .inner li a strong {
+.page.page-template-default #parallax2 .inner li a strong, .page.page-template #parallax2 .inner li a strong {
   text-transform: uppercase;
 }
 
@@ -1737,7 +1737,7 @@ header {
 }
 /* line 605, ../sass/styles.scss */
 .page-id-9 #cta-solutions2 {
-  height: 235px;
+  height: 245px;
   background-image: url("../images/parallax/solutions/cta2.jpg");
 }
 /* line 609, ../sass/styles.scss */

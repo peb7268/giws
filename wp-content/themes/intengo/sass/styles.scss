@@ -4,7 +4,7 @@
 @import 'includes/mixins';
 @import 'includes/globals';
 
-.page.page-template-default {
+.page.page-template-default, .page.page-template {
 #parallax2 {
 	&.headline {
 		h4 {
@@ -603,7 +603,7 @@
 		height: 236px;
 	}
 	#cta-solutions2 {
-		height: 235px;
+		height: 245px;
 		@include i_img('parallax/solutions/cta2.jpg', 0 0);
 	}
 	#parallax2 {
