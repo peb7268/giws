@@ -1,11 +1,18 @@
 ;(function($){
+	/*
+	* Plugin Roadmap:
+	* 1. Handle if the page load starts in the middle of an element to parallax. ( Smoothe animate it to the position )
+	* 2. Y based event binding. ( When you Reach _ Y position trigger an event and a callback )
+	* 3. pass in your own target objects
+	*/
 	$.plax = function(options){
 		var self = $.plax;
-		var message; var m; var pos; var $w = $(window);
+		var message; var m; var pos; var scrollDirection = 'down'; var $w = $(window);
 
 		var settings = $.extend({
 			//defaults
-			'debug'		: true,
+			'offsetTop' : 0,
+			'debug'		: false,
 			'context'	: window,
 			'pos': 0, 							// Initial Y staring value for the background position of each image.
 			'elemHeight' : 245,					//How tall each element is ( will be unique per target but also here for a default )
@@ -53,8 +60,10 @@
 				t[elem] = {};
 				var selector 	= t[elem].selector = '#' + elem;
 				var height   	= t[elem].height = $(selector).outerHeight();
-				t[elem].ceiling = $(selector).offset().top;
-				t[elem].floor 	= t[elem].ceiling + height;
+				t[elem].ceiling = $(selector).offset().top - settings.offsetTop;
+
+				t[elem].floor 	= t[elem].ceiling + height - settings.offsetTop; //CORRECT THIS IT'S WRONG
+
 				t[elem].calculatedHeight = t[elem].floor  - t[elem].ceiling;	//just a check, should match height
 				if(t[elem].calculatedHeight !== height) console.error(selector + ' calculations are off based on calculated height.');
 			});
@@ -70,9 +79,15 @@
 		self.scroll = function(e){
 			self.setWinBottomY();		//update winBottomy
 			self.setWinTopY();			//update winTopy
-			self.setScrollDirection();
+			scrollDirection = self.setScrollDirection();
 			self.checkForPreexistingElementsToParallax();
 			self.checkElements('winBottomY')		//determine if any elements need to be parallaxed
+			if(settings.winTopY <= 0) self.resetParallax();
+		};
+		self.resetParallax = function(){
+			$('.parallax').removeAttr('style');
+			pos = 0;
+			return false;
 		};
 		/*
 		* On scroll, checks if any elements need to be parallaxed.
@@ -104,12 +119,19 @@
 			self[method]($element);
 		};
 		self.panDown = function($element){
-			m('panning down');
 			pos = pos - settings.scrollSpeed;
+			m('panning down', pos);
 			$element.css('backgroundPosition', '0' + ' ' + pos +'px');
 		};
 		self.panUp = function($element){
-			m('panning up');
+			m('panning up', pos);
+			//if($element.attr('id') == 'parallax2') {
+				if($element.css('backgroundPosition').split(" ")[1].split('px')[0] > 0) {
+					return false;
+					//$element.css({ 'backgroundPosition':'0 0'}).removeAttr('style');
+					//pos = 0;
+				}
+			//}
 			pos = pos + settings.scrollSpeed;
 			$element.css('backgroundPosition', '0' + ' ' + pos +'px');
 		};
@@ -123,12 +145,13 @@
 
 			direction = (winBottomY > settings.newWinBottomY) ? 'down' : 'up';
 			settings.scrollDirection = direction;
+			return direction;
 		};
 
 		self.setWinTopY = function(){
 			if(typeof pageYOffset!= 'undefined'){
 		        // Most browsers
-				settings.winTopY = pageYOffset;
+				settings.winTopY = pageYOffset - settings.offsetTop;
 		    } else{
 				//IE 'quirks'
 		        var B = document.body;

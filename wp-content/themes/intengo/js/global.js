@@ -32,7 +32,9 @@ $(document).ready(function($) {
 
 	//Kickoff the parallax
 	$.plax({
-		'targets' : ['parallax1', 'parallax2']
+		'targets' : ['parallax1', 'parallax2'],
+		'scrollSpeed' : 1
+		//'offsetTop' : $('#headerWrapper').outerHeight()
 	});
 
 	var $navToggle 	= $('#navControl');
